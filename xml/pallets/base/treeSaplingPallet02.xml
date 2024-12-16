@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="treeSaplingPallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>$l10n_fillType_treeSaplings</name>
+        <functions>
+            <function>$l10n_function_saplingPallet</function>
+        </functions>
+        <specs>
+            <combination xmlFilename="$data/vehicles/damcon/pl75/pl75.xml"/>
+            <weight ignore="true"/>
+        </specs>
+        <image>$data/objects/pallets/treeSaplingPallet02/store_treeSaplingPallet02.png</image>
+        <price>1000</price>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <category>pallets palletForestry</category>
+        <financeCategory>PURCHASE_SAPLINGS</financeCategory>
+        <shopHeight>2.5</shopHeight>
+        <vertexBufferMemoryUsage>13312</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>3328</indexBufferMemoryUsage>
+        <textureMemoryUsage>655360</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="35" />
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>$data/objects/pallets/treeSaplingPallet02/treeSaplingPallet02.i3d</filename>
+        <size width="1.3" length="0.9" height="2.7"/>
+        <canBeReset>false</canBeReset>
+        <input allowed="false"/>
+        <components maxMass="100">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="150" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <supportsPickUp>true</supportsPickUp>
+    </base>
+
+    <treeSaplingPallet>
+        <treeSaplingTypeConfigurations>
+            <treeSaplingTypeConfiguration useMapTreeTypes="true" variationName="DEFAULT"/>
+        </treeSaplingTypeConfigurations>
+
+        <saplingNodes>
+            <saplingNode node="sapling01"/>
+            <saplingNode node="sapling02"/>
+            <saplingNode node="sapling03"/>
+            <saplingNode node="sapling04"/>
+            <saplingNode node="sapling05"/>
+            <saplingNode node="sapling06"/>
+            <saplingNode node="sapling07"/>
+            <saplingNode node="sapling08"/>
+            <saplingNode node="sapling09"/>
+            <saplingNode node="sapling10"/>
+            <saplingNode node="sapling11"/>
+            <saplingNode node="sapling12"/>
+            <saplingNode node="sapling13"/>
+            <saplingNode node="sapling14"/>
+            <saplingNode node="sapling15"/>
+            <saplingNode node="sapling16"/>
+            <saplingNode node="sapling17"/>
+            <saplingNode node="sapling18"/>
+            <saplingNode node="sapling19"/>
+            <saplingNode node="sapling20"/>
+        </saplingNodes>
+    </treeSaplingPallet>
+
+    <pallet fillUnitIndex="1" linkNode="treeSaplingPallet02_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+    </pallet>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleThreshold="0.01">
+                    <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="TREESAPLINGS" capacity="20" startFillType="TREESAPLINGS" startFillLevel="20" ignoreFillLimit="true">
+                        <exactFillRootNode node="exactFillRootNode" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="6" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="10"/>
+
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="tensionBeltShape"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+    <i3dMappings>
+        <i3dMapping id="treeSaplingPallet02_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="fillTrigger" node="0>1" />
+        <i3dMapping id="treeSaplingsBox" node="0>2" />
+        <i3dMapping id="tensionBeltShape" node="0>2|0" />
+        <i3dMapping id="sapling01" node="0>2|1|0" />
+        <i3dMapping id="sapling02" node="0>2|1|1" />
+        <i3dMapping id="sapling03" node="0>2|1|2" />
+        <i3dMapping id="sapling04" node="0>2|1|3" />
+        <i3dMapping id="sapling05" node="0>2|1|4" />
+        <i3dMapping id="sapling06" node="0>2|1|5" />
+        <i3dMapping id="sapling07" node="0>2|1|6" />
+        <i3dMapping id="sapling08" node="0>2|1|7" />
+        <i3dMapping id="sapling09" node="0>2|1|8" />
+        <i3dMapping id="sapling10" node="0>2|1|9" />
+        <i3dMapping id="sapling11" node="0>2|1|10" />
+        <i3dMapping id="sapling12" node="0>2|1|11" />
+        <i3dMapping id="sapling13" node="0>2|1|12" />
+        <i3dMapping id="sapling14" node="0>2|1|13" />
+        <i3dMapping id="sapling15" node="0>2|1|14" />
+        <i3dMapping id="sapling16" node="0>2|1|15" />
+        <i3dMapping id="sapling17" node="0>2|1|16" />
+        <i3dMapping id="sapling18" node="0>2|1|17" />
+        <i3dMapping id="sapling19" node="0>2|1|18" />
+        <i3dMapping id="sapling20" node="0>2|1|19" />
+        <i3dMapping id="exactFillRootNode" node="0>3" />
+    </i3dMappings>
+</vehicle>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>$l10n_fillType_seeds</name>
+        <specs>
+            <weight ignore="true"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_seeds</function>
+        </functions>
+        <image>$data/objects/pallets/pioneer/store_pioneerPallet.png</image>
+        <price>1260</price>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <rotation>0</rotation>
+        <brand>PIONEER</brand>
+        <category>pallets palletSeeds</category>
+        <financeCategory>PURCHASE_SEEDS</financeCategory>
+        <shopHeight>1.5</shopHeight>
+        <vertexBufferMemoryUsage>512</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>256</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="35" />
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/multiPurchaseItem/multiPurchaseItem.i3d</filename>
+        <size width="2.8" length="4.4" height="0.9" lengthOffset="0.0"/>
+        <input allowed="false"/>
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="100" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="SEEDS" capacity="1050"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <multipleItemPurchase filename="xml/pallets/base/pioneerPallet.xml" isVehicle="true">
+        <offsets>
+            <offset amount="2" offset="0.7 0 0"/>
+            <offset amount="3" offset="0.7 0 0.55"/>
+            <offset amount="5" offset="0.7 0 1.1"/>
+            <offset amount="7" offset="0.7 0 1.65"/>
+        </offsets>
+        <itemPositions>
+            <itemPosition position="0 0 0" rotation="0 0 0"/>
+            <itemPosition position="-1.4 0 0" rotation="0 0 0"/>
+            <itemPosition position="0 0 -1.1" rotation="0 0 0"/>
+            <itemPosition position="-1.4 0 -1.1" rotation="0 0 0"/>
+
+            <itemPosition position="0 0 -2.2" rotation="0 0 0"/>
+            <itemPosition position="-1.4 0 -2.2" rotation="0 0 0"/>
+            <itemPosition position="0 0 -3.3" rotation="0 0 0"/>
+            <itemPosition position="-1.4 0 -3.3" rotation="0 0 0"/>
+        </itemPositions>
+    </multipleItemPurchase>
+
+    <multipleItemPurchaseAmountConfigurations>
+        <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="1260"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="2520"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="3780"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="5040"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="6300"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="7560"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="8820"/>
+    </multipleItemPurchaseAmountConfigurations>
+</vehicle>

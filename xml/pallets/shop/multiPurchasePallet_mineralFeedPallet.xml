@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>$l10n_fillType_mineralFeed</name>
+        <specs>
+            <fillTypes>MINERAL_FEED</fillTypes>
+            <weight ignore="true"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_mineralFeedPallet</function>
+        </functions>
+        <image>$data/objects/pallets/mineralFeedPallet/store_mineralFeedPallet.png</image>
+        <price>1000</price>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <category>pallets palletAnimals</category>
+        <financeCategory>OTHER</financeCategory>
+        <shopHeight>1.5</shopHeight>
+        <shopDynamicTitle>true</shopDynamicTitle>
+        <vertexBufferMemoryUsage>512</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>256</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="35" />
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/multiPurchaseItem/multiPurchaseItem.i3d</filename>
+        <size width="2.7" length="4.0" height="0.8" lengthOffset="0.0"/>
+        <input allowed="false"/>
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="100" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="MINERAL_FEED" capacity="1050"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <multipleItemPurchase filename="xml/pallets/base/mineralFeedPallet.xml" isVehicle="true">
+        <offsets>
+            <offset amount="2" offset="0.65 0 0"/>
+            <offset amount="3" offset="0.65 0 0.5"/>
+            <offset amount="5" offset="0.65 0 1.0"/>
+            <offset amount="7" offset="0.65 0 1.5"/>
+        </offsets>
+        <itemPositions>
+            <itemPosition position="0 0 0" rotation="0 0 0"/>
+            <itemPosition position="-1.3 0 0" rotation="0 0 0"/>
+            <itemPosition position="0 0 -1.0" rotation="0 0 0"/>
+            <itemPosition position="-1.3 0 -1.0" rotation="0 0 0"/>
+
+            <itemPosition position="0 0 -2.0" rotation="0 0 0"/>
+            <itemPosition position="-1.3 0 -2.0" rotation="0 0 0"/>
+            <itemPosition position="0 0 -3.0" rotation="0 0 0"/>
+            <itemPosition position="-1.3 0 -3.0" rotation="0 0 0"/>
+        </itemPositions>
+    </multipleItemPurchase>
+
+    <multipleItemPurchaseAmountConfigurations>
+        <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="1000"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="2000"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="3000"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="4000"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="5000"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="6000"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="7000"/>
+    </multipleItemPurchaseAmountConfigurations>
+</vehicle>

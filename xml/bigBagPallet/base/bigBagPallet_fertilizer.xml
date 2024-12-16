@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>$l10n_fillType_fertilizer</name>
+        <specs>
+            <weight ignore="true"/>
+        </specs>
+        <image>$data/objects/bigBagPallet/fertilizer/store_bigBagPallet_fertilizer.png</image>
+        <price>1920</price>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <rotation>0</rotation>
+        <brand>CORTEVA</brand>
+        <category>bigbagPallets</category>
+        <financeCategory>PURCHASE_FERTILIZER</financeCategory>
+        <showInStore>false</showInStore>
+        <vertexBufferMemoryUsage>94208</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>33792</indexBufferMemoryUsage>
+        <textureMemoryUsage>4390912</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/bigBagPallet/bigBagPallet.i3d</filename>
+        <size width="1.5" length="1.2" height="1.1" />
+        <input allowed="false"/>
+        <canBeReset>false</canBeReset>
+        <components maxMass="100">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="150" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <supportsPickUp>true</supportsPickUp>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration name="$l10n_configuration_valueDefault">
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="FERTILIZER" capacity="1000" startFillType="FERTILIZER" startFillLevel="1000" ignoreFillLimit="true">
+                        <fillRootNode node="0>" />
+
+                        <fillTypeMaterials>
+                            <material fillType="wheat" node="bigBagPallet_vis" refNode="chickenFood_mat"/>
+                            <material fillType="fertilizer" node="bigBagPallet_vis" refNode="fertilizer_mat"/>
+                            <material fillType="oat" node="bigBagPallet_vis" refNode="horseFood_mat"/>
+                            <material fillType="lime" node="bigBagPallet_vis" refNode="lime_mat"/>
+                            <material fillType="pigFood" node="bigBagPallet_vis" refNode="pigFood_mat"/>
+                            <material fillType="roadSalt" node="bigBagPallet_vis" refNode="roadSalt_mat"/>
+                            <material fillType="seeds" node="bigBagPallet_vis" refNode="seeds_mat"/>
+                        </fillTypeMaterials>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="raycastNode" emptySpeed="100" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true">
+            <raycast useWorldNegYDirection="true" />
+            <info width="0.4" length="0.4" />
+            <activationTrigger node="dischargeActivationTrigger" />
+
+            <effects>
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"  materialType="pipe"           delay="0"   maxBending="1"  positionUpdateNodes="smokeEffect"/>
+                <effectNode                          effectNode="smokeEffect" materialType="unloadingSmoke" delay="0.1" alignToWorldY="true"/>
+            </effects>
+        </dischargeNode>
+    </dischargeable>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="1.09" jointTransY="0.097" jointLimitToRotY="true"/>
+
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="tensionBeltShape"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+    <i3dMappings>
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="raycastNode" node="0>1|0" />
+        <i3dMapping id="fillTrigger" node="0>1|1" />
+        <i3dMapping id="pipeEffect" node="0>1|2|0" />
+        <i3dMapping id="smokeEffect" node="0>1|2|1" />
+        <i3dMapping id="dischargeActivationTrigger" node="0>1|3" />
+        <i3dMapping id="bigBagPallet_vis" node="0>2|0" />
+        <i3dMapping id="tensionBeltShape" node="0>2|0|1" />
+        <i3dMapping id="seeds_mat" node="0>2|1" />
+        <i3dMapping id="pigFood_mat" node="0>2|2" />
+        <i3dMapping id="lime_mat" node="0>2|3" />
+        <i3dMapping id="horseFood_mat" node="0>2|4" />
+        <i3dMapping id="chickenFood_mat" node="0>2|5" />
+        <i3dMapping id="roadSalt_mat" node="0>2|6" />
+        <i3dMapping id="fertilizer_mat" node="0>2|7" />
+    </i3dMappings>
+</vehicle>

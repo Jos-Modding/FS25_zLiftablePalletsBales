@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>$l10n_fillType_seeds</name>
+        <functions>
+            <function>$l10n_function_seeds</function>
+        </functions>
+        <specs>
+            <weight ignore="true"/>
+        </specs>
+        <image>$data/objects/pallets/pioneer/store_pioneerPallet.png</image>
+        <price>1260</price>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <rotation>0</rotation>
+        <brand>PIONEER</brand>
+        <category>pallets palletSeeds</category>
+        <financeCategory>PURCHASE_SEEDS</financeCategory>
+        <shopHeight>1.5</shopHeight>
+        <vertexBufferMemoryUsage>63488</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>17920</indexBufferMemoryUsage>
+        <textureMemoryUsage>1048576</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="35" />
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>$data/objects/pallets/pioneer/pioneerPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.9" />
+        <input allowed="false"/>
+        <canBeReset>false</canBeReset>
+        <components maxMass="100">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <supportsPickUp>true</supportsPickUp>
+    </base>
+
+    <animations>
+        <animation name="seedBagAnimation">
+            <part node="seedBags" startTime="0.0" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="41.01 0 0 0" shaderEndValues="-0.01 0 0 0"/>
+            <part node="fillCollision01" startTime="0.143" endTime="1.0" startTrans="0 0 0"   endTrans="0 0.095 0"/>
+            <part node="fillCollision02" startTime="0.143" endTime="1.0" startTrans="0 0 0"   endTrans="0 0.187 0"/>
+            <part node="fillCollision03" startTime="0.143" endTime="1.0" startTrans="0 0 0"   endTrans="0 0.284 0"/>
+            <part node="fillCollision04" startTime="0.143" endTime="1.0" startTrans="0 0 0"   endTrans="0 0.373 0"/>
+            <part node="fillCollision05" startTime="0.143" endTime="1.0" startTrans="0 0 0"   endTrans="0 0.470 0"/>
+            <part node="fillCollision06" startTime="0.143" endTime="1.0" startTrans="0 0 0"   endTrans="0 0.567 0"/>
+            <part node="tensionBeltNode" startTime="0.000" endTime="1.0" startScale="1 0.1 1" endScale="1 1 1"/>
+        </animation>
+    </animations>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="SEEDS" capacity="1050" startFillType="SEEDS" startFillLevel="1050" ignoreFillLimit="true">
+                        <fillRootNode node="0>" />
+                        <fillLevelAnimation name="seedBagAnimation" resetOnEmpty="true" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="6" additionalMountDistance="0.8" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="tensionBeltNode"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+    <pallet linkNode="pioneerPallet_main_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+    </pallet>
+
+    <i3dMappings>
+        <i3dMapping id="pioneerPallet_main_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="fillTrigger" node="0>1" />
+        <i3dMapping id="tensionBeltNode" node="0>2" />
+        <i3dMapping id="seedBags" node="0>3" />
+        <i3dMapping id="fillCollision01" node="0>4|0" />
+        <i3dMapping id="fillCollision02" node="0>4|1" />
+        <i3dMapping id="fillCollision03" node="0>4|2" />
+        <i3dMapping id="fillCollision04" node="0>4|3" />
+        <i3dMapping id="fillCollision05" node="0>4|4" />
+        <i3dMapping id="fillCollision06" node="0>4|5" />
+    </i3dMappings>
+</vehicle>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<bale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/bale.xsd">
+    <filename>$data/objects/bales/squarebales/cotton/cottonSquarebale488.i3d</filename>
+    <size isRoundbale="false" width="2.440" height="2.440" length="4.88" maxStackHeight="1"/>
+    <mountableObject triggerNode="0" forceAcceleration="2" forceLimitScale="1" axisFreeY="false" axisFreeX="false"/>
+
+    <uvId>DEFAULT</uvId>
+
+    <baleMeshes>
+        <baleMesh node="1" isTensionBeltMesh="true"/>
+    </baleMeshes>
+
+    <fillTypes>
+        <fillType name="COTTON" capacity="20000" mass="100" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/shared/default_alpha.dds"/>
+            <baleNormal filename="$data/shared/default_normal.dds"/>
+        </fillType>
+    </fillTypes>
+</bale>

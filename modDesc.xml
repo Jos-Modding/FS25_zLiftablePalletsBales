@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="93">
+    <author>Jos</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Liftable Pallets And Bales</en>
+        <de>Anhebbare Paletten Und Ballen</de>
+    </title>
+    <description>
+        <en><![CDATA[All base game pallets, big bags, and bales are now liftable by hand, weighing only 100 kg.
+
+Productions/animal pens will spawn these lightweight pallets after installing this mod. Anything existing before activation will remain original weight.
+All pallets are available for purchase on the warehouse/pallet store on your map.
+
+Included are balers and cotton harvesters producing bales weighing only 100 kg, making them liftable by hand! Produced bales can be wrapped and transported by all base game equipment.
+Selection of all base game bales available as lightweight bales available for purchase in the shop.
+
+Pallet, big bags, or bales added by other mods will NOT be liftable.
+]]>
+		</en>
+        <de><![CDATA[Alle Basisspielpaletten, BigBags and Ballen sind jetzt von Hand anhebbar und wiegen nur noch 100 kg.
+Nach der Installation dieses Mods werden in Produktionen/Tiergehegen diese leichten Paletten erscheinen. Alles, was vor der Aktivierung vorhanden war, behält sein ursprüngliches Gewicht.
+Alle Paletten stehen im Lager/Palettenshop auf Deiner Karte zum Kauf bereit.
+
+Im Lieferumfang sind Ballenpressen und Baumwollerntemaschinen enthalten, die Ballen mit einem Gewicht von nur 100 kg produzieren und somit von Hand angehoben werden können! Die produzierten Ballen können mit allen Basisgeräten des Spiels gewickelt und transportiert werden.
+Auswahl aller als Leichtballen verfügbaren Basisspielballen zum Kauf im Shop verfügbar.
+
+Von anderen Mods hinzugefügte Paletten/BigBags/Ballen sind NICHT transportierbar.
+]]>
+		</de>
+    </description>
+    <iconFilename>icon_zLiftablePalletsBales.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <fillTypes filename="xml/fillTypes.xml"/>
+    <bales>
+        <bale filename="xml/bales/roundbales/biomassBale125.xml" />
+        <bale filename="xml/bales/roundbales/cottonBale238.xml" />
+        <bale filename="xml/bales/roundbales/roundbale125.xml" />
+        <bale filename="xml/bales/roundbales/roundbale150.xml" />
+        <bale filename="xml/bales/roundbales/roundbale180.xml" />
+        <bale filename="xml/bales/squarebales/cottonSquarebale488.xml" />
+        <bale filename="xml/bales/squarebales/packedSquareBale120.xml" />
+        <bale filename="xml/bales/squarebales/squarebale120.xml" />
+        <bale filename="xml/bales/squarebales/squarebale180.xml" />
+        <bale filename="xml/bales/squarebales/squarebale220.xml" />
+        <bale filename="xml/bales/squarebales/squarebale240.xml" />
+    </bales>
+    <storeItems>
+        <!-- Base/Production Pallets -->
+        <storeItem xmlFilename="xml/pallets/base/bakeryBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/baleNetPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/baleTwinePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/barrelPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/bathtubPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/boardsStackPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/bucketPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/buffaloMilkBottlesBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/butterBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/cakePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/cannedPeasBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/canolaOilPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/cartonRollPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/cementBagsPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/cementBricksPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/cerealsPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/cheesePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/chilliBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/chocolateBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/clothesBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/eggBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/enokiBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/fabricsPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/fermentedNapaCabbageBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/fertilizerTank.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/fertilizerTankHelm.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/fillablePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/flourBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/freshSpinachBagsPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/furnitureStackPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/garlicBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/goatCheeseBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/goatMilkBottlesBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/goatMilkCanPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/grapeJuicePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/grapePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/herbicideTank.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/herbicideTankHelm.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/honeyBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/jarredGreenBeansPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/lettuceBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/milkBottlesBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/mineralFeedPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/mozzarellaBufalaBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/napaCabbageBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/noodleSoupBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/oliveOilPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/oysterBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/palletPoplar.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/palletPotato.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/palletSugarCane.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/paperRollPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/pioneerPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/planksPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/potatoChipsPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/prefabWallPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/preservedFoodBeetRootPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/preservedFoodCarrotsPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/preservedFoodParsnipPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/raisinBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/raniWrapPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/riceBagsPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/riceBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/riceFlourBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/riceOilPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/riceRollsPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/riceSaplingPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/roofPlatesPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/ropePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/silageAdditivePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/soupCansPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/soupCansPalletBeetroot.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/soupCansPalletCarrots.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/soupCansPalletParsnip.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/soupCansPalletPotato.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/springOnionBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/stonePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/strawberriesBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/sugarBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/sunflowerOilPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/tomatoesBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/treeSaplingPallet01.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/treeSaplingPallet02.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/vegetablesPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/woodBeamPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/woolPallet.xml"/>
+        <!-- MultiPurchase Pallets -->
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchase_vegetablesPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchaseLiquidTank_fertilizerTank.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchaseLiquidTank_fertilizerTankHelm.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchaseLiquidTank_herbicideTank.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchaseLiquidTank_herbicideTankHelm.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchasePallet_baleNetPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchasePallet_baleTwinePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchasePallet_mineralFeedPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchasePallet_palletPoplar.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchasePallet_palletPotato.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchasePallet_palletSugarCane.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchasePallet_pioneerPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchasePallet_raniWrapPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchasePallet_riceSaplingPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchasePallet_silageAdditivePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchasePallet_treeSaplingPallet01.xml"/>
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchasePallet_treeSaplingPallet02.xml"/>
+        <!-- Base Big Bag Pallets -->
+        <storeItem xmlFilename="xml/bigBagPallet/base/bigBagPallet_chickenFood.xml"/>
+        <storeItem xmlFilename="xml/bigBagPallet/base/bigBagPallet_fertilizer.xml"/>
+        <storeItem xmlFilename="xml/bigBagPallet/base/bigBagPallet_horseFood.xml"/>
+        <storeItem xmlFilename="xml/bigBagPallet/base/bigBagPallet_lime.xml"/>
+        <storeItem xmlFilename="xml/bigBagPallet/base/bigBagPallet_pigFood.xml"/>
+        <storeItem xmlFilename="xml/bigBagPallet/base/bigBagPallet_roadSalt.xml"/>
+        <storeItem xmlFilename="xml/bigBagPallet/base/bigBagPallet_seeds.xml"/>
+        <!-- MultiPurchase Big Bag Pallets -->
+        <storeItem xmlFilename="xml/bigBagPallet/shop/multiPurchaseBigBagPallet_chickenFood.xml"/>
+        <storeItem xmlFilename="xml/bigBagPallet/shop/multiPurchaseBigBagPallet_fertilizer.xml"/>
+        <storeItem xmlFilename="xml/bigBagPallet/shop/multiPurchaseBigBagPallet_horseFood.xml"/>
+        <storeItem xmlFilename="xml/bigBagPallet/shop/multiPurchaseBigBagPallet_lime.xml"/>
+        <storeItem xmlFilename="xml/bigBagPallet/shop/multiPurchaseBigBagPallet_pigFood.xml"/>
+        <storeItem xmlFilename="xml/bigBagPallet/shop/multiPurchaseBigBagPallet_roadSalt.xml"/>
+        <storeItem xmlFilename="xml/bigBagPallet/shop/multiPurchaseBigBagPallet_seeds.xml"/>
+        <!-- Base Big Bag -->
+        <storeItem xmlFilename="xml/bigBag/base/bigBag_chickenFood.xml"/>
+        <storeItem xmlFilename="xml/bigBag/base/bigBag_horseFood.xml"/>
+        <storeItem xmlFilename="xml/bigBag/base/bigBag_lime.xml"/>
+        <storeItem xmlFilename="xml/bigBag/base/bigBag_pigFood.xml"/>
+        <storeItem xmlFilename="xml/bigBag/base/bigBag_roadSalt.xml"/>
+        <storeItem xmlFilename="xml/bigBag/base/bigBag_seeds.xml"/>
+        <storeItem xmlFilename="xml/bigBag/base/bigBagHelm_fertilizer.xml"/>
+        <!-- MultiPurchase Big Bag Pallets -->
+        <storeItem xmlFilename="xml/bigBag/shop/multiPurchaseBigBag_chickenFood.xml"/>
+        <storeItem xmlFilename="xml/bigBag/shop/multiPurchaseBigBag_horseFood.xml"/>
+        <storeItem xmlFilename="xml/bigBag/shop/multiPurchaseBigBag_lime.xml"/>
+        <storeItem xmlFilename="xml/bigBag/shop/multiPurchaseBigBag_pigFood.xml"/>
+        <storeItem xmlFilename="xml/bigBag/shop/multiPurchaseBigBag_roadSalt.xml"/>
+        <storeItem xmlFilename="xml/bigBag/shop/multiPurchaseBigBag_seeds.xml"/>
+        <storeItem xmlFilename="xml/bigBag/shop/multiPurchaseBigBagHelm_fertilizer.xml"/>
+        <!-- Round Balers -->
+        <storeItem xmlFilename="xml/vehicles/bioBalerWB55.xml" />
+        <storeItem xmlFilename="xml/vehicles/c441R.xml" />
+        <storeItem xmlFilename="xml/vehicles/g1F125.xml" />
+        <storeItem xmlFilename="xml/vehicles/proBelt165.xml" />
+        <storeItem xmlFilename="xml/vehicles/rb456.xml" />
+        <storeItem xmlFilename="xml/vehicles/varioMaster.xml" />
+        <storeItem xmlFilename="xml/vehicles/varipackV190XC.xml" />
+        <storeItem xmlFilename="xml/vehicles/vb3190.xml" />
+        <storeItem xmlFilename="xml/vehicles/zr5.xml" />
+        <!-- Square Balers -->
+        <storeItem xmlFilename="xml/vehicles/baler1840.xml" />
+        <storeItem xmlFilename="xml/vehicles/baler2370UHD.xml" />
+        <storeItem xmlFilename="xml/vehicles/bigPack1290HDPVC.xml" />
+        <storeItem xmlFilename="xml/vehicles/quadrant5300.xml" />
+        <storeItem xmlFilename="xml/vehicles/sb1290ID.xml" />
+        <storeItem xmlFilename="xml/vehicles/squadra1290.xml" />
+        <!-- Cotton Harvesters -->
+        <storeItem xmlFilename="xml/vehicles/cp690.xml" />
+        <storeItem xmlFilename="xml/vehicles/moduleExpress635.xml" />
+        <!-- Buyable Bales -->
+        <storeItem xmlFilename="xml/bales/buyable/buyableBales_dryGrass.xml" />
+        <storeItem xmlFilename="xml/bales/buyable/buyableBales_dryGrassRound.xml" />
+        <storeItem xmlFilename="xml/bales/buyable/buyableBales_silage.xml" />
+        <storeItem xmlFilename="xml/bales/buyable/buyableBales_silageRound.xml" />
+        <storeItem xmlFilename="xml/bales/buyable/buyableBales_straw.xml" />
+        <storeItem xmlFilename="xml/bales/buyable/buyableBales_strawRound.xml" />
+    </storeItems>
+</modDesc>

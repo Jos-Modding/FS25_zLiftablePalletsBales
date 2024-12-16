@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="pallet" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>$l10n_fillType_poplar</name>
+        <functions>
+            <function>$l10n_function_fillablePallet</function>
+        </functions>
+        <specs>
+            <combination xmlFilename="$data/vehicles/damcon/pl75/pl75.xml"/>
+            <weight ignore="true"/>
+        </specs>
+        <image>$data/objects/pallets/palletPoplar/store_pallet_saplingsPoplar.png</image>
+        <price>280</price>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <rotation>0</rotation>
+        <shopHeight>1.5</shopHeight>
+        <brand>NONE</brand>
+        <category>pallets palletForestry</category>
+        <financeCategory>PURCHASE_SAPLINGS</financeCategory>
+        <vertexBufferMemoryUsage>7168</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>2560</indexBufferMemoryUsage>
+        <textureMemoryUsage>655360</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/fillablePallet/fillablePallet.i3d</filename>
+        <size width="1.3" length="0.9" height="1.1"/>
+        <canBeReset>false</canBeReset>
+        <input allowed="false"/>
+        <components maxMass="100">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="150"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false"/>
+        <supportsPickUp>true</supportsPickUp>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="POPLAR" capacity="2000" updateMass="false" startFillType="POPLAR" startFillLevel="2000" ignoreFillLimit="true">
+                        <exactFillRootNode node="exactFillRootNode"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="fillVolume" maxAllowedHeapAngle="4" fillUnitIndex="1"/>
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+    </fillVolume>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.785" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="fillablePallet_vis"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+    <pallet linkNode="fillablePallet_main_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+    </pallet>
+
+    <i3dMappings>
+        <i3dMapping id="fillablePallet_main_component1" node="0>"/>
+        <i3dMapping id="dynamicMountTrigger" node="0>0"/>
+        <i3dMapping id="dischargeNode" node="0>1"/>
+        <i3dMapping id="exactFillRootNode" node="0>2|0"/>
+        <i3dMapping id="fillTrigger" node="0>2|1"/>
+        <i3dMapping id="fillVolume" node="0>2|2"/>
+        <i3dMapping id="fillablePallet_vis" node="0>3"/>
+    </i3dMappings>
+</vehicle>

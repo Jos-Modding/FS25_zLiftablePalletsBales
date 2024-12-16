@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="pallet" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>$l10n_storeItem_riceSaplingPallet</name>
+        <image>$data/objects/pallets/riceSaplingPallet/store_riceSaplingPallet.png</image>
+        <price>450</price>
+        <category>pallets specialCropsPallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <allowLeasing>false</allowLeasing>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>15104</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>3840</indexBufferMemoryUsage>
+        <textureMemoryUsage>524288</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/riceSaplingPallet/riceSaplingPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="1.15"/>
+        <canBeReset>false</canBeReset>
+        <components maxMass="100">
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false"/>
+        <input allowed="false"/>
+        <supportsPickUp>true</supportsPickUp>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="RICESAPLINGS" capacity="24" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="riceSaplingPallet_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+        <sounds>
+            <unload template="palletsFillOil" pitchScale="0.8"/>
+        </sounds>
+    </pallet>
+
+    <consumable>
+        <type typeName="RICE_SAPLINGS" defaultConsumableName="DEFAULT_RICE_SAPLINGS" fillUnitIndex="1">
+            <slot node="riceSapling01" useTensionBeltMesh="true"/>
+            <slot node="riceSapling02" useTensionBeltMesh="true"/>
+            <slot node="riceSapling03" useTensionBeltMesh="true"/>
+            <slot node="riceSapling04" useTensionBeltMesh="true"/>
+            <slot node="riceSapling05" useTensionBeltMesh="true"/>
+            <slot node="riceSapling06" useTensionBeltMesh="true"/>
+            <slot node="riceSapling07" useTensionBeltMesh="false"/>
+            <slot node="riceSapling08" useTensionBeltMesh="false"/>
+            <slot node="riceSapling09" useTensionBeltMesh="false"/>
+            <slot node="riceSapling10" useTensionBeltMesh="false"/>
+            <slot node="riceSapling11" useTensionBeltMesh="false"/>
+            <slot node="riceSapling12" useTensionBeltMesh="false"/>
+            <slot node="riceSapling13" useTensionBeltMesh="false"/>
+            <slot node="riceSapling14" useTensionBeltMesh="false"/>
+            <slot node="riceSapling15" useTensionBeltMesh="false"/>
+            <slot node="riceSapling16" useTensionBeltMesh="false"/>
+            <slot node="riceSapling17" useTensionBeltMesh="false"/>
+            <slot node="riceSapling18" useTensionBeltMesh="false"/>
+            <slot node="riceSapling19" useTensionBeltMesh="false"/>
+            <slot node="riceSapling20" useTensionBeltMesh="false"/>
+            <slot node="riceSapling21" useTensionBeltMesh="false"/>
+            <slot node="riceSapling22" useTensionBeltMesh="false"/>
+            <slot node="riceSapling23" useTensionBeltMesh="false"/>
+            <slot node="riceSapling24" useTensionBeltMesh="false"/>
+        </type>
+    </consumable>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="2"/>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="1.15" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="riceSaplingPallet_component1" node="0>"/>
+        <i3dMapping id="riceSapling01" node="0>0|0"/>
+        <i3dMapping id="riceSapling02" node="0>0|1"/>
+        <i3dMapping id="riceSapling03" node="0>0|2"/>
+        <i3dMapping id="riceSapling04" node="0>0|3"/>
+        <i3dMapping id="riceSapling05" node="0>0|4"/>
+        <i3dMapping id="riceSapling06" node="0>0|5"/>
+        <i3dMapping id="riceSapling07" node="0>0|6"/>
+        <i3dMapping id="riceSapling08" node="0>0|7"/>
+        <i3dMapping id="riceSapling09" node="0>0|8"/>
+        <i3dMapping id="riceSapling10" node="0>0|9"/>
+        <i3dMapping id="riceSapling11" node="0>0|10"/>
+        <i3dMapping id="riceSapling12" node="0>0|11"/>
+        <i3dMapping id="riceSapling13" node="0>0|12"/>
+        <i3dMapping id="riceSapling14" node="0>0|13"/>
+        <i3dMapping id="riceSapling15" node="0>0|14"/>
+        <i3dMapping id="riceSapling16" node="0>0|15"/>
+        <i3dMapping id="riceSapling17" node="0>0|16"/>
+        <i3dMapping id="riceSapling18" node="0>0|17"/>
+        <i3dMapping id="riceSapling19" node="0>0|18"/>
+        <i3dMapping id="riceSapling20" node="0>0|19"/>
+        <i3dMapping id="riceSapling21" node="0>0|20"/>
+        <i3dMapping id="riceSapling22" node="0>0|21"/>
+        <i3dMapping id="riceSapling23" node="0>0|22"/>
+        <i3dMapping id="riceSapling24" node="0>0|23"/>
+        <i3dMapping id="dynamicMountTrigger" node="0>1"/>
+        <i3dMapping id="fillTrigger" node="0>2"/>
+        <i3dMapping id="dischargeNode" node="0>3"/>
+        <i3dMapping id="tensionBeltMesh" node="0>6"/>
+    </i3dMappings>
+</vehicle>

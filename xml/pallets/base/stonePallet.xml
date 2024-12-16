@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="pallet" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>$l10n_storeItem_stonePallet</name>
+        <image>$data/store/store_empty.png</image>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>47104</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>14080</indexBufferMemoryUsage>
+        <textureMemoryUsage>2621440</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/stonePallet/stonePallet.i3d</filename>
+        <size width="1.5" length="1.2" height="1.1"/>
+        <canBeReset>false</canBeReset>
+        <components maxMass="100">
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="150"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false"/>
+        <input allowed="false"/>
+        <supportsPickUp>true</supportsPickUp>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="STONE" capacity="1000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" node="bigBagContainer_vis">
+        <content>
+            <object node="fill" tensionBeltNode="tensionBeltShape"/>
+        </content>
+        <sounds>
+            <unload template="palletsFillWood" pitchScale="0.7" volumeScale="1.5" supportsReverb="false"/>
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="1.09" jointTransY="0.097" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="bigBagContainer_main_component1" node="0>"/>
+        <i3dMapping id="bigBagContainer_vis" node="0>0|0"/>
+        <i3dMapping id="tensionBeltShape" node="0>0|0|0"/>
+        <i3dMapping id="grid" node="0>0|0|1"/>
+        <i3dMapping id="fill" node="0>0|0|2"/>
+        <i3dMapping id="col_bigBagContainer" node="0>0|0|3"/>
+        <i3dMapping id="dynamicMountTrigger" node="0>1"/>
+        <i3dMapping id="dischargeNode" node="0>2"/>
+    </i3dMappings>
+</vehicle>

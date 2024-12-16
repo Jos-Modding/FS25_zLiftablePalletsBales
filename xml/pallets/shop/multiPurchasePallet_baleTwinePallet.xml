@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>$l10n_storeItem_baleTwine</name>
+        <specs>
+            <fillTypes>BALE_TWINE</fillTypes>
+            <weight ignore="true"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_baleTwine</function>
+        </functions>
+        <image>$data/objects/pallets/baleTwinePallet/store_baleTwinePallet.png</image>
+        <price>875</price>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <category>pallets palletBaling</category>
+        <financeCategory>OTHER</financeCategory>
+        <shopHeight>1.5</shopHeight>
+        <shopDynamicTitle>true</shopDynamicTitle>
+        <vertexBufferMemoryUsage>512</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>256</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="35" />
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/multiPurchaseItem/multiPurchaseItem.i3d</filename>
+        <size width="2.55" length="3.6" height="0.8" lengthOffset="0.0"/>
+        <input allowed="false"/>
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="100" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_rolls" fillTypes="BALE_TWINE" capacity="24"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <consumable>
+        <consumableConfigurations title="$l10n_configuration_baleTwine" typeName="BALE_TWINE">
+            <consumableConfiguration name="$l10n_consumable_lizardTwine" vehicleBrand="LIZARD" vehicleName="$l10n_consumable_lizardTwine" consumableName="LIZARD_TWINE"/>
+            <consumableConfiguration name="John Deere XtraTwine™ Plus" vehicleBrand="JOHNDEERE" vehicleName="XtraTwine™ Plus" consumableName="JOHNDEERE_TWINE"/>
+            <consumableConfiguration name="CLAAS QUADOTEX" vehicleBrand="CLAAS" vehicleName="QUADOTEX" consumableName="CLAAS_TWINE"/>
+            <consumableConfiguration name="New Holland Baler Twine" vehicleBrand="NEWHOLLAND" vehicleName="$l10n_consumable_lizardTwine" consumableName="NEWHOLLAND_TWINE"/>
+            <consumableConfiguration name="Case IH Baler Twine" vehicleBrand="CASEIH" vehicleName="$l10n_consumable_lizardTwine" consumableName="CASEIH_TWINE"/>
+        </consumableConfigurations>
+    </consumable>
+
+    <multipleItemPurchase filename="xml/pallets/base/baleTwinePallet.xml" isVehicle="true">
+        <offsets>
+            <offset amount="2" offset="0.65 0 0"/>
+            <offset amount="3" offset="0.65 0 0.45"/>
+            <offset amount="5" offset="0.65 0 0.9"/>
+            <offset amount="7" offset="0.65 0 1.35"/>
+        </offsets>
+        <itemPositions>
+            <itemPosition position="0 0 0" rotation="0 0 0"/>
+            <itemPosition position="-1.3 0 0" rotation="0 0 0"/>
+            <itemPosition position="0 0 -0.9" rotation="0 0 0"/>
+            <itemPosition position="-1.3 0 -0.9" rotation="0 0 0"/>
+
+            <itemPosition position="0 0 -1.8" rotation="0 0 0"/>
+            <itemPosition position="-1.3 0 -1.8" rotation="0 0 0"/>
+            <itemPosition position="0 0 -2.7" rotation="0 0 0"/>
+            <itemPosition position="-1.3 0 -2.7" rotation="0 0 0"/>
+        </itemPositions>
+    </multipleItemPurchase>
+
+    <multipleItemPurchaseAmountConfigurations>
+        <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="875"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="1750"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="2625"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="3500"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="4375"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="5250"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="6125"/>
+    </multipleItemPurchaseAmountConfigurations>
+</vehicle>

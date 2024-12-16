@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="pallet" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>RaniWrap</name>
+        <functions>
+            <function>$l10n_function_baleWrap</function>
+        </functions>
+        <specs>
+            <weight ignore="true"/>
+        </specs>
+        <image>$data/objects/pallets/raniWrapPallet/store_raniWrapPallet.png</image>
+        <price>3900</price>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <rotation>0</rotation>
+        <brand>RANIPLAST</brand>
+        <category>pallets palletBaling</category>
+        <financeCategory>OTHER</financeCategory>
+        <shopHeight>1.5</shopHeight>
+        <vertexBufferMemoryUsage>30208</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>9216</indexBufferMemoryUsage>
+        <textureMemoryUsage>851968</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/raniWrapPallet/raniWrapPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.9"/>
+        <canBeReset>false</canBeReset>
+        <components maxMass="100">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false"/>
+        <input allowed="false"/>
+        <supportsPickUp>true</supportsPickUp>
+    </base>
+
+    <animations>
+        <animation name="fillLevelAnimation" resetOnStart="false">
+            <part node="topLayerCollision" startTime="0.5000" endTime="0.5001" startTrans="0.000 0.526 0.000" endTrans="0.000 1.274 0.000"/>
+            <part node="topLayerCollision" startTime="0.5001" endTime="1.0000" startTrans="0.000 1.274 0.000" endTrans="0.000 1.274 0.000"/>
+        </animation>
+    </animations>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_rolls" fillTypes="BALE_WRAP" ignoreFillLimit="true">
+                        <fillLevelAnimation name="fillLevelAnimation"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="1.5"/>
+
+    <consumable>
+        <consumableConfigurations title="$l10n_configuration_baleWrap" typeName="BALE_WRAP">
+            <consumableConfiguration name="$l10n_consumable_raniPlastWhite" consumableName="RANI_PLAST_WHITE"/>
+            <consumableConfiguration name="$l10n_consumable_raniPlastBlack" consumableName="RANI_PLAST_BLACK"/>
+            <consumableConfiguration name="$l10n_consumable_raniPlastGreen" consumableName="RANI_PLAST_GREEN"/>
+            <consumableConfiguration name="$l10n_consumable_raniPlastNatureGreen" consumableName="RANI_PLAST_NATURE_GREEN"/>
+        </consumableConfigurations>
+
+        <type typeName="BALE_WRAP" defaultConsumableName="RANI_PLAST_WHITE" fillUnitIndex="1">
+            <slot node="baleWrapSlot01"/>
+            <slot node="baleWrapSlot02"/>
+            <slot node="baleWrapSlot03"/>
+            <slot node="baleWrapSlot04"/>
+            <slot node="baleWrapSlot05"/>
+            <slot node="baleWrapSlot06"/>
+            <slot node="baleWrapSlot07"/>
+            <slot node="baleWrapSlot08"/>
+            <slot node="baleWrapSlot09"/>
+            <slot node="baleWrapSlot10"/>
+            <slot node="baleWrapSlot11"/>
+            <slot node="baleWrapSlot12"/>
+            <slot node="baleWrapSlot13"/>
+            <slot node="baleWrapSlot14"/>
+            <slot node="baleWrapSlot15"/>
+            <slot node="baleWrapSlot16"/>
+            <slot node="baleWrapSlot17"/>
+            <slot node="baleWrapSlot18"/>
+            <slot node="baleWrapSlot19"/>
+            <slot node="baleWrapSlot20"/>
+            <slot node="baleWrapSlot21"/>
+            <slot node="baleWrapSlot22"/>
+            <slot node="baleWrapSlot23"/>
+            <slot node="baleWrapSlot24"/>
+            <slot node="baleWrapSlot25"/>
+            <slot node="baleWrapSlot26"/>
+            <slot node="baleWrapSlot27"/>
+            <slot node="baleWrapSlot28"/>
+            <slot node="baleWrapSlot29"/>
+            <slot node="baleWrapSlot30"/>
+            <slot node="baleWrapSlot31"/>
+            <slot node="baleWrapSlot32"/>
+            <slot node="baleWrapSlot33"/>
+            <slot node="baleWrapSlot34"/>
+            <slot node="baleWrapSlot35"/>
+            <slot node="baleWrapSlot36"/>
+            <slot node="baleWrapSlot37"/>
+            <slot node="baleWrapSlot38"/>
+            <slot node="baleWrapSlot39"/>
+            <slot node="baleWrapSlot40"/>
+        </type>
+    </consumable>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.90" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="raniWrapPallet_component1" node="0>"/>
+        <i3dMapping id="pallet_vis" node="0>0"/>
+        <i3dMapping id="dynamicMountTrigger" node="0>0|0"/>
+        <i3dMapping id="fillTrigger" node="0>0|1"/>
+        <i3dMapping id="baleWrapSlot01" node="0>0|2|0"/>
+        <i3dMapping id="baleWrapSlot02" node="0>0|2|1"/>
+        <i3dMapping id="baleWrapSlot03" node="0>0|2|2"/>
+        <i3dMapping id="baleWrapSlot04" node="0>0|2|3"/>
+        <i3dMapping id="baleWrapSlot05" node="0>0|2|4"/>
+        <i3dMapping id="baleWrapSlot06" node="0>0|2|5"/>
+        <i3dMapping id="baleWrapSlot07" node="0>0|2|6"/>
+        <i3dMapping id="baleWrapSlot08" node="0>0|2|7"/>
+        <i3dMapping id="baleWrapSlot09" node="0>0|2|8"/>
+        <i3dMapping id="baleWrapSlot10" node="0>0|2|9"/>
+        <i3dMapping id="baleWrapSlot11" node="0>0|2|10"/>
+        <i3dMapping id="baleWrapSlot12" node="0>0|2|11"/>
+        <i3dMapping id="baleWrapSlot13" node="0>0|2|12"/>
+        <i3dMapping id="baleWrapSlot14" node="0>0|2|13"/>
+        <i3dMapping id="baleWrapSlot15" node="0>0|2|14"/>
+        <i3dMapping id="baleWrapSlot16" node="0>0|2|15"/>
+        <i3dMapping id="baleWrapSlot17" node="0>0|2|16"/>
+        <i3dMapping id="baleWrapSlot18" node="0>0|2|17"/>
+        <i3dMapping id="baleWrapSlot19" node="0>0|2|18"/>
+        <i3dMapping id="baleWrapSlot20" node="0>0|2|19"/>
+        <i3dMapping id="baleWrapSlot21" node="0>0|2|20"/>
+        <i3dMapping id="baleWrapSlot22" node="0>0|2|21"/>
+        <i3dMapping id="baleWrapSlot23" node="0>0|2|22"/>
+        <i3dMapping id="baleWrapSlot24" node="0>0|2|23"/>
+        <i3dMapping id="baleWrapSlot25" node="0>0|2|24"/>
+        <i3dMapping id="baleWrapSlot26" node="0>0|2|25"/>
+        <i3dMapping id="baleWrapSlot27" node="0>0|2|26"/>
+        <i3dMapping id="baleWrapSlot28" node="0>0|2|27"/>
+        <i3dMapping id="baleWrapSlot29" node="0>0|2|28"/>
+        <i3dMapping id="baleWrapSlot30" node="0>0|2|29"/>
+        <i3dMapping id="baleWrapSlot31" node="0>0|2|30"/>
+        <i3dMapping id="baleWrapSlot32" node="0>0|2|31"/>
+        <i3dMapping id="baleWrapSlot33" node="0>0|2|32"/>
+        <i3dMapping id="baleWrapSlot34" node="0>0|2|33"/>
+        <i3dMapping id="baleWrapSlot35" node="0>0|2|34"/>
+        <i3dMapping id="baleWrapSlot36" node="0>0|2|35"/>
+        <i3dMapping id="baleWrapSlot37" node="0>0|2|36"/>
+        <i3dMapping id="baleWrapSlot38" node="0>0|2|37"/>
+        <i3dMapping id="baleWrapSlot39" node="0>0|2|38"/>
+        <i3dMapping id="baleWrapSlot40" node="0>0|2|39"/>
+        <i3dMapping id="topLayerCollision" node="0>0|2|40"/>
+    </i3dMappings>
+</vehicle>

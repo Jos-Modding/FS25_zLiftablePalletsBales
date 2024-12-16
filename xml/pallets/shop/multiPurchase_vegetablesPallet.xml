@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>$l10n_storeItem_vegetablesPallet</name>
+        <image>$data/objects/pallets/vegetablesPallet/store_vegetablesPallet.png</image>
+        <price>130</price>
+        <category>pallets palletVegetables</category>
+        <brand>DEWULF</brand>
+        <canBeSold>false</canBeSold>
+        <allowLeasing>false</allowLeasing>
+        <rotation>90</rotation>
+        <shopRotationOffset>0 0 0</shopRotationOffset>
+        <shopHeight>2</shopHeight>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>512</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>256</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_storeItem_vegetablesPallet</typeDesc>
+        <filename>$data/objects/multiPurchaseItem/multiPurchaseItem.i3d</filename>
+        <size width="6.5" length="1.3" height="1.25" />
+        <components>
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="150"/>
+        </components>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="ROOT_CROPS" capacity="2000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <multipleItemPurchase filename="xml/pallets/base/vegetablesPallet.xml" isVehicle="true">
+        <offsets>
+            <offset amount="2" offset="-0.81 0 0"/>
+            <offset amount="3" offset="-1.62 0 0"/>
+            <offset amount="4" offset="-2.43 0 0"/>
+        </offsets>
+        <itemPositions>
+            <itemPosition position="0 0 0"    rotation="0 0 0"/>
+            <itemPosition position="1.62 0 0" rotation="0 0 0"/>
+            <itemPosition position="3.24 0 0" rotation="0 0 0"/>
+            <itemPosition position="4.86 0 0" rotation="0 0 0"/>
+        </itemPositions>
+    </multipleItemPurchase>
+
+    <multipleItemPurchaseAmountConfigurations>
+        <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="130"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="260"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="390"/>
+    </multipleItemPurchaseAmountConfigurations>
+</vehicle>

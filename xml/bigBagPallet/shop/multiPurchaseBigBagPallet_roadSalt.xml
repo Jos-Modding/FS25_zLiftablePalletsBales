@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>$l10n_fillType_roadSalt</name>
+        <specs>
+            <weight ignore="true"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_bigBagRoadSalt</function>
+        </functions>
+        <image>$data/objects/bigBagPallet/roadSalt/store_bigBagPallet_roadSalt.png</image>
+        <price>200</price>
+        <lifetime>600</lifetime>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <category>bigbagPallets</category>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>512</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>256</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_fillType_roadSalt</typeDesc>
+        <filename>$data/objects/multiPurchaseItem/multiPurchaseItem.i3d</filename>
+        <size width="3.1" length="4.8" height="1.1"/>
+        <components>
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="100"/>
+        </components>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit fillTypes="roadSalt" capacity="1000" />
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <multipleItemPurchase filename="xml/bigBagPallet/base/bigBagPallet_roadSalt.xml" isVehicle="true">
+        <offsets>
+            <offset amount="2" offset="0.775 0 0"/>
+            <offset amount="3" offset="0.775 0 0.6"/>
+            <offset amount="5" offset="0.775 0 1.2"/>
+            <offset amount="7" offset="0.775 0 1.8"/>
+        </offsets>
+        <itemPositions>
+            <itemPosition position="0 0 0" rotation="0 0 0"/>
+            <itemPosition position="-1.55 0 0" rotation="0 0 0"/>
+            <itemPosition position="0 0 -1.2" rotation="0 0 0"/>
+            <itemPosition position="-1.55 0 -1.2" rotation="0 0 0"/>
+
+            <itemPosition position="0 0 -2.4" rotation="0 0 0"/>
+            <itemPosition position="-1.55 0 -2.4" rotation="0 0 0"/>
+            <itemPosition position="0 0 -3.6" rotation="0 0 0"/>
+            <itemPosition position="-1.55 0 -3.6" rotation="0 0 0"/>
+        </itemPositions>
+    </multipleItemPurchase>
+
+    <multipleItemPurchaseAmountConfigurations>
+        <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="200"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="400"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="600"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="800"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="1000"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="1200"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="1400"/>
+    </multipleItemPurchaseAmountConfigurations>
+
+</vehicle>

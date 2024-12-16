@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<bale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/bale.xsd">
+    <filename>$data/objects/bales/roundbales/cotton/cottonBale238.i3d</filename>
+    <size isRoundbale="true" width="2.380" diameter="2.380" maxStackHeight="1"/>
+    <mountableObject triggerNode="0" forceAcceleration="2" forceLimitScale="1" axisFreeY="false" axisFreeX="false"/>
+
+    <uvId>DEFAULT</uvId>
+
+    <baleMeshes>
+        <baleMesh node="1" isTensionBeltMesh="true"/>
+    </baleMeshes>
+
+    <variations>
+        <variation id="DEFAULT"/>
+        <variation id="FOILWRAP">
+            <netWrapDiffuse filename="$data/objects/bales/roundbales/cotton/netWrap_diffuse.dds"/>
+            <netWrapNormal  filename="$data/objects/bales/roundbales/cotton/netWrap_normal.dds"/>
+        </variation>
+    </variations>
+
+    <fillTypes>
+        <fillType name="COTTON" capacity="10000" mass="100" materialName="wrapBale" alphaMaterialName="wrapBaleAlpha">
+            <diffuse    filename="$data/objects/bales/roundbales/cotton/cotton_diffuse.dds"/>
+            <normal     filename="$data/objects/bales/roundbales/cotton/cotton_normal.dds"/>
+            <alpha      filename="$data/shared/default_alpha.dds"/>
+            <baleNormal filename="$data/shared/default_normal.dds"/>
+        </fillType>
+    </fillTypes>
+</bale>

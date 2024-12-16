@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd">
+    <fillTypes>
+        <fillType name="WOOL" unitShort="$l10n_unit_literShort">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_wool.png"/>
+            <pallet filename="xml/pallets/base/woolPallet.xml"/>
+        </fillType>
+
+        <fillType name="EGG">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_egg.png"/>
+            <pallet filename="xml/pallets/base/eggBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="HONEY">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_honey.png"/>
+            <pallet filename="xml/pallets/base/honeyBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="LETTUCE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_lettuce.png"/>
+            <pallet filename="xml/pallets/base/lettuceBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="TOMATO">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_tomato.png"/>
+            <pallet filename="xml/pallets/base/tomatoesBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="STRAWBERRY">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_strawberry.png"/>
+            <pallet filename="xml/pallets/base/strawberriesBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="SPRING_ONION">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_springOnion.png"/>
+            <pallet filename="xml/pallets/base/springOnionBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="NAPACABBAGE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_napaCabbage.png"/>
+            <pallet filename="xml/pallets/base/napaCabbageBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="CHILLI">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_chilli.png"/>
+            <pallet filename="xml/pallets/base/chilliBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="GARLIC">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_garlic.png"/>
+            <pallet filename="xml/pallets/base/garlicBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="ENOKI">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_enoki.png"/>
+            <pallet filename="xml/pallets/base/enokiBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="OYSTER">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_oyster.png"/>
+            <pallet filename="xml/pallets/base/oysterBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="BOARDS">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_boards.png"/>
+            <pallet filename="xml/pallets/base/boardsStackPallet.xml"/>
+        </fillType>
+
+        <fillType name="PLANKS">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_planks.png"/>
+            <pallet filename="xml/pallets/base/planksPallet.xml"/>
+        </fillType>
+
+        <fillType name="WOODBEAM">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_woodbeam.png"/>
+            <pallet filename="xml/pallets/base/woodBeamPallet.xml"/>
+        </fillType>
+
+        <fillType name="PREFABWALL">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_prefabwall.png"/>
+            <pallet filename="xml/pallets/base/prefabWallPallet.xml"/>
+        </fillType>
+
+        <fillType name="FLOUR">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_flour.png"/>
+            <pallet filename="xml/pallets/base/flourBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="RICEFLOUR">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_riceFlour.png"/>
+            <pallet filename="xml/pallets/base/riceFlourBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="BREAD">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_bread.png"/>
+            <pallet filename="xml/pallets/base/bakeryBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="CAKE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_cake.png"/>
+            <pallet filename="xml/pallets/base/cakePallet.xml"/>
+        </fillType>
+
+        <fillType name="MILK_BOTTLED">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_cowMilk_bottled.png"/>
+            <pallet filename="xml/pallets/base/milkBottlesBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="GOATMILK">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_milkGoat.png"/>
+            <pallet filename="xml/pallets/base/goatMilkCanPallet.xml"/>
+        </fillType>
+
+        <fillType name="GOATMILK_BOTTLED">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_goatMilk_bottled.png"/>
+            <pallet filename="xml/pallets/base/goatMilkBottlesBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="BUFFALOMILK_BOTTLED">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_buffaloMilk_bottled.png"/>
+            <pallet filename="xml/pallets/base/buffaloMilkBottlesBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="BUTTER">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_butter.png"/>
+            <pallet filename="xml/pallets/base/butterBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="CHEESE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_cheese.png"/>
+            <pallet filename="xml/pallets/base/cheesePallet.xml"/>
+        </fillType>
+
+        <fillType name="BUFFALOMOZZARELLA">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_buffaloMozzarella.png"/>
+            <pallet filename="xml/pallets/base/mozzarellaBufalaBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="GOATCHEESE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_goatCheese.png"/>
+            <pallet filename="xml/pallets/base/goatCheeseBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="CHOCOLATE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_chocolate.png"/>
+            <pallet filename="xml/pallets/base/chocolateBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="POTATOCHIPS">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_potatoChips.png"/>
+            <pallet filename="xml/pallets/base/potatoChipsPallet.xml"/>
+        </fillType>
+
+        <fillType name="RICEROLLS">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_riceRolls.png"/>
+            <pallet filename="xml/pallets/base/riceRollsPallet.xml"/>
+        </fillType>
+
+        <fillType name="FERMENTEDNAPACABBAGE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_fermentedNapaCabbage.png"/>
+            <pallet filename="xml/pallets/base/fermentedNapaCabbageBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="PRESERVEDCARROTS">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_preservedFoodCarrot.png"/>
+            <pallet filename="xml/pallets/base/preservedFoodCarrotsPallet.xml"/>
+        </fillType>
+
+        <fillType name="PRESERVEDPARSNIP">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_preservedFoodParsnip.png"/>
+            <pallet filename="xml/pallets/base/preservedFoodParsnipPallet.xml"/>
+        </fillType>
+
+        <fillType name="PRESERVEDBEETROOT">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_preservedFoodBeetRoot.png"/>
+            <pallet filename="xml/pallets/base/preservedFoodBeetRootPallet.xml"/>
+        </fillType>
+
+        <fillType name="NOODLESOUP">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_noodleSoup.png"/>
+            <pallet filename="xml/pallets/base/noodleSoupBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="SOUPCANSMIXED">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_soupCan.png"/>
+            <pallet filename="xml/pallets/base/soupCansPallet.xml"/>
+        </fillType>
+
+        <fillType name="SOUPCANSCARROTS">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_soupCan_carrot.png"/>
+            <pallet filename="xml/pallets/base/soupCansPalletCarrots.xml"/>
+        </fillType>
+
+        <fillType name="SOUPCANSPARSNIP">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_soupCan_parsnip.png"/>
+            <pallet filename="xml/pallets/base/soupCansPalletParsnip.xml"/>
+        </fillType>
+
+        <fillType name="SOUPCANSBEETROOT">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_soupCan_beetRoot.png"/>
+            <pallet filename="xml/pallets/base/soupCansPalletBeetroot.xml"/>
+        </fillType>
+
+        <fillType name="SOUPCANSPOTATO">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_soupCan_potato.png"/>
+            <pallet filename="xml/pallets/base/soupCansPalletPotato.xml"/>
+        </fillType>
+
+        <fillType name="FABRIC">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_fabric.png"/>
+            <pallet filename="xml/pallets/base/fabricsPallet.xml"/>
+        </fillType>
+
+        <fillType name="CLOTHES">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_clothes.png"/>
+            <pallet filename="xml/pallets/base/clothesBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="SUGAR">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_sugar.png"/>
+            <pallet filename="xml/pallets/base/sugarBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="CEREAL">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_cereals.png"/>
+            <pallet filename="xml/pallets/base/cerealsPallet.xml"/>
+        </fillType>
+
+        <fillType name="FURNITURE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_furniture.png"/>
+            <pallet filename="xml/pallets/base/furnitureStackPallet.xml"/>
+        </fillType>
+
+        <fillType name="CARTONROLL">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_cartonRoll.png"/>
+            <pallet filename="xml/pallets/base/cartonRollPallet.xml"/>
+        </fillType>
+
+        <fillType name="PAPERROLL">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_paperRoll.png"/>
+            <pallet filename="xml/pallets/base/paperRollPallet.xml"/>
+        </fillType>
+
+        <fillType name="SUNFLOWER_OIL">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_oil_sunflower.png"/>
+            <pallet filename="xml/pallets/base/sunflowerOilPallet.xml"/>
+        </fillType>
+
+        <fillType name="CANOLA_OIL">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_oil_canola.png"/>
+            <pallet filename="xml/pallets/base/canolaOilPallet.xml"/>
+        </fillType>
+
+        <fillType name="OLIVE_OIL">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_oil_olive.png"/>
+            <pallet filename="xml/pallets/base/oliveOilPallet.xml"/>
+        </fillType>
+
+        <fillType name="RICE_OIL">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_riceOil.png"/>
+            <pallet filename="xml/pallets/base/riceOilPallet.xml"/>
+        </fillType>
+
+        <fillType name="RAISINS">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_raisins.png"/>
+            <pallet filename="xml/pallets/base/raisinBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="GRAPEJUICE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_grapeJuice.png"/>
+            <pallet filename="xml/pallets/base/grapeJuicePallet.xml"/>
+        </fillType>
+
+        <fillType name="CEMENT">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_cement.png"/>
+            <pallet filename="xml/pallets/base/cementBagsPallet.xml"/>
+        </fillType>
+
+        <fillType name="BARREL">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_barrel.png"/>
+            <pallet filename="xml/pallets/base/barrelPallet.xml"/>
+        </fillType>
+
+        <fillType name="BATHTUB">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_bathTub.png"/>
+            <pallet filename="xml/pallets/base/bathtubPallet.xml"/>
+        </fillType>
+
+        <fillType name="BUCKET">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_bucket.png"/>
+            <pallet filename="xml/pallets/base/bucketPallet.xml"/>
+        </fillType>
+
+        <fillType name="ROOFPLATES">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_roofPlate.png"/>
+            <pallet filename="xml/pallets/base/roofPlatesPallet.xml"/>
+        </fillType>
+
+        <fillType name="ROPE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_rope.png"/>
+            <pallet filename="xml/pallets/base/ropePallet.xml"/>
+        </fillType>
+
+        <fillType name="CANNED_PEAS">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_cannedPeas.png"/>
+            <pallet filename="xml/pallets/base/cannedPeasBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="CEMENTBRICKS">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_cementBrick.png"/>
+            <pallet filename="xml/pallets/base/cementBricksPallet.xml"/>
+        </fillType>
+
+        <fillType name="SPINACH_BAGS">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_spinachbags.png"/>
+            <pallet filename="xml/pallets/base/freshSpinachBagsPallet.xml"/>
+        </fillType>
+
+        <fillType name="JARRED_GREENBEAN">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_jarredGreenBeans.png"/>
+            <pallet filename="xml/pallets/base/jarredGreenBeansPallet.xml"/>
+        </fillType>
+
+        <fillType name="RICE_BAGS">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_riceBags.png"/>
+            <pallet filename="xml/pallets/base/riceBagsPallet.xml"/>
+        </fillType>
+
+        <fillType name="RICE_BOXES">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_riceBoxes.png"/>
+            <pallet filename="xml/pallets/base/riceBoxPallet.xml"/>
+        </fillType>
+
+        <fillType name="HERBICIDE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_herbicide.png"/>
+            <pallet filename="xml/pallets/base/herbicideTank.xml"/>
+        </fillType>
+
+        <fillType name="SILAGE_ADDITIVE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_silageAdditive.png"/>
+            <pallet filename="xml/pallets/base/silageAdditivePallet.xml"/>
+        </fillType>
+
+        <fillType name="MINERAL_FEED">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_mineralFeed.png"/>
+            <pallet filename="xml/pallets/base/mineralFeedPallet.xml"/>
+            <textures diffuse="$data/fillPlanes/mineralFeed_diffuse.png" unitSize="0.5" blendContrast="0.2"
+                      noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/mineralFeed_normal.png"
+                      height="$data/fillPlanes/mineralFeed_height.png"
+                      displacement="$data/fillPlanes/mineralFeed_displacement.png" displacementMaxHeight="0.2"
+                      firmness="0.3" viscosity="0.5"
+                      distance="$data/fillPlanes/distance/mineralFeedDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="LIQUIDFERTILIZER">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_liquidFertilizer.png"/>
+            <pallet filename="xml/pallets/base/fertilizerTank.xml"/>
+        </fillType>
+
+        <fillType name="RICESAPLINGS">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_riceSaplings.png"/>
+            <pallet filename="xml/pallets/base/riceSaplingPallet.xml"/>
+        </fillType>
+
+        <!-- Crops -->
+        <fillType name="WHEAT">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_wheat.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/wheat_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5"
+                      noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/wheat_normal.png"
+                      height="$data/fillPlanes/wheat_height.png"
+                      displacement="$data/fillPlanes/wheat_displacement.png" displacementMaxHeight="0.2" firmness="0.3"
+                      viscosity="0.5"
+                      distance="$data/fillPlanes/distance/wheatDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="BARLEY">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_barley.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/barley_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5"
+                      noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/barley_normal.png"
+                      height="$data/fillPlanes/barley_height.png"
+                      displacement="$data/fillPlanes/barley_displacement.png" displacementMaxHeight="0.2" firmness="0.3"
+                      viscosity="0.5"
+                      distance="$data/fillPlanes/distance/barleyDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="OAT">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_oat.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/oat_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5"
+                      noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/oat_normal.png"
+                      height="$data/fillPlanes/oat_height.png"
+                      displacement="$data/fillPlanes/oat_displacement.png" displacementMaxHeight="0.2" firmness="0.3"
+                      viscosity="0.5"
+                      distance="$data/fillPlanes/distance/oatDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="CANOLA">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_canola.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/canola_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5"
+                      noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/canola_normal.png"
+                      height="$data/fillPlanes/canola_height.png"
+                      displacement="$data/fillPlanes/canola_displacement.png" displacementMaxHeight="0.2" firmness="0.3"
+                      viscosity="0.5"
+                      distance="$data/fillPlanes/distance/canolaDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="SORGHUM">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_sorghum.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/sorghum_diffuse.png" unitSize="0.45" blendContrast="0.2"
+                      noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/sorghum_normal.png"
+                      height="$data/fillPlanes/sorghum_height.png"
+                      displacement="$data/fillPlanes/sorghum_displacement.png" displacementMaxHeight="0.2"
+                      firmness="0.3" viscosity="0.5"
+                      distance="$data/fillPlanes/distance/sorghumDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="SUNFLOWER">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_sunflower.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/sunflower_diffuse.png" unitSize="0.5" blendContrast="0.2"
+                      noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/sunflower_normal.png"
+                      height="$data/fillPlanes/sunflower_height.png"
+                      displacement="$data/fillPlanes/sunflower_displacement.png" displacementMaxHeight="0.2"
+                      firmness="0.3" viscosity="0.5"
+                      distance="$data/fillPlanes/distance/sunflowerDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="SOYBEAN">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_soyBean.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/soybean_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5"
+                      noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/soybean_normal.png"
+                      height="$data/fillPlanes/soybean_height.png"
+                      displacement="$data/fillPlanes/soybean_displacement.png" displacementMaxHeight="0.2"
+                      firmness="0.3" viscosity="0.5"
+                      distance="$data/fillPlanes/distance/soybeanDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="MAIZE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_maize.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/maize_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5"
+                      noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/maize_normal.png"
+                      height="$data/fillPlanes/maize_height.png"
+                      displacement="$data/fillPlanes/maize_displacement.png" displacementMaxHeight="0.2" firmness="0.3"
+                      viscosity="0.5"
+                      distance="$data/fillPlanes/distance/maizeDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="POTATO">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_potato.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/potatoes_diffuse.png" unitSize="0.75" blendContrast="0.2"
+                      noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/potatoes_normal.png"
+                      height="$data/fillPlanes/potatoes_height.png"
+                      displacement="$data/fillPlanes/potatoes_displacement.png" displacementMaxHeight="0.2"
+                      firmness="0.3" viscosity="0.5"
+                      distance="$data/fillPlanes/distance/potatoesDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="SUGARBEET">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_sugarBeet.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/sugarBeets_diffuse.png" unitSize="1" blendContrast="0.2"
+                      noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/sugarBeets_normal.png"
+                      height="$data/fillPlanes/sugarBeets_height.png"
+                      displacement="$data/fillPlanes/sugarBeets_displacement.png" displacementMaxHeight="0.2"
+                      firmness="0.3" viscosity="0.5"
+                      distance="$data/fillPlanes/distance/sugarBeetsDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="BEETROOT">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_beetRoot.png"/>
+            <pallet filename="xml/pallets/base/vegetablesPallet.xml"/>
+            <textures diffuse="$data/fillPlanes/beetroot_diffuse.png" unitSize="0.6" blendContrast="0.2"
+                      noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/beetroot_normal.png"
+                      height="$data/fillPlanes/beetroot_height.png"
+                      displacement="$data/fillPlanes/beetroot_displacement.png" displacementMaxHeight="0.2"
+                      firmness="0.3" viscosity="0.5"
+                      distance="$data/fillPlanes/distance/beetrootDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="CARROT">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_carrot.png"/>
+            <pallet filename="xml/pallets/base/vegetablesPallet.xml"/>
+            <textures diffuse="$data/fillPlanes/carrot_diffuse.png" unitSize="0.8" blendContrast="0.2" noiseScale="0.5"
+                      noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/carrot_normal.png"
+                      height="$data/fillPlanes/carrot_height.png"
+                      displacement="$data/fillPlanes/carrot_displacement.png" displacementMaxHeight="0.2" firmness="0.3"
+                      viscosity="0.5"
+                      distance="$data/fillPlanes/distance/carrotDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="PARSNIP">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_parsnip.png"/>
+            <pallet filename="xml/pallets/base/vegetablesPallet.xml"/>
+            <textures diffuse="$data/fillPlanes/parsnip_diffuse.png" unitSize="0.8" blendContrast="0.2" noiseScale="0.5"
+                      noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/parsnip_normal.png"
+                      height="$data/fillPlanes/parsnip_height.png"
+                      displacement="$data/fillPlanes/parsnip_displacement.png" displacementMaxHeight="0.2"
+                      firmness="0.3" viscosity="0.5"
+                      distance="$data/fillPlanes/distance/parsnipDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="RICELONGGRAIN">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_riceLongGrain.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/riceLongGrain_diffuse.png" unitSize="0.7" blendContrast="0.2"
+                      noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/riceLongGrain_normal.png"
+                      height="$data/fillPlanes/riceLongGrain_height.png"
+                      displacement="$data/fillPlanes/riceLongGrain_displacement.png" displacementMaxHeight="0.2"
+                      firmness="0.3" viscosity="0.5"
+                      distance="$data/fillPlanes/distance/riceLongGrainDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="RICE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_rice.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/rice_diffuse.png" unitSize="0.7" blendContrast="0.2" noiseScale="0.5"
+                      noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/rice_normal.png"
+                      height="$data/fillPlanes/rice_height.png"
+                      displacement="$data/fillPlanes/rice_displacement.png" displacementMaxHeight="0.2" firmness="0.3"
+                      viscosity="0.5"
+                      distance="$data/fillPlanes/distance/riceDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="GREENBEAN">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_greenbean.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/greenbean_diffuse.png" unitSize="0.5" blendContrast="0.2"
+                      noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/greenbean_normal.png"
+                      height="$data/fillPlanes/greenbean_height.png"
+                      displacement="$data/fillPlanes/greenbean_displacement.png" displacementMaxHeight="0.2"
+                      firmness="0.3" viscosity="0.5"
+                      distance="$data/fillPlanes/distance/greenbeanDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="PEA">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_pea.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/pea_diffuse.png" unitSize="0.4" blendContrast="0.2" noiseScale="0.5"
+                      noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/pea_normal.png"
+                      height="$data/fillPlanes/pea_height.png"
+                      displacement="$data/fillPlanes/pea_displacement.png" displacementMaxHeight="0.2" firmness="0.3"
+                      viscosity="0.5"
+                      distance="$data/fillPlanes/distance/peaDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="SPINACH">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_spinach.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/spinach_diffuse.png" unitSize="0.75" blendContrast="0.2"
+                      noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/spinach_normal.png"
+                      height="$data/fillPlanes/spinach_height.png"
+                      displacement="$data/fillPlanes/spinach_displacement.png" displacementMaxHeight="0.2"
+                      firmness="0.3" viscosity="0.5"
+                      distance="$data/fillPlanes/distance/spinachDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="SUGARCANE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_sugarCane.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/sugarCane_diffuse.png" unitSize="1.25" blendContrast="0.2"
+                      noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/sugarCane_normal.png"
+                      height="$data/fillPlanes/sugarCane_height.png"
+                      displacement="$data/fillPlanes/sugarCane_displacement.png" displacementMaxHeight="0.2"
+                      firmness="0.3" viscosity="0.5"
+                      distance="$data/fillPlanes/distance/sugarCaneDistance_diffuse.png"/>
+        </fillType>
+
+
+        <fillType name="WOODCHIPS">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_woodChips.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/woodChips_diffuse.png" unitSize="1" blendContrast="0.2" noiseScale="0.5"
+                      noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/woodChips_normal.png"
+                      height="$data/fillPlanes/woodChips_height.png"
+                      displacement="$data/fillPlanes/woodChips_displacement.png" displacementMaxHeight="0.2"
+                      firmness="0.3" viscosity="0.5"
+                      distance="$data/fillPlanes/distance/woodChipsDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="SUGARBEET_CUT">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_sugarBeetCut.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/sugarBeetsCut_diffuse.png" unitSize="0.5" blendContrast="0.2"
+                      noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/sugarBeetsCut_normal.png"
+                      height="$data/fillPlanes/sugarBeetsCut_height.png"
+                      displacement="$data/fillPlanes/sugarBeetsCut_displacement.png" displacementMaxHeight="0.2"
+                      firmness="0.3" viscosity="0.5"
+                      distance="$data/fillPlanes/distance/sugarBeetsCutDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="OLIVE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_olive.png"/>
+            <pallet filename="xml/pallets/base/fillablePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/olive_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5"
+                      noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/olive_normal.png"
+                      height="$data/fillPlanes/olive_height.png"
+                      displacement="$data/fillPlanes/olive_displacement.png" displacementMaxHeight="0.2" firmness="0.3"
+                      viscosity="0.5"
+                      distance="$data/fillPlanes/distance/oliveDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="GRAPE">
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_grape.png"/>
+            <pallet filename="xml/pallets/base/grapePallet.xml"/>
+            <textures diffuse="$data/fillPlanes/grape_diffuse.png" unitSize="0.9" blendContrast="0.2" noiseScale="0.5"
+                      noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/grape_normal.png"
+                      height="$data/fillPlanes/grape_height.png"
+                      displacement="$data/fillPlanes/grape_displacement.png" displacementMaxHeight="0.2" firmness="0.3"
+                      viscosity="0.5"
+                      distance="$data/fillPlanes/distance/grapeDistance_diffuse.png"/>
+        </fillType>
+
+        <fillType name="SEEDS">
+            <image    hud         ="$dataS/menu/hud/fillTypes/hud_fill_seeds.png" />
+            <pallet   filename    ="xml/bigBagPallet/base/bigBagPallet_seeds.xml" />
+            <textures diffuse     ="$data/fillPlanes/genericSeed_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal      ="$data/fillPlanes/genericSeed_normal.png"
+                      height      ="$data/fillPlanes/genericSeed_height.png"
+                      displacement="$data/fillPlanes/genericSeed_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance    ="$data/fillPlanes/distance/genericSeedDistance_diffuse.png" />
+        </fillType>
+
+        <fillType name="STONE">
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_stone.png" />
+            <pallet   filename="xml/pallets/base/stonePallet.xml" />
+            <textures diffuse      ="$data/fillPlanes/stone_diffuse.png" unitSize="0.7" blendContrast="0.2" noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/stone_normal.png"
+                      height       ="$data/fillPlanes/stone_height.png"
+                      displacement ="$data/fillPlanes/stone_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/stoneDistance_diffuse.png" />
+        </fillType>
+
+        <fillType name="ROADSALT">
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_roadSalt.png" />
+            <pallet   filename     ="xml/bigBagPallet/base/bigBagPallet_roadSalt.xml" />
+            <textures diffuse      ="$data/fillPlanes/roadSalt_diffuse.png" unitSize="0.8" blendContrast="0.2" noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/roadSalt_normal.png"
+                      height       ="$data/fillPlanes/roadSalt_height.png"
+                      displacement ="$data/fillPlanes/roadSalt_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/roadSaltDistance_diffuse.png" />
+        </fillType>
+
+        <fillType name="FERTILIZER">
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_fertilizer.png" />
+            <pallet   filename     ="xml/bigBagPallet/base/bigBagPallet_fertilizer.xml" />
+            <textures diffuse      ="$data/fillPlanes/fertilizer_diffuse.png" unitSize="0.4" blendContrast="0.2" noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/fertilizer_normal.png"
+                      height       ="$data/fillPlanes/fertilizer_height.png"
+                      displacement ="$data/fillPlanes/fertilizer_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/fertilizerDistance_diffuse.png" />
+        </fillType>
+
+        <fillType name="PIGFOOD">
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_pigFood.png" />
+            <pallet   filename     ="xml/bigBagPallet/base/bigBagPallet_pigFood.xml" />
+            <textures diffuse      ="$data/fillPlanes/pigFood_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/pigFood_normal.png"
+                      height       ="$data/fillPlanes/pigFood_height.png"
+                      displacement ="$data/fillPlanes/pigFood_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/pigFoodDistance_diffuse.png" />
+        </fillType>
+
+        <fillType name="LIME">
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_lime.png" />
+            <pallet   filename     ="xml/bigBagPallet/base/bigBagPallet_lime.xml" />
+            <textures diffuse      ="$data/fillPlanes/lime_diffuse.png" unitSize="1" blendContrast="0.2" noiseScale="0.5" noiseSharpness="0.5" porosityAtZeroRoughness="0" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/lime_normal.png"
+                      height       ="$data/fillPlanes/lime_height.png"
+                      displacement ="$data/fillPlanes/lime_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/limeDistance_diffuse.png" />
+        </fillType>
+    </fillTypes>
+</map>

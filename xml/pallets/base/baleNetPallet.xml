@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="pallet" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>$l10n_storeItem_baleNet</name>
+        <functions>
+            <function>$l10n_function_baleNet</function>
+        </functions>
+        <specs>
+            <weight ignore="true"/>
+        </specs>
+        <image>$data/objects/pallets/baleNetPallet/store_baleNetPallet.png</image>
+        <price>1200</price>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <category>pallets palletBaling</category>
+        <financeCategory>OTHER</financeCategory>
+        <shopHeight>1.5</shopHeight>
+        <shopDynamicTitle>true</shopDynamicTitle>
+        <vertexBufferMemoryUsage>2816</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1280</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/baleNetPallet/baleNetPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.6"/>
+        <canBeReset>false</canBeReset>
+        <components maxMass="100">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false"/>
+        <input allowed="false"/>
+        <supportsPickUp>true</supportsPickUp>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_rolls" fillTypes="BALE_NET" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="1.5"/>
+
+    <consumable>
+        <consumableConfigurations title="$l10n_configuration_baleNet" typeName="BALE_NET">
+            <consumableConfiguration name="$l10n_consumable_lizardNetWrap" consumableName="LIZARD_NETWRAP" vehicleBrand="LIZARD" vehicleName="$l10n_consumable_lizardNetWrap"/>
+            <consumableConfiguration name="$l10n_consumable_lizardFoilWrap" consumableName="LIZARD_FOILWRAP" vehicleBrand="LIZARD" vehicleName="$l10n_consumable_lizardFoilWrap"/>
+            <consumableConfiguration name="MASSEY FERGUSON NETWRAP+" consumableName="MF_NETWRAP" vehicleBrand="MASSEYFERGUSON" vehicleName="NETWRAP+"/>
+            <consumableConfiguration name="FENDT NETWRAP+" consumableName="FENDT_NETWRAP" vehicleBrand="FENDT" vehicleName="NETWRAP+"/>
+            <consumableConfiguration name="John Deere XtraCover™" consumableName="JOHNDEERE_NETWRAP" vehicleBrand="JOHNDEERE" vehicleName="XtraCover™"/>
+            <consumableConfiguration name="CLAAS ROLLATEX PRO" consumableName="CLAAS_NETWRAP" vehicleBrand="CLAAS" vehicleName="ROLLATEX PRO"/>
+        </consumableConfigurations>
+
+        <type typeName="BALE_NET" defaultConsumableName="LIZARD_NETWRAP" fillUnitIndex="1">
+            <slot node="baleNetSlot01"/>
+            <slot node="baleNetSlot02"/>
+            <slot node="baleNetSlot03"/>
+            <slot node="baleNetSlot04"/>
+            <slot node="baleNetSlot05"/>
+        </type>
+    </consumable>
+
+    <pallet linkNode="baleNetPallet_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <straps>
+            <strap startNode="strap01Start" endNode="strap01End" tensionBeltType="palletStrap">
+                <intersectionNode node="strap01Intersection01"/>
+                <intersectionNode node="strap01Intersection02"/>
+            </strap>
+            <strap startNode="strap02Start" endNode="strap02End" tensionBeltType="palletStrap">
+                <intersectionNode node="strap02Intersection01"/>
+                <intersectionNode node="strap02Intersection02"/>
+            </strap>
+        </straps>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.41" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="baleNetPallet_component1" node="0>"/>
+        <i3dMapping id="dynamicMountTrigger" node="0>0"/>
+        <i3dMapping id="fillTrigger" node="0>1"/>
+        <i3dMapping id="baleNetSlot01" node="0>2|0"/>
+        <i3dMapping id="baleNetSlot02" node="0>2|1"/>
+        <i3dMapping id="baleNetSlot03" node="0>2|2"/>
+        <i3dMapping id="baleNetSlot04" node="0>2|3"/>
+        <i3dMapping id="baleNetSlot05" node="0>2|4"/>
+        <i3dMapping id="strap01Start" node="0>2|5"/>
+        <i3dMapping id="strap01End" node="0>2|5|0"/>
+        <i3dMapping id="strap01Intersection01" node="0>2|5|1"/>
+        <i3dMapping id="strap01Intersection02" node="0>2|5|2"/>
+        <i3dMapping id="strap02Start" node="0>2|6"/>
+        <i3dMapping id="strap02End" node="0>2|6|0"/>
+        <i3dMapping id="strap02Intersection01" node="0>2|6|1"/>
+        <i3dMapping id="strap02Intersection02" node="0>2|6|2"/>
+    </i3dMappings>
+</vehicle>
