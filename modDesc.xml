@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="93">
+<modDesc descVersion="94">
     <author>Jos</author>
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
     <title>
         <en>Liftable Pallets And Bales</en>
         <de>Anhebbare Paletten Und Ballen</de>
@@ -16,6 +16,9 @@ Included are balers and cotton harvesters producing bales weighing only 100 kg, 
 Selection of all base game bales available as lightweight bales available for purchase in the shop.
 
 Pallet, big bags, or bales added by other mods will NOT be liftable.
+
+Changelog 1.0.0.1:
+- Updated Goweil VARIO-Master V140 to match game version 1.4.0.0 changes
 ]]>
 		</en>
         <de><![CDATA[Alle Basisspielpaletten, BigBags and Ballen sind jetzt von Hand anhebbar und wiegen nur noch 100 kg.
@@ -26,6 +29,9 @@ Im Lieferumfang sind Ballenpressen und Baumwollerntemaschinen enthalten, die Bal
 Auswahl aller als Leichtballen verfügbaren Basisspielballen zum Kauf im Shop verfügbar.
 
 Von anderen Mods hinzugefügte Paletten/BigBags/Ballen sind NICHT transportierbar.
+
+Changelog 1.0.0.1:
+- Goweil VARIO-Master V140 wurde aktualisiert, um den Änderungen in der Spielversion 1.4.0.0 zu entsprechen
 ]]>
 		</de>
     </description>
