@@ -2645,8 +2645,8 @@
         <i3dMapping id="baleAnimationNode" node="0>0|3|5|0|0" />
         <i3dMapping id="baleAnimNode125" node="0>0|3|5|0|0|0|0" />
         <i3dMapping id="baleNode125" node="0>0|3|5|0|0|0|0|0" />
-        <i3dMapping id="baleAnimNode150" node="0>0|3|5|0|0|0|0|1" />
-        <i3dMapping id="baleNode150" node="0>0|3|5|0|0|0|0|1|0" />
+        <i3dMapping id="baleAnimNode150" node="0>0|3|5|0|0|0|1" />
+        <i3dMapping id="baleNode150" node="0>0|3|5|0|0|0|1|0" />
         <i3dMapping id="baleChamberDoor" node="0>0|3|5|1" />
         <i3dMapping id="baleDensityArm" node="0>0|3|5|1|0" />
         <i3dMapping id="baleDensityArmRod" node="0>0|3|5|1|0|0" />
