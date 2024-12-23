@@ -9,7 +9,7 @@
             <function>$l10n_function_bales</function>
         </functions>
         <image>$data/objects/buyableBales/store_buyableBales_straw.png</image>
-        <price>1476</price>
+        <price>1500</price>
         <lifetime>600</lifetime>
         <allowLeasing>false</allowLeasing>
         <canBeSold>false</canBeSold>
@@ -58,12 +58,12 @@
 
     <multipleItemPurchaseAmountConfigurations>
         <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
-        <multipleItemPurchaseAmountConfiguration name="2" price="1476"/>
-        <multipleItemPurchaseAmountConfiguration name="3" price="2952"/>
-        <multipleItemPurchaseAmountConfiguration name="4" price="4428"/>
-        <multipleItemPurchaseAmountConfiguration name="5" price="5904"/>
-        <multipleItemPurchaseAmountConfiguration name="6" price="7380"/>
-        <multipleItemPurchaseAmountConfiguration name="7" price="8856"/>
-        <multipleItemPurchaseAmountConfiguration name="8" price="10332"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="3000"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="4500"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="6000"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="7500"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="9000"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="10500"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="12000"/>
     </multipleItemPurchaseAmountConfigurations>
 </vehicle>

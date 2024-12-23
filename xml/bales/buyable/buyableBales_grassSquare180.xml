@@ -9,7 +9,7 @@
             <function>$l10n_function_bales</function>
         </functions>
         <image>store/store_grassSquare.dds</image>
-        <price>1536</price>
+        <price>1250</price>
         <lifetime>600</lifetime>
         <allowLeasing>false</allowLeasing>
         <canBeSold>false</canBeSold>
@@ -58,12 +58,12 @@
 
     <multipleItemPurchaseAmountConfigurations>
         <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
-        <multipleItemPurchaseAmountConfiguration name="2" price="1536"/>
-        <multipleItemPurchaseAmountConfiguration name="3" price="3072"/>
-        <multipleItemPurchaseAmountConfiguration name="4" price="4608"/>
-        <multipleItemPurchaseAmountConfiguration name="5" price="6144"/>
-        <multipleItemPurchaseAmountConfiguration name="6" price="7680"/>
-        <multipleItemPurchaseAmountConfiguration name="7" price="9216"/>
-        <multipleItemPurchaseAmountConfiguration name="8" price="10752"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="2500"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="3750"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="5000"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="6250"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="7500"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="8750"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="10000"/>
     </multipleItemPurchaseAmountConfigurations>
 </vehicle>
