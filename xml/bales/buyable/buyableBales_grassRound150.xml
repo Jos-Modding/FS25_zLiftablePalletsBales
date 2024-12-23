@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/vehicle.xsd">
+<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
     <storeData>
-        <name>$l10n_storeItem_roundBaleDryGrass</name>
+        <name params="$l10n_fillType_grass">%s 150 cm</name>
         <specs>
             <weight minValue="0" />
         </specs>
         <functions>
             <function>$l10n_function_bales</function>
         </functions>
-        <image>$data/objects/buyableBales/store_buyableBales_dryGrassRound.png</image>
+        <image>store/store_grassRound.dds</image>
         <price>864</price>
         <lifetime>600</lifetime>
         <allowLeasing>false</allowLeasing>
@@ -16,17 +16,7 @@
         <rotation>0</rotation>
         <brand>NONE</brand>
         <category>bales</category>
-        <vertexBufferMemoryUsage>512</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>256</indexBufferMemoryUsage>
-        <textureMemoryUsage>65536</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
         <financeCategory>PURCHASE_BALES</financeCategory>
-
-        <storeIconRendering>
-            <settings cameraXRot="-15" cameraYRot="25" />
-        </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
@@ -42,13 +32,13 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits>
-                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="DRYGRASS_WINDROW" capacity="4500" />
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="GRASS_WINDROW" capacity="5500" />
                 </fillUnits>
             </fillUnitConfiguration>
         </fillUnitConfigurations>
     </fillUnit>
 
-    <multipleItemPurchase filename="xml/bales/roundbales/roundbale125.xml" isVehicle="false" fillType="DRYGRASS_WINDROW" baleVariationId="NETWRAP">
+    <multipleItemPurchase filename="xml/bales/roundbales/roundbale150.xml" isVehicle="false" fillType="GRASS_WINDROW" baleVariationId="NETWRAP">
         <offsets>
             <offset amount="1" offset="0 0 0.67"/>
             <offset amount="3" offset="0 0 0"/>
@@ -79,5 +69,4 @@
         <multipleItemPurchaseAmountConfiguration name="7" price="5184"/>
         <multipleItemPurchaseAmountConfiguration name="8" price="6048"/>
     </multipleItemPurchaseAmountConfigurations>
-
 </vehicle>

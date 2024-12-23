@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd">
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/fillTypes.xsd">
     <fillTypes>
         <fillType name="WOOL" unitShort="$l10n_unit_literShort">
             <image hud="$dataS/menu/hud/fillTypes/hud_fill_wool.png"/>

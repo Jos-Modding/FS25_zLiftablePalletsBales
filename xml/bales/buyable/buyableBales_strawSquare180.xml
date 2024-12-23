@@ -1,32 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/vehicle.xsd">
+<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
     <storeData>
-        <name>$l10n_storeItem_squareBaleDryGrass</name>
+        <name params="$l10n_fillType_straw">%s 180 cm</name>
         <specs>
             <weight minValue="0" />
         </specs>
         <functions>
             <function>$l10n_function_bales</function>
         </functions>
-        <image>$data/objects/buyableBales/store_buyableBales_dryGrass.png</image>
-        <price>1536</price>
+        <image>$data/objects/buyableBales/store_buyableBales_straw.png</image>
+        <price>1476</price>
         <lifetime>600</lifetime>
         <allowLeasing>false</allowLeasing>
         <canBeSold>false</canBeSold>
         <rotation>0</rotation>
         <brand>NONE</brand>
         <category>bales</category>
-        <vertexBufferMemoryUsage>512</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>256</indexBufferMemoryUsage>
-        <textureMemoryUsage>65536</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
         <financeCategory>PURCHASE_BALES</financeCategory>
-
-        <storeIconRendering>
-            <settings cameraXRot="-15" cameraYRot="25" />
-        </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
@@ -42,13 +32,13 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits>
-                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="DRYGRASS_WINDROW" capacity="8000" />
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="STRAW" capacity="7000" />
                 </fillUnits>
             </fillUnitConfiguration>
         </fillUnitConfigurations>
     </fillUnit>
 
-    <multipleItemPurchase filename="xml/bales/squarebales/squarebale240.xml" isVehicle="false" fillType="DRYGRASS_WINDROW" baleVariationId="TWINE">
+    <multipleItemPurchase filename="xml/bales/squarebales/squarebale180.xml" isVehicle="false" fillType="STRAW" baleVariationId="TWINE">
         <offsets>
             <offset amount="1" offset="0 0 0.61"/>
             <offset amount="5" offset="0 0 0"/>
@@ -68,13 +58,12 @@
 
     <multipleItemPurchaseAmountConfigurations>
         <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
-        <multipleItemPurchaseAmountConfiguration name="2" price="1536"/>
-        <multipleItemPurchaseAmountConfiguration name="3" price="3072"/>
-        <multipleItemPurchaseAmountConfiguration name="4" price="4608"/>
-        <multipleItemPurchaseAmountConfiguration name="5" price="6144"/>
-        <multipleItemPurchaseAmountConfiguration name="6" price="7680"/>
-        <multipleItemPurchaseAmountConfiguration name="7" price="9216"/>
-        <multipleItemPurchaseAmountConfiguration name="8" price="10752"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="1476"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="2952"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="4428"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="5904"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="7380"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="8856"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="10332"/>
     </multipleItemPurchaseAmountConfigurations>
-
 </vehicle>

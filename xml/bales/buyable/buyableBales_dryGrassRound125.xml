@@ -1,36 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/vehicle.xsd">
+<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
     <storeData>
-        <name>$l10n_storeItem_roundBaleWheat</name>
+        <name params="$l10n_fillType_dryGrass">%s 125 cm</name>
         <specs>
             <weight minValue="0" />
         </specs>
         <functions>
             <function>$l10n_function_bales</function>
         </functions>
-        <image>$data/objects/buyableBales/store_buyableBales_strawRound.png</image>
-        <price>820</price>
+        <image>$data/objects/buyableBales/store_buyableBales_dryGrassRound.png</image>
+        <price>864</price>
         <lifetime>600</lifetime>
         <allowLeasing>false</allowLeasing>
         <canBeSold>false</canBeSold>
         <rotation>0</rotation>
         <brand>NONE</brand>
         <category>bales</category>
-        <vertexBufferMemoryUsage>512</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>256</indexBufferMemoryUsage>
-        <textureMemoryUsage>65536</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
         <financeCategory>PURCHASE_BALES</financeCategory>
-
-        <storeIconRendering>
-            <settings cameraXRot="-15" cameraYRot="25" />
-        </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
-        <typeDesc>$l10n_storeItem_squareBaleWheat</typeDesc>
+        <typeDesc>$l10n_storeItem_roundBaleSilage</typeDesc>
         <filename>$data/objects/multiPurchaseItem/multiPurchaseItem.i3d</filename>
         <size width="2.6" length="2.6" height="2.4"/>
         <components>
@@ -42,13 +32,13 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits>
-                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="STRAW" capacity="5000" />
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="DRYGRASS_WINDROW" capacity="4500" />
                 </fillUnits>
             </fillUnitConfiguration>
         </fillUnitConfigurations>
     </fillUnit>
 
-    <multipleItemPurchase filename="xml/bales/roundbales/roundbale125.xml" isVehicle="false" fillType="STRAW" baleVariationId="NETWRAP">
+    <multipleItemPurchase filename="xml/bales/roundbales/roundbale125.xml" isVehicle="false" fillType="DRYGRASS_WINDROW" baleVariationId="NETWRAP">
         <offsets>
             <offset amount="1" offset="0 0 0.67"/>
             <offset amount="3" offset="0 0 0"/>
@@ -71,12 +61,12 @@
 
     <multipleItemPurchaseAmountConfigurations>
         <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
-        <multipleItemPurchaseAmountConfiguration name="2" price="820"/>
-        <multipleItemPurchaseAmountConfiguration name="3" price="1640"/>
-        <multipleItemPurchaseAmountConfiguration name="4" price="2460"/>
-        <multipleItemPurchaseAmountConfiguration name="5" price="3280"/>
-        <multipleItemPurchaseAmountConfiguration name="6" price="4100"/>
-        <multipleItemPurchaseAmountConfiguration name="7" price="4920"/>
-        <multipleItemPurchaseAmountConfiguration name="8" price="5740"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="864"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="1728"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="2592"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="3456"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="4320"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="5184"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="6048"/>
     </multipleItemPurchaseAmountConfigurations>
 </vehicle>

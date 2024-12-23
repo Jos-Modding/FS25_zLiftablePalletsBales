@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
+    <storeData>
+        <name params="$l10n_fillType_straw">%s 150 cm</name>
+        <specs>
+            <weight minValue="0" />
+        </specs>
+        <functions>
+            <function>$l10n_function_bales</function>
+        </functions>
+        <image>$data/objects/buyableBales/store_buyableBales_strawRound.png</image>
+        <price>820</price>
+        <lifetime>600</lifetime>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <category>bales</category>
+        <financeCategory>PURCHASE_BALES</financeCategory>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_storeItem_squareBaleWheat</typeDesc>
+        <filename>$data/objects/multiPurchaseItem/multiPurchaseItem.i3d</filename>
+        <size width="2.6" length="2.6" height="2.4"/>
+        <components>
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="100"/>
+        </components>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration name="1">
+                <fillUnits>
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="STRAW" capacity="7500" />
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <multipleItemPurchase filename="xml/bales/roundbales/roundbale150.xml" isVehicle="false" fillType="STRAW" baleVariationId="NETWRAP">
+        <offsets>
+            <offset amount="1" offset="0 0 0.67"/>
+            <offset amount="3" offset="0 0 0"/>
+            <offset amount="5" offset="-0.67 0 0"/>
+        </offsets>
+        <itemPositions>
+            <itemPosition position="0 0.58 -0.67" rotation="-90 0 0"/>
+            <itemPosition position="0 1.75 -0.67" rotation="-90 0 0"/>
+
+            <itemPosition position="0 0.58 0.67" rotation="-90 0 0"/>
+            <itemPosition position="0 1.75 0.67" rotation="-90 0 0"/>
+
+            <itemPosition position="1.34 0.58 -0.67" rotation="-90 0 0"/>
+            <itemPosition position="1.34 1.75 -0.67" rotation="-90 0 0"/>
+
+            <itemPosition position="1.34 0.58 0.67" rotation="-90 0 0"/>
+            <itemPosition position="1.34 1.75 0.67" rotation="-90 0 0"/>
+        </itemPositions>
+    </multipleItemPurchase>
+
+    <multipleItemPurchaseAmountConfigurations>
+        <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="820"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="1640"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="2460"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="3280"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="4100"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="4920"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="5740"/>
+    </multipleItemPurchaseAmountConfigurations>
+</vehicle>
