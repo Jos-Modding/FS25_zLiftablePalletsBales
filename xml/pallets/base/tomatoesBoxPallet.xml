@@ -38,7 +38,7 @@
     <fillUnit>
         <fillUnitConfigurations>
             <fillUnitConfiguration>
-                <fillUnits>
+                <fillUnits removeVehicleIfEmpty="true">
                     <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="TOMATO" capacity="1000" ignoreFillLimit="true"/>
                 </fillUnits>
             </fillUnitConfiguration>
@@ -68,6 +68,12 @@
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.747" jointTransY="0.106" jointLimitToRotY="true"/>
 
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
+
     <i3dMappings>
         <i3dMapping id="tomatoesBoxPallet_main_component1" node="0>"/>
         <i3dMapping id="dynamicMountTrigger" node="0>0"/>
@@ -87,5 +93,7 @@
         <i3dMapping id="tomatoesBox_Tension07" node="0>1|6|0"/>
         <i3dMapping id="tomatoesBox08" node="0>1|7"/>
         <i3dMapping id="tomatoesBox_Tension08" node="0>1|7|0"/>
+        <i3dMapping id="dischargeNode" node="0>3"/>
+        <i3dMapping id="fillTrigger" node="0>4"/>
     </i3dMappings>
 </vehicle>

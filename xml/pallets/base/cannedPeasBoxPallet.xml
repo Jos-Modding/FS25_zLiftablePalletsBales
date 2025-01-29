@@ -38,7 +38,7 @@
     <fillUnit>
         <fillUnitConfigurations>
             <fillUnitConfiguration>
-                <fillUnits>
+                <fillUnits removeVehicleIfEmpty="true">
                     <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="CANNED_PEAS" capacity="1000" ignoreFillLimit="true"/>
                 </fillUnits>
             </fillUnitConfiguration>
@@ -76,6 +76,12 @@
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="5" additionalMountDistance="0.8" jointTransY="0.11" jointLimitToRotY="true"/>
 
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
+
     <i3dMappings>
         <i3dMapping id="cannedPeasBoxPallet_component1" node="0>"/>
         <i3dMapping id="dynamicMountTrigger" node="0>0"/>
@@ -112,5 +118,6 @@
         <i3dMapping id="cannedPeasBox_Tension15" node="0>2|14|0"/>
         <i3dMapping id="cannedPeasBox16" node="0>2|15"/>
         <i3dMapping id="cannedPeasBox_Tension16" node="0>2|15|0"/>
+        <i3dMapping id="fillTrigger" node="0>4"/>
     </i3dMappings>
 </vehicle>

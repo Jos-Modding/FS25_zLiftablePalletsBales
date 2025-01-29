@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="94">
+<modDesc descVersion="95">
     <author>Jos</author>
     <version>1.0.1.0</version>
     <title>
@@ -56,6 +56,8 @@ Changelog 1.0.0.1:
         <bale filename="xml/bales/squarebales/squarebale240.xml" />
     </bales>
     <storeItems>
+        <!-- Testing -->
+        <storeItem xmlFilename="xml/gx520.xml"/>
         <!-- Base/Production Pallets -->
         <storeItem xmlFilename="xml/pallets/base/bakeryBoxPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/base/baleNetPallet.xml"/>

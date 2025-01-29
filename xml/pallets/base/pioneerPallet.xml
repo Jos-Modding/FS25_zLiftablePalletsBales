@@ -85,6 +85,10 @@
         <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
     </pallet>
 
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
     <i3dMappings>
         <i3dMapping id="pioneerPallet_main_component1" node="0>" />
         <i3dMapping id="dynamicMountTrigger" node="0>0" />
@@ -97,5 +101,6 @@
         <i3dMapping id="fillCollision04" node="0>4|3" />
         <i3dMapping id="fillCollision05" node="0>4|4" />
         <i3dMapping id="fillCollision06" node="0>4|5" />
+        <i3dMapping id="dischargeNode" node="0>5"/>
     </i3dMappings>
 </vehicle>

@@ -38,7 +38,7 @@
     <fillUnit>
         <fillUnitConfigurations>
             <fillUnitConfiguration>
-                <fillUnits>
+                <fillUnits removeVehicleIfEmpty="true">
                     <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="CARTONROLL" capacity="3000" ignoreFillLimit="true"/>
                 </fillUnits>
             </fillUnitConfiguration>
@@ -60,6 +60,12 @@
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="1.666" jointTransY="0.106" jointLimitToRotY="true"/>
 
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
+
     <i3dMappings>
         <i3dMapping id="cartonRollPallet_main_component1" node="0>"/>
         <i3dMapping id="cartonRoll" node="0>0|0"/>
@@ -71,5 +77,6 @@
         <i3dMapping id="linkNode02" node="0>5"/>
         <i3dMapping id="linkNode03" node="0>6"/>
         <i3dMapping id="linkNode04" node="0>7"/>
+        <i3dMapping id="fillTrigger" node="0>9"/>
     </i3dMappings>
 </vehicle>

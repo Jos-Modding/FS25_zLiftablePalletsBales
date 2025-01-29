@@ -55,8 +55,6 @@
         </fillUnitConfigurations>
     </fillUnit>
 
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="1.5"/>
-
     <consumable>
         <consumableConfigurations title="$l10n_configuration_baleTwine" typeName="BALE_TWINE">
             <consumableConfiguration name="$l10n_consumable_lizardTwine" vehicleBrand="LIZARD" vehicleName="$l10n_consumable_lizardTwine" consumableName="LIZARD_TWINE"/>
@@ -120,6 +118,12 @@
     </pallet>
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.41" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
 
     <i3dMappings>
         <i3dMapping id="baleTwinePallet_component1" node="0>"/>

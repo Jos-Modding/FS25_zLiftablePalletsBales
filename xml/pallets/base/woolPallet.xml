@@ -64,6 +64,12 @@
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="1.2" jointTransY="0.11" jointLimitToRotY="true"/>
 
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
+
     <i3dMappings>
         <i3dMapping id="woolPallet_component1" node="0>"/>
         <i3dMapping id="dynamicMountTrigger" node="0>0"/>
@@ -76,5 +82,6 @@
         <i3dMapping id="woolBag_Tension03" node="0>2|2|0"/>
         <i3dMapping id="woolBag04" node="0>2|3"/>
         <i3dMapping id="woolBag_Tension04" node="0>2|3|0"/>
+        <i3dMapping id="fillTrigger" node="0>4"/>
     </i3dMappings>
 </vehicle>

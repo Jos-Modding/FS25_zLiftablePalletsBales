@@ -46,7 +46,7 @@
     <fillUnit>
         <fillUnitConfigurations>
             <fillUnitConfiguration>
-                <fillUnits>
+                <fillUnits removeVehicleIfEmpty="true">
                     <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="TREESAPLINGS" capacity="20"/>
                 </fillUnits>
             </fillUnitConfiguration>

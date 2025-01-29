@@ -38,7 +38,7 @@
     <fillUnit>
         <fillUnitConfigurations>
             <fillUnitConfiguration>
-                <fillUnits>
+                <fillUnits removeVehicleIfEmpty="true">
                     <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="SUGAR" capacity="1000" ignoreFillLimit="true"/>
                 </fillUnits>
             </fillUnitConfiguration>
@@ -72,6 +72,12 @@
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="1.1" jointTransY="0.11" jointLimitToRotY="true"/>
 
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
+
     <i3dMappings>
         <i3dMapping id="sugarBoxPallet_component1" node="0>"/>
         <i3dMapping id="dynamicMountTrigger" node="0>0"/>
@@ -100,5 +106,6 @@
         <i3dMapping id="sugarBox_Tension11" node="0>2|10|1"/>
         <i3dMapping id="sugarBox12" node="0>2|11"/>
         <i3dMapping id="sugarBox_Tension12" node="0>2|11|1"/>
+        <i3dMapping id="fillTrigger" node="0>4"/>
     </i3dMappings>
 </vehicle>

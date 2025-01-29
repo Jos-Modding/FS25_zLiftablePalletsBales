@@ -119,6 +119,10 @@
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.90" jointTransY="0.11" jointLimitToRotY="true"/>
 
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
     <i3dMappings>
         <i3dMapping id="raniWrapPallet_component1" node="0>"/>
         <i3dMapping id="pallet_vis" node="0>0"/>
@@ -165,5 +169,6 @@
         <i3dMapping id="baleWrapSlot39" node="0>0|2|38"/>
         <i3dMapping id="baleWrapSlot40" node="0>0|2|39"/>
         <i3dMapping id="topLayerCollision" node="0>0|2|40"/>
+        <i3dMapping id="dischargeNode" node="0>2"/>
     </i3dMappings>
 </vehicle>

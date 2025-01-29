@@ -38,7 +38,7 @@
     <fillUnit>
         <fillUnitConfigurations>
             <fillUnitConfiguration name="$l10n_configuration_valueDefault">
-                <fillUnits>
+                <fillUnits removeVehicleIfEmpty="true">
                     <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="GOATMILK_BOTTLED" capacity="1000" startFillType="GOATMILK_BOTTLED" startFillLevel="0" ignoreFillLimit="true">
                         <fillRootNode node="0>"/>
 
@@ -92,6 +92,12 @@
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.64" jointTransY="0.106" jointLimitToRotY="true"/>
 
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
+
     <i3dMappings>
         <i3dMapping id="milkBoxPallet_component1" node="0>"/>
         <i3dMapping id="dynamicMountTrigger" node="0>0"/>
@@ -144,5 +150,6 @@
         <i3dMapping id="milkBottlesBox_Tension23" node="0>2|22|0"/>
         <i3dMapping id="milkBottlesBox24" node="0>2|23"/>
         <i3dMapping id="milkBottlesBox_Tension24" node="0>2|23|0"/>
+        <i3dMapping id="fillTrigger" node="0>4"/>
     </i3dMappings>
 </vehicle>
