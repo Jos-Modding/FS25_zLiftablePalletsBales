@@ -11,15 +11,16 @@
 
 Productions/animal pens will spawn these lightweight pallets after installing this mod. Anything existing before activation will remain original weight.
 All pallets are available for purchase on the warehouse/pallet store on your map.
+Bales and pallets brought through this mod are compatible with (console)autoloaders.
 
 Included are balers and cotton harvesters producing bales weighing only 100 kg, making them liftable by hand! Produced bales can be wrapped and transported by all base game equipment.
 Liftable grass/silage/hay/straw bales in all sizes available for purchase through the shop.
 
-This mod will not make pallets, big bags, or bales added by other mods liftable.
+This mod will not make pallets, big bags, or bales added by other mods liftable, unless mentioned by this mod.
 
 Changelog 1.0.2.0:
 - Fixed error with Case IH Module Express 635
-- Added triggers for (console) autoloading
+- Added triggers for (console) autoloading (Credits 82Studio and Ridiculous Dominick)
 
 Changelog 1.0.1.0:
 - Updated balers to match changes made in game version 1.4.0.0
@@ -30,15 +31,16 @@ Changelog 1.0.1.0:
         <de><![CDATA[Alle Basisspielpaletten, BigBags and Ballen sind jetzt von Hand anhebbar und wiegen nur noch 100 kg.
 Nach der Installation dieses Mods werden in Produktionen/Tiergehegen diese leichten Paletten erscheinen. Alles, was vor der Aktivierung vorhanden war, behält sein ursprüngliches Gewicht.
 Alle Paletten stehen im Lager/Palettenshop auf Deiner Karte zum Kauf bereit.
+Ballen und Paletten, die durch diesen Mod gebracht werden, sind mit (Konsolen-)Autoloadern kompatibel.
 
 Im Lieferumfang sind Ballenpressen und Baumwollerntemaschinen enthalten, die Ballen mit einem Gewicht von nur 100 kg produzieren und somit von Hand angehoben werden können! Die produzierten Ballen können mit allen Basisgeräten des Spiels gewickelt und transportiert werden.
 Hebebare Gras-/Silage-/Heu-/Strohballen in allen Größen im Shop erhältlich.
 
-Mit diesem Mod können Paletten, große Säcke oder Ballen, die durch andere Mods hinzugefügt wurden, nicht angehoben werden.
+Dieser Mod macht Paletten, Big Bags oder Ballen, die von anderen Mods hinzugefügt wurden, nicht hebbar, es sei denn, dieser Mod erwähnt sie.
 
 Changelog 1.0.2.0:
 - Fehler mit Case IH Module Express 635 behoben
-- Trigger für (Konsolen-)Autoloading hinzugefügt
+- Trigger für (Konsolen-)Autoloading hinzugefügt (Kredite 82Studio und Ridiculous Dominick)
 
 Changelog 1.0.1.0:
 - Die Ballenpressen wurden aktualisiert, um den Änderungen in der Spielversion 1.4.0.0 zu entsprechen.
