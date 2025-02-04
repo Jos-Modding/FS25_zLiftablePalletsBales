@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="lettuceBoxPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/objects/pallets/lettuceBoxPallet/lettuceBoxLeaf_diffuse.png"/>
+    <File fileId="6" filename="$data/objects/pallets/lettuceBoxPallet/lettuceBoxLeaf_normal.png"/>
+    <File fileId="7" filename="$data/objects/pallets/lettuceBoxPallet/lettuceBoxLeaf_specular.png"/>
+    <File fileId="2" filename="$data/objects/pallets/lettuceBoxPallet/lettuceBox_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/lettuceBoxPallet/lettuceBox_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/lettuceBoxPallet/lettuceBox_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="lettuceBox_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lettuceBoxLeaf_mat" materialId="7">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="lettuceBoxPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="lettuceBoxPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="17" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="18" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="content" nodeId="19">
+        <TransformGroup name="lettuceBox01_lod" lodDistance="0 4" nodeId="20">
+          <Shape name="lettuceBox01_LOD0" translation="0.298062 0.144671 0.201378" shapeId="3" clipDistance="100" nodeId="21" castsShadows="true" receiveShadows="true" skinBindNodeIds="21 26 31 36 41 46 51 56 61 66 71 76" materialIds="6">
+            <Shape name="leaf" shapeId="4" clipDistance="50" nodeId="22" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="lettuceBox_Tension01" shapeId="5" nodeId="23" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          </Shape>
+          <Shape name="lettuceBox01_LOD1" translation="0.298062 0.144671 0.201378" shapeId="6" clipDistance="100" nodeId="24" castsShadows="true" receiveShadows="true" skinBindNodeIds="24 29 34 39 44 49 54 59 64 69 74 79" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="lettuceBox02_lod" lodDistance="0 4" nodeId="25">
+          <TransformGroup name="lettuceBox02_LOD0" translation="0.298062 0.144671 -0.199032" clipDistance="100" nodeId="26">
+            <Shape name="lettuceBox_Tension02" shapeId="5" nodeId="27" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="leaf" shapeId="4" clipDistance="50" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="lettuceBox02_LOD1" translation="0.298062 0.144671 -0.199" clipDistance="100" nodeId="29"/>
+        </TransformGroup>
+        <TransformGroup name="lettuceBox03_lod" lodDistance="0 4" nodeId="30">
+          <TransformGroup name="lettuceBox03_LOD0" translation="-0.302558 0.144671 0.201378" clipDistance="100" nodeId="31">
+            <Shape name="lettuceBox_Tension03" shapeId="5" nodeId="32" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="leaf" shapeId="4" clipDistance="50" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="lettuceBox03_LOD1" translation="-0.303 0.144671 -0.199" clipDistance="100" nodeId="34"/>
+        </TransformGroup>
+        <TransformGroup name="lettuceBox04_lod" lodDistance="0 4" nodeId="35">
+          <TransformGroup name="lettuceBox04_LOD0" translation="-0.302558 0.144671 -0.199032" clipDistance="100" nodeId="36">
+            <Shape name="lettuceBox_Tension04" shapeId="5" nodeId="37" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="leaf" shapeId="4" clipDistance="50" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="lettuceBox04_LOD1" translation="-0.303 0.144671 0.201" clipDistance="100" nodeId="39"/>
+        </TransformGroup>
+        <TransformGroup name="lettuceBox05_lod" lodDistance="0 4" nodeId="40">
+          <TransformGroup name="lettuceBox05_LOD0" translation="0.298062 0.348148 0.201378" clipDistance="100" nodeId="41">
+            <Shape name="lettuceBox_Tension05" shapeId="5" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="leaf" shapeId="4" clipDistance="50" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="lettuceBox05_LOD1" translation="0.298062 0.348148 0.201378" clipDistance="100" nodeId="44"/>
+        </TransformGroup>
+        <TransformGroup name="lettuceBox06_lod" lodDistance="0 4" nodeId="45">
+          <TransformGroup name="lettuceBox06_LOD0" translation="0.298062 0.348148 -0.199032" clipDistance="100" nodeId="46">
+            <Shape name="lettuceBox_Tension06" shapeId="5" nodeId="47" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="leaf" shapeId="4" clipDistance="50" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="lettuceBox06_LOD1" translation="0.298062 0.348148 -0.199" clipDistance="100" nodeId="49"/>
+        </TransformGroup>
+        <TransformGroup name="lettuceBox07_lod" lodDistance="0 4" nodeId="50">
+          <TransformGroup name="lettuceBox07_LOD0" translation="-0.302558 0.348148 0.201378" clipDistance="100" nodeId="51">
+            <Shape name="lettuceBox_Tension07" shapeId="5" nodeId="52" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="leaf" shapeId="4" clipDistance="50" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="lettuceBox07_LOD1" translation="-0.303 0.348148 -0.199" clipDistance="100" nodeId="54"/>
+        </TransformGroup>
+        <TransformGroup name="lettuceBox08_lod" lodDistance="0 4" nodeId="55">
+          <TransformGroup name="lettuceBox08_LOD0" translation="-0.302558 0.348148 -0.199032" clipDistance="100" nodeId="56">
+            <Shape name="lettuceBox_Tension08" shapeId="5" nodeId="57" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="leaf" shapeId="4" clipDistance="50" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="lettuceBox08_LOD1" translation="-0.303 0.348148 0.201" clipDistance="100" nodeId="59"/>
+        </TransformGroup>
+        <TransformGroup name="lettuceBox09_lod" lodDistance="0 4" nodeId="60">
+          <TransformGroup name="lettuceBox09_LOD0" translation="0.298062 0.551625 0.201378" clipDistance="100" nodeId="61">
+            <Shape name="lettuceBox_Tension09" shapeId="5" nodeId="62" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="leaf" shapeId="4" clipDistance="50" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="lettuceBox09_LOD1" translation="0.298062 0.551625 0.201378" clipDistance="100" nodeId="64"/>
+        </TransformGroup>
+        <TransformGroup name="lettuceBox10_lod" lodDistance="0 4" nodeId="65">
+          <TransformGroup name="lettuceBox10_LOD0" translation="0.298062 0.551625 -0.199032" clipDistance="100" nodeId="66">
+            <Shape name="lettuceBox_Tension10" shapeId="5" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="leaf" shapeId="4" clipDistance="50" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="lettuceBox10_LOD1" translation="0.298062 0.551625 -0.199" clipDistance="100" nodeId="69"/>
+        </TransformGroup>
+        <TransformGroup name="lettuceBox11_lod" lodDistance="0 4" nodeId="70">
+          <TransformGroup name="lettuceBox11_LOD0" translation="-0.302558 0.551625 0.201378" clipDistance="100" nodeId="71">
+            <Shape name="lettuceBox_Tension11" shapeId="5" nodeId="72" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="leaf" shapeId="4" clipDistance="50" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="lettuceBox11_LOD1" translation="-0.303 0.551625 -0.199" clipDistance="100" nodeId="74"/>
+        </TransformGroup>
+        <TransformGroup name="lettuceBox12_lod" lodDistance="0 4" nodeId="75">
+          <TransformGroup name="lettuceBox12_LOD0" translation="-0.302558 0.551625 -0.199032" clipDistance="100" nodeId="76">
+            <Shape name="lettuceBox_Tension12" shapeId="5" nodeId="77" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="leaf" shapeId="4" clipDistance="50" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="lettuceBox12_LOD1" translation="-0.303 0.551625 0.201" clipDistance="100" nodeId="79"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="80">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="7" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="81" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="7" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="82" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="87"/>
+      <Shape name="fillTrigger" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="88" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="9" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="89" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

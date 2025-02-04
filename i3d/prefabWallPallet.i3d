@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="prefabWallPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/prefabWallPallet/prefabWallPallet_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/prefabWallPallet/prefabWallPallet_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/prefabWallPallet/prefabWallPallet_specular.png"/>
+    <File fileId="5" filename="$data/objects/pallets/shared/palletStrap_diffuse.png"/>
+    <File fileId="6" filename="$data/objects/pallets/shared/palletStrap_normal.png"/>
+    <File fileId="7" filename="$data/objects/pallets/shared/palletStrap_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="palletStrap_mat" materialId="6">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="prefabWallPallet_mat" materialId="7">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="prefabWallPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="prefabWallPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" clipDistance="300" nodeId="17" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="prefabWallPallet_vis" shapeId="2" clipDistance="300" nodeId="18" castsShadows="true" receiveShadows="true" materialIds="7">
+        <TransformGroup name="contents" nodeId="19">
+          <Shape name="prefabWall" shapeId="3" clipDistance="300" nodeId="20" castsShadows="true" receiveShadows="true" materialIds="7">
+            <Shape name="prefabWallTension" translation="0.007999 1.31219 0" shapeId="4" nodeId="21" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          </Shape>
+          <Shape name="palletStrap01" translation="0.015936 1.31399 -0.002196" shapeId="5" clipDistance="300" nodeId="22" castsShadows="true" receiveShadows="true" skinBindNodeIds="22 23" materialIds="6"/>
+          <TransformGroup name="palletStrap02" translation="0.015936 1.31399 -0.002196" rotation="0 90 0" clipDistance="300" nodeId="23"/>
+        </TransformGroup>
+        <Shape name="dynamicMountTrigger" translation="0 0.090475 -0.026696" shapeId="6" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="24" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="dischargeNode" translation="0 0.75 0" static="true" nodeId="25"/>
+        <TransformGroup name="collisions" clipDistance="10" nodeId="26">
+          <Shape name="floorCollision01" translation="0.3 5.7e-05 0" shapeId="7" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.001" nodeId="27" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="floorCollision02" translation="-0.3 5.7e-05 0" shapeId="8" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.001" nodeId="28" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+      </Shape>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="33"/>
+      <Shape name="fillTrigger" shapeId="9" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="34" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="10" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="35" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

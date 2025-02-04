@@ -12,17 +12,11 @@
         <category>pallets</category>
         <shopRotationOffset>0 0 0</shopRotationOffset>
         <financeCategory>OTHER</financeCategory>
-        <vertexBufferMemoryUsage>48640</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>9472</indexBufferMemoryUsage>
-        <textureMemoryUsage>786432</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
         <typeDesc>$l10n_typeDesc_pallet</typeDesc>
-        <filename>$data/objects/pallets/vegetablesPallet/vegetablesPallet.i3d</filename>
+        <filename>i3d/vegetablesPallet.i3d</filename>
         <size width="1.7" length="1.3" height="1.25"/>
         <canBeReset>false</canBeReset>
         <components maxMass="100">
@@ -46,6 +40,16 @@
         </fillUnitConfigurations>
     </fillUnit>
 
+	<dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="raycastNode" emptySpeed="500" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true">
+            <raycast useWorldNegYDirection="true" />
+            <info width="0.4" length="0.4" />
+            <activationTrigger node="dischargeActivationTrigger" />
+        </dischargeNode>
+    </dischargeable>
+
+	<fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="500"/>
+
     <fillVolume>
         <fillVolumeConfigurations>
             <fillVolumeConfiguration>
@@ -64,19 +68,19 @@
         </meshNodes>
     </tensionBeltObject>
 
-    <dischargeable requiresTipOcclusionArea="false">
-        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
-    </dischargeable>
-
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
-
-    <i3dMappings>
-        <i3dMapping id="fillablePallet_main_component1" node="0>"/>
-        <i3dMapping id="vegetablesPallet_vis" node="0>0"/>
-        <i3dMapping id="dynamicMountTrigger" node="0>0|1"/>
-        <i3dMapping id="exactFillRootNode" node="0>0|2|0"/>
-        <i3dMapping id="fillVolume" node="0>0|2|1"/>
-        <i3dMapping id="dischargeNode" node="0>3"/>
-        <i3dMapping id="fillTrigger" node="0>4"/>
-    </i3dMappings>
+<i3dMappings>
+  <i3dMapping id="vegetablesPallet_main_component1" node="0>" />
+  <i3dMapping id="vegetablesPallet_vis" node="0>0" />
+  <i3dMapping id="dewulfDecal" node="0>0|0" />
+  <i3dMapping id="dynamicMountTrigger" node="0>0|1" />
+  <i3dMapping id="fillUnit" node="0>0|2" />
+  <i3dMapping id="exactFillRootNode" node="0>0|2|0" />
+  <i3dMapping id="fillVolume" node="0>0|2|1" />
+  <i3dMapping id="collisions" node="0>0|3" />
+  <i3dMapping id="floorCollision01" node="0>0|3|0" />
+  <i3dMapping id="floorCollision02" node="0>0|3|1" />
+  <i3dMapping id="raycastNode" node="0>0|4" />
+  <i3dMapping id="fillTrigger" node="0>0|5" />
+  <i3dMapping id="dischargeActivationTrigger" node="0>0|6" />
+</i3dMappings>
 </vehicle>

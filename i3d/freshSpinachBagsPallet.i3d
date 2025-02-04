@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="freshSpinachBagsPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/freshSpinachBagsPallet/freshSpinachBags_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/freshSpinachBagsPallet/freshSpinachBags_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/freshSpinachBagsPallet/freshSpinachBags_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="freshSpinachBags_mat" materialId="175">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="174" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="freshSpinachBagsPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="freshSpinachBagPallet_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="207" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="208" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+      <TransformGroup name="dischargeNode" translation="0 0.5 0" nodeId="209"/>
+      <TransformGroup name="content" nodeId="210">
+        <TransformGroup name="freshSpinachBags01" translation="-0.455435 0.144671 -0.197924" nodeId="211">
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="212">
+            <Shape name="LOD0" shapeId="3" nodeId="213" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="214" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+          <Shape name="freshSpinachBags_Tension01" shapeId="5" nodeId="215" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags02" translation="-0.455435 0.144671 0.192314" nodeId="216">
+          <Shape name="freshSpinachBags_Tension02" shapeId="5" nodeId="217" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="218">
+            <Shape name="LOD0" shapeId="3" nodeId="219" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="220" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags03" translation="-0.154491 0.144671 -0.197924" nodeId="221">
+          <Shape name="freshSpinachBags_Tension03" shapeId="5" nodeId="222" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="223">
+            <Shape name="LOD0" shapeId="3" nodeId="224" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="225" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags04" translation="-0.154491 0.144671 0.192314" nodeId="226">
+          <Shape name="freshSpinachBags_Tension04" shapeId="5" nodeId="227" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="228">
+            <Shape name="LOD0" shapeId="3" nodeId="229" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="230" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags05" translation="0.146249 0.144671 -0.197924" nodeId="231">
+          <Shape name="freshSpinachBags_Tension05" shapeId="5" nodeId="232" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="233">
+            <Shape name="LOD0" shapeId="3" nodeId="234" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="235" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags06" translation="0.146249 0.144671 0.192314" nodeId="236">
+          <Shape name="freshSpinachBags_Tension06" shapeId="5" nodeId="237" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="238">
+            <Shape name="LOD0" shapeId="3" nodeId="239" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="240" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags07" translation="0.448077 0.144671 -0.197924" nodeId="241">
+          <Shape name="freshSpinachBags_Tension07" shapeId="5" nodeId="242" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="243">
+            <Shape name="LOD0" shapeId="3" nodeId="244" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="245" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags08" translation="0.448077 0.144671 0.192314" nodeId="246">
+          <Shape name="freshSpinachBags_Tension08" shapeId="5" nodeId="247" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="248">
+            <Shape name="LOD0" shapeId="3" nodeId="249" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="250" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags09" translation="-0.455435 0.341691 -0.197924" nodeId="251">
+          <Shape name="freshSpinachBags_Tension09" shapeId="5" nodeId="252" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="253">
+            <Shape name="LOD0" shapeId="3" nodeId="254" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="255" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags10" translation="-0.455435 0.341691 0.192314" nodeId="256">
+          <Shape name="freshSpinachBags_Tension10" shapeId="5" nodeId="257" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="258">
+            <Shape name="LOD0" shapeId="3" nodeId="259" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="260" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags11" translation="-0.154491 0.341691 -0.197924" nodeId="261">
+          <Shape name="freshSpinachBags_Tension11" shapeId="5" nodeId="262" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="263">
+            <Shape name="LOD0" shapeId="3" nodeId="264" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="265" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags12" translation="-0.154491 0.341691 0.192314" nodeId="266">
+          <Shape name="freshSpinachBags_Tension12" shapeId="5" nodeId="267" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="268">
+            <Shape name="LOD0" shapeId="3" nodeId="269" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="270" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags13" translation="0.146249 0.341691 -0.197924" nodeId="271">
+          <Shape name="freshSpinachBags_Tension13" shapeId="5" nodeId="272" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="273">
+            <Shape name="LOD0" shapeId="3" nodeId="274" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="275" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags14" translation="0.146249 0.341691 0.192314" nodeId="276">
+          <Shape name="freshSpinachBags_Tension14" shapeId="5" nodeId="277" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="278">
+            <Shape name="LOD0" shapeId="3" nodeId="279" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="280" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags15" translation="0.448077 0.341691 -0.197924" nodeId="281">
+          <Shape name="freshSpinachBags_Tension15" shapeId="5" nodeId="282" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="283">
+            <Shape name="LOD0" shapeId="3" nodeId="284" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="285" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags16" translation="0.448077 0.341691 0.192314" nodeId="286">
+          <Shape name="freshSpinachBags_Tension16" shapeId="5" nodeId="287" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="288">
+            <Shape name="LOD0" shapeId="3" nodeId="289" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="290" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags17" translation="-0.455435 0.53871 -0.197924" nodeId="291">
+          <Shape name="freshSpinachBags_Tension17" shapeId="5" nodeId="292" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="293">
+            <Shape name="LOD0" shapeId="3" nodeId="294" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="295" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags18" translation="-0.455435 0.53871 0.192314" nodeId="296">
+          <Shape name="freshSpinachBags_Tension18" shapeId="5" nodeId="297" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="298">
+            <Shape name="LOD0" shapeId="3" nodeId="299" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="300" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags19" translation="-0.154491 0.53871 -0.197924" nodeId="301">
+          <Shape name="freshSpinachBags_Tension19" shapeId="5" nodeId="302" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="303">
+            <Shape name="LOD0" shapeId="3" nodeId="304" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="305" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags20" translation="-0.154491 0.53871 0.192314" nodeId="306">
+          <Shape name="freshSpinachBags_Tension20" shapeId="5" nodeId="307" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="308">
+            <Shape name="LOD0" shapeId="3" nodeId="309" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="310" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags21" translation="0.146249 0.53871 -0.197924" nodeId="311">
+          <Shape name="freshSpinachBags_Tension21" shapeId="5" nodeId="312" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="313">
+            <Shape name="LOD0" shapeId="3" nodeId="314" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="315" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags22" translation="0.146249 0.53871 0.192314" nodeId="316">
+          <Shape name="freshSpinachBags_Tension22" shapeId="5" nodeId="317" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="318">
+            <Shape name="LOD0" shapeId="3" nodeId="319" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="320" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags23" translation="0.448077 0.53871 -0.197924" nodeId="321">
+          <Shape name="freshSpinachBags_Tension23" shapeId="5" nodeId="322" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="323">
+            <Shape name="LOD0" shapeId="3" nodeId="324" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="325" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="freshSpinachBags24" translation="0.448077 0.53871 0.192314" nodeId="326">
+          <Shape name="freshSpinachBags_Tension24" shapeId="5" nodeId="327" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="328">
+            <Shape name="LOD0" shapeId="3" nodeId="329" castsShadows="true" receiveShadows="true" materialIds="175"/>
+            <Shape name="LOD1" translation="0 0 7e-06" shapeId="4" nodeId="330" castsShadows="true" receiveShadows="true" materialIds="175"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="331">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="332" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="333" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="338"/>
+      <Shape name="fillTrigger" shapeId="7" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="339" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="340" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="174"/>
+    </Shape>
+  </Scene>
+
+</i3D>

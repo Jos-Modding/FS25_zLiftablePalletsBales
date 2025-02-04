@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="preservedFoodBeetRootPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/preservedFoodCarrotsPallet/preservedFoodPallet_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/preservedFoodCarrotsPallet/preservedFoodPallet_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/preservedFoodCarrotsPallet/preservedFoodPallet_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="preservedFoodPallet_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="preservedFoodBeetRootPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="beetRootPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" clipDistance="300" nodeId="36" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <TransformGroup name="contents" static="true" nodeId="37">
+        <TransformGroup name="beetRoot01_lod" translation="-0.297039 0.145727 -0.198709" lodDistance="0 20" nodeId="38">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot02_lod" translation="0.298646 0.145727 -0.198709" lodDistance="0 20" nodeId="41">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot03_lod" translation="0.298646 0.145727 0.201611" lodDistance="0 20" nodeId="44">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot04_lod" translation="-0.297039 0.145727 0.201611" lodDistance="0 20" nodeId="47">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot05_lod" translation="-0.297039 0.277 -0.198709" lodDistance="0 20" nodeId="50">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot06_lod" translation="0.298646 0.277 -0.198709" lodDistance="0 20" nodeId="53">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot07_lod" translation="0.298646 0.277 0.201611" lodDistance="0 20" nodeId="56">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot08_lod" translation="-0.297039 0.277 0.201611" lodDistance="0 20" nodeId="59">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot09_lod" translation="-0.297039 0.407828 -0.198709" lodDistance="0 20" nodeId="62">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot10_lod" translation="0.298646 0.408 -0.198709" lodDistance="0 20" nodeId="65">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot11_lod" translation="0.298646 0.408 0.201611" lodDistance="0 20" nodeId="68">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot12_lod" translation="-0.297039 0.408 0.201611" lodDistance="0 20" nodeId="71">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot13_lod" translation="-0.297039 0.538828 -0.198709" lodDistance="0 20" nodeId="74">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot14_lod" translation="0.298646 0.539 -0.198709" lodDistance="0 20" nodeId="77">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot15_lod" translation="0.298646 0.539 0.201611" lodDistance="0 20" nodeId="80">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="81" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="82" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="beetRoot16_lod" translation="-0.297039 0.539 0.201611" lodDistance="0 20" nodeId="83">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="300" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <Shape name="beetRoot_Tension01" translation="-0.297039 0.211141 -0.198709" shapeId="4" nodeId="86" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension02" translation="0.298646 0.211141 -0.198709" shapeId="4" nodeId="87" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension03" translation="0.298646 0.211141 0.201611" shapeId="4" nodeId="88" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension04" translation="-0.297039 0.211141 0.201611" shapeId="4" nodeId="89" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension05" translation="-0.297039 0.345 -0.198709" shapeId="4" nodeId="90" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension06" translation="0.298646 0.345 -0.198709" shapeId="4" nodeId="91" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension07" translation="0.298646 0.345 0.201611" shapeId="4" nodeId="92" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension08" translation="-0.297039 0.345 0.201611" shapeId="4" nodeId="93" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension09" translation="-0.297039 0.476 -0.198709" shapeId="4" nodeId="94" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension10" translation="0.298646 0.476 -0.198709" shapeId="4" nodeId="95" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension11" translation="0.298646 0.476 0.201611" shapeId="4" nodeId="96" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension12" translation="-0.297039 0.476 0.201611" shapeId="4" nodeId="97" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension13" translation="-0.297039 0.607 -0.198709" shapeId="4" nodeId="98" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension14" translation="0.298646 0.607 -0.198709" shapeId="4" nodeId="99" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension15" translation="0.298646 0.607 0.201611" shapeId="4" nodeId="100" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="beetRoot_Tension16" translation="-0.297039 0.607 0.201611" shapeId="4" nodeId="101" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="5" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="102" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="103">
+        <Shape name="floorCollision01" translation="-0.299024 0.060435 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="104" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="0.299024 0.060435 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="105" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="110"/>
+      <Shape name="fillTrigger" shapeId="7" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="111" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="112" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

@@ -3,7 +3,8 @@
     <parentFile xmlFilename="$data/vehicles/caseIH/moduleExpress635/moduleExpress635.xml">
         <attributes>
             <set path="vehicle.baler.baleTypes.baleType(0)#width" value="2.440" />
-            <set path="vehicle.baler.baleTypes.baleType(0)#height" value="2.2440" />
+            <set path="vehicle.baler.baleTypes.baleType(0)#height" value="2.440" />
+            <set path="vehicle.baler.baleTypes.baleType(0)#length" value="4.88" />
         </attributes>
     </parentFile>
 </vehicle>

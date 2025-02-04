@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="mozzarellaBufalaBoxPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_diffuse.png"/>
+    <File fileId="6" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_normal.png"/>
+    <File fileId="7" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_specular.png"/>
+    <File fileId="2" filename="$data/objects/pallets/mozzarellaBufalaBoxPallet/mozzarellaBufalaBox_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/mozzarellaBufalaBoxPallet/mozzarellaBufalaBox_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/mozzarellaBufalaBoxPallet/mozzarellaBufalaBox_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="mozzarellaBufalaBox_mat" materialId="7">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="newPalletsFoil_mat1" materialId="6" alphaBlending="true">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="mozzarellaBufalaBoxPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="mozzarellaBufalaBoxPallet_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="109" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="110" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="dischargeNode" translation="0 0.5 0" nodeId="111"/>
+      <TransformGroup name="content" nodeId="112">
+        <TransformGroup name="mozzarellaBufalaBox01" translation="-0.449329 0.144671 0.20474" rotation="0 -90 0" nodeId="113">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="114">
+            <Shape name="LOD0" shapeId="3" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="116" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="117" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension01" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="118" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox02" translation="-0.449329 0.144671 -0.201439" rotation="0 -90 0" nodeId="119">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="120">
+            <Shape name="LOD0" shapeId="3" nodeId="121" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="122" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="123" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension02" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="124" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox03" translation="-0.147299 0.144671 0.20474" rotation="0 -90 0" nodeId="125">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="126">
+            <Shape name="LOD0" shapeId="3" nodeId="127" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="128" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="129" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension03" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="130" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox04" translation="-0.147299 0.144671 -0.201439" rotation="0 -90 0" nodeId="131">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="132">
+            <Shape name="LOD0" shapeId="3" nodeId="133" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="134" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="135" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension04" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="136" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox05" translation="0.154564 0.144671 0.20474" rotation="0 -90 0" nodeId="137">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="138">
+            <Shape name="LOD0" shapeId="3" nodeId="139" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="140" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="141" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension05" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="142" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox06" translation="0.154564 0.144671 -0.201439" rotation="0 -90 0" nodeId="143">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="144">
+            <Shape name="LOD0" shapeId="3" nodeId="145" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="146" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="147" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension06" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="148" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox07" translation="0.456657 0.144671 0.20474" rotation="0 -90 0" nodeId="149">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="150">
+            <Shape name="LOD0" shapeId="3" nodeId="151" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="152" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="153" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension07" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="154" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox08" translation="0.456657 0.144671 -0.201439" rotation="0 -90 0" nodeId="155">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="156">
+            <Shape name="LOD0" shapeId="3" nodeId="157" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="158" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="159" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension08" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="160" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox09" translation="-0.449329 0.34451 0.20474" rotation="0 -90 0" nodeId="161">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="162">
+            <Shape name="LOD0" shapeId="3" nodeId="163" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="164" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="165" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension09" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="166" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox10" translation="-0.449329 0.34451 -0.201439" rotation="0 -90 0" nodeId="167">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="168">
+            <Shape name="LOD0" shapeId="3" nodeId="169" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="170" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="171" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension10" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="172" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox11" translation="-0.147299 0.34451 0.20474" rotation="0 -90 0" nodeId="173">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="174">
+            <Shape name="LOD0" shapeId="3" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="176" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="177" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension11" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="178" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox12" translation="-0.147299 0.34451 -0.201439" rotation="0 -90 0" nodeId="179">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="180">
+            <Shape name="LOD0" shapeId="3" nodeId="181" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="182" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="183" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension12" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="184" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox13" translation="0.154564 0.34451 0.20474" rotation="0 -90 0" nodeId="185">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="186">
+            <Shape name="LOD0" shapeId="3" nodeId="187" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="188" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="189" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension13" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="190" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox14" translation="0.154564 0.34451 -0.201439" rotation="0 -90 0" nodeId="191">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="192">
+            <Shape name="LOD0" shapeId="3" nodeId="193" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="194" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="195" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension14" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="196" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox15" translation="0.456657 0.34451 0.20474" rotation="0 -90 0" nodeId="197">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="198">
+            <Shape name="LOD0" shapeId="3" nodeId="199" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="200" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="201" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension15" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="202" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox16" translation="0.456657 0.34451 -0.201439" rotation="0 -90 0" nodeId="203">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="204">
+            <Shape name="LOD0" shapeId="3" nodeId="205" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="206" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="207" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension16" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="208" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox17" translation="-0.449329 0.542747 0.20474" rotation="0 -90 0" nodeId="209">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="210">
+            <Shape name="LOD0" shapeId="3" nodeId="211" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="212" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="213" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension17" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="214" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox18" translation="-0.449329 0.542747 -0.201439" rotation="0 -90 0" nodeId="215">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="216">
+            <Shape name="LOD0" shapeId="3" nodeId="217" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="218" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="219" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension18" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="220" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox19" translation="-0.147299 0.542747 0.20474" rotation="0 -90 0" nodeId="221">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="222">
+            <Shape name="LOD0" shapeId="3" nodeId="223" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="224" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="225" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension19" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="226" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox20" translation="-0.147299 0.542747 -0.201439" rotation="0 -90 0" nodeId="227">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="228">
+            <Shape name="LOD0" shapeId="3" nodeId="229" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="230" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="231" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension20" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="232" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox21" translation="0.154564 0.542747 0.20474" rotation="0 -90 0" nodeId="233">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="234">
+            <Shape name="LOD0" shapeId="3" nodeId="235" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="236" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="237" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension21" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="238" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox22" translation="0.154564 0.542747 -0.201439" rotation="0 -90 0" nodeId="239">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="240">
+            <Shape name="LOD0" shapeId="3" nodeId="241" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="242" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="243" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension22" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="244" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox23" translation="0.456657 0.542747 0.20474" rotation="0 -90 0" nodeId="245">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="246">
+            <Shape name="LOD0" shapeId="3" nodeId="247" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="248" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="249" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension23" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="250" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="mozzarellaBufalaBox24" translation="0.456657 0.542747 -0.201439" rotation="0 -90 0" nodeId="251">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="252">
+            <Shape name="LOD0" shapeId="3" nodeId="253" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" translation="0 -0.00219 0" shapeId="4" nodeId="254" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="255" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="mozzarellaBufalaBox_Tension24" translation="-0.004525 0.000266 -0.000378" shapeId="6" nodeId="256" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="257">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="7" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="258" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="7" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="259" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="264"/>
+      <Shape name="fillTrigger" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="265" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="9" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="266" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="soupCansPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/soupCansPallet/soupCansPallet_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/soupCansPallet/soupCansPallet_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/soupCansPallet/soupCansPallet_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="soupCansPallet_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="soupCansPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="soupCansPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" clipDistance="300" nodeId="30" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <TransformGroup name="contents" nodeId="31">
+        <TransformGroup name="soupCansPallet01_lod" translation="0.299651 0.146569 0.201176" lodDistance="0 10" nodeId="32">
+          <Shape name="soupCansPallet01_lod0" shapeId="2" clipDistance="100" nodeId="33" castsShadows="true" receiveShadows="true" skinBindNodeIds="33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78" materialIds="6"/>
+          <Shape name="soupCansPallet01_lod1" shapeId="3" clipDistance="300" nodeId="34" castsShadows="true" receiveShadows="true" skinBindNodeIds="34 37 40 43 46 49 52 55 58 61 64 67 70 73 76 79" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet02_lod" translation="-0.299651 0.146569 0.201176" lodDistance="0 10" nodeId="35">
+          <TransformGroup name="soupCansPallet02_lod0" clipDistance="100" nodeId="36"/>
+          <TransformGroup name="soupCansPallet02_lod1" clipDistance="300" nodeId="37"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet03_lod" translation="-0.299651 0.146569 -0.201176" lodDistance="0 10" nodeId="38">
+          <TransformGroup name="soupCansPallet03_lod0" clipDistance="100" nodeId="39"/>
+          <TransformGroup name="soupCansPallet03_lod1" clipDistance="300" nodeId="40"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet04_lod" translation="0.299651 0.146569 -0.201176" lodDistance="0 10" nodeId="41">
+          <TransformGroup name="soupCansPallet04_lod0" clipDistance="100" nodeId="42"/>
+          <TransformGroup name="soupCansPallet04_lod1" clipDistance="300" nodeId="43"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet05_lod" translation="0.299651 0.29767 0.201176" lodDistance="0 10" nodeId="44">
+          <TransformGroup name="soupCansPallet05_lod0" clipDistance="100" nodeId="45"/>
+          <TransformGroup name="soupCansPallet05_lod1" clipDistance="300" nodeId="46"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet06_lod" translation="-0.299651 0.29767 0.201176" lodDistance="0 10" nodeId="47">
+          <TransformGroup name="soupCansPallet06_lod0" clipDistance="100" nodeId="48"/>
+          <TransformGroup name="soupCansPallet06_lod1" clipDistance="300" nodeId="49"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet07_lod" translation="-0.299651 0.29767 -0.201176" lodDistance="0 10" nodeId="50">
+          <TransformGroup name="soupCansPallet07_lod0" clipDistance="100" nodeId="51"/>
+          <TransformGroup name="soupCansPallet07_lod1" clipDistance="300" nodeId="52"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet08_lod" translation="0.299651 0.29767 -0.201176" lodDistance="0 10" nodeId="53">
+          <TransformGroup name="soupCansPallet08_lod0" clipDistance="100" nodeId="54"/>
+          <TransformGroup name="soupCansPallet08_lod1" clipDistance="300" nodeId="55"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet09_lod" translation="0.299651 0.448712 0.201176" lodDistance="0 10" nodeId="56">
+          <TransformGroup name="soupCansPallet09_lod0" clipDistance="100" nodeId="57"/>
+          <TransformGroup name="soupCansPallet09_lod1" clipDistance="300" nodeId="58"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet10_lod" translation="-0.299651 0.448712 0.201176" lodDistance="0 10" nodeId="59">
+          <TransformGroup name="soupCansPallet10_lod0" clipDistance="100" nodeId="60"/>
+          <TransformGroup name="soupCansPallet10_lod1" clipDistance="300" nodeId="61"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet11_lod" translation="-0.299651 0.448712 -0.201176" lodDistance="0 10" nodeId="62">
+          <TransformGroup name="soupCansPallet11_lod0" clipDistance="100" nodeId="63"/>
+          <TransformGroup name="soupCansPallet11_lod1" clipDistance="300" nodeId="64"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet12_lod" translation="0.299651 0.448712 -0.201176" lodDistance="0 10" nodeId="65">
+          <TransformGroup name="soupCansPallet12_lod0" clipDistance="100" nodeId="66"/>
+          <TransformGroup name="soupCansPallet12_lod1" clipDistance="300" nodeId="67"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet13_lod" translation="0.299651 0.599604 0.201176" lodDistance="0 10" nodeId="68">
+          <TransformGroup name="soupCansPallet13_lod0" clipDistance="100" nodeId="69"/>
+          <TransformGroup name="soupCansPallet13_lod1" clipDistance="300" nodeId="70"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet14_lod" translation="-0.299651 0.599604 0.201176" lodDistance="0 10" nodeId="71">
+          <TransformGroup name="soupCansPallet14_lod0" clipDistance="100" nodeId="72"/>
+          <TransformGroup name="soupCansPallet14_lod1" clipDistance="300" nodeId="73"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet15_lod" translation="-0.299651 0.599604 -0.201176" lodDistance="0 10" nodeId="74">
+          <TransformGroup name="soupCansPallet15_lod0" clipDistance="100" nodeId="75"/>
+          <TransformGroup name="soupCansPallet15_lod1" clipDistance="300" nodeId="76"/>
+        </TransformGroup>
+        <TransformGroup name="soupCansPallet16_lod" translation="0.299651 0.599604 -0.201176" lodDistance="0 10" nodeId="77">
+          <TransformGroup name="soupCansPallet16_lod0" clipDistance="100" nodeId="78"/>
+          <TransformGroup name="soupCansPallet16_lod1" clipDistance="300" nodeId="79"/>
+        </TransformGroup>
+        <Shape name="soupCansPallet_tension01" translation="0.300473 0.222144 0.201272" shapeId="4" nodeId="80" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension02" translation="-0.299008 0.222144 0.201272" shapeId="4" nodeId="81" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension03" translation="0.299651 0.222144 -0.200383" shapeId="4" nodeId="82" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension04" translation="-0.299008 0.222144 -0.200383" shapeId="4" nodeId="83" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension05" translation="0.299651 0.371376 0.201176" shapeId="4" nodeId="84" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension06" translation="-0.299008 0.371376 0.201176" shapeId="4" nodeId="85" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension07" translation="0.299651 0.371376 -0.200383" shapeId="4" nodeId="86" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension08" translation="-0.299008 0.371376 -0.200383" shapeId="4" nodeId="87" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension09" translation="0.300473 0.52 0.201272" shapeId="4" nodeId="88" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension10" translation="-0.299008 0.52 0.201272" shapeId="4" nodeId="89" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension11" translation="0.299651 0.52 -0.200383" shapeId="4" nodeId="90" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension12" translation="-0.299008 0.52 -0.200383" shapeId="4" nodeId="91" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension13" translation="0.299651 0.674251 0.201176" shapeId="4" nodeId="92" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension14" translation="-0.299008 0.674 0.201176" shapeId="4" nodeId="93" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension15" translation="0.299651 0.674 -0.200383" shapeId="4" nodeId="94" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="soupCansPallet_tension16" translation="-0.299008 0.674 -0.200383" shapeId="4" nodeId="95" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="5" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="96" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="dischargeNode" translation="0 0.8 0" nodeId="97"/>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="98">
+        <Shape name="floorCollision01" translation="-0.299024 0.060435 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="99" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="0.299024 0.060435 0" shapeId="7" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="100" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="105"/>
+      <Shape name="fillTrigger" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="106" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="9" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="107" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

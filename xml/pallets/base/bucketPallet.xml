@@ -9,21 +9,15 @@
         <showInStore>false</showInStore>
         <canBeSold>false</canBeSold>
         <financeCategory>OTHER</financeCategory>
-        <vertexBufferMemoryUsage>157184</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>51456</indexBufferMemoryUsage>
-        <textureMemoryUsage>655360</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
 
         <storeIconRendering>
             <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
         </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
         <typeDesc>$l10n_typeDesc_pallet</typeDesc>
-        <filename>$data/objects/pallets/bucketPallet/bucketPallet.i3d</filename>
+        <filename>i3d/bucketPallet.i3d</filename>
         <size width="1.3" length="0.9" height="0.8" lengthOffset="0"/>
         <canBeReset>false</canBeReset>
         <components maxMass="100">
@@ -39,12 +33,22 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits removeVehicleIfEmpty="true">
-                    <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="BUCKET" capacity="1000" ignoreFillLimit="true"/>
+                    <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="BUCKET" capacity="1000" startFillLevel="1000" ignoreFillLimit="true"/>
                 </fillUnits>
             </fillUnitConfiguration>
         </fillUnitConfigurations>
     </fillUnit>
+	
+	<dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="raycastNode" emptySpeed="500" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true">
+            <raycast useWorldNegYDirection="true" />
+            <info width="0.4" length="0.4" />
+            <activationTrigger node="dischargeActivationTrigger" />
+        </dischargeNode>
+    </dischargeable>
 
+	<fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="500"/>
+	
     <pallet fillUnitIndex="1" linkNode="bucketPallet_main_component1">
         <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
         <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
@@ -65,12 +69,6 @@
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.757" jointTransY="0.106" jointLimitToRotY="true"/>
 
-    <dischargeable requiresTipOcclusionArea="false">
-        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
-    </dischargeable>
-
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
-
     <i3dMappings>
         <i3dMapping id="bucketPallet_main_component1" node="0>"/>
         <i3dMapping id="bucket01" node="0>0|0"/>
@@ -86,7 +84,9 @@
         <i3dMapping id="bucket06" node="0>0|5"/>
         <i3dMapping id="bucket06Tension" node="0>0|5|0"/>
         <i3dMapping id="dynamicMountTrigger" node="0>1"/>
-        <i3dMapping id="dischargeNode" node="0>3"/>
-        <i3dMapping id="fillTrigger" node="0>4"/>
+        <i3dMapping id="dischargeNode" node="0>2"/>
+		<i3dMapping id="raycastNode" node="0>4"/>
+		<i3dMapping id="fillTrigger" node="0>5"/>
+		<i3dMapping id="dischargeActivationTrigger" node="0>6"/>
     </i3dMappings>
 </vehicle>

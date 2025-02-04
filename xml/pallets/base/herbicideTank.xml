@@ -29,7 +29,6 @@
         <storeIconRendering>
             <settings cameraXRot="-15" cameraYRot="25" />
         </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
@@ -63,7 +62,7 @@
         </fillUnitConfigurations>
     </fillUnit>
 
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="500"/>
 
     <dischargeable requiresTipOcclusionArea="false" />
 

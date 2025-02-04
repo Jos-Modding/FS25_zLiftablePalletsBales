@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="chocolateBoxPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/chocolateBoxPallet/chocolateBox_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/chocolateBoxPallet/chocolateBox_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/chocolateBoxPallet/chocolateBox_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="chocolateBox_mat1" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="chocolateBoxPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="chocolateBoxPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="14" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="15" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="content" nodeId="16">
+        <Shape name="chocolateBox01" translation="-0.303998 0.145827 -0.197137" shapeId="3" nodeId="17" castsShadows="true" receiveShadows="true" skinBindNodeIds="17 19 21 23 25 27 29 31 33 35 37 39" materialIds="6">
+          <Shape name="chocolateBox_Tension01" translation="-2e-06 0.000173 -0.00266" shapeId="4" nodeId="18" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <TransformGroup name="chocolateBox02" translation="-0.302418 0.145827 0.204286" nodeId="19">
+          <Shape name="chocolateBox_Tension02" translation="-0.001582 0.000173 -0.002267" shapeId="4" nodeId="20" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="chocolateBox03" translation="0.297613 0.145033 -0.197137" nodeId="21">
+          <Shape name="chocolateBox_Tension03" translation="-0.00074 0.000967 -0.00266" shapeId="4" nodeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="chocolateBox04" translation="0.299194 0.145033 0.204286" nodeId="23">
+          <Shape name="chocolateBox_Tension04" translation="-0.00232 0.000967 -0.002267" shapeId="4" nodeId="24" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="chocolateBox05" translation="-0.303998 0.346826 -0.197137" rotation="0 180 0" nodeId="25">
+          <Shape name="chocolateBox_Tension05" translation="2e-06 -8.7e-05 0.00266" rotation="0 180 0" shapeId="4" nodeId="26" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="chocolateBox06" translation="-0.302418 0.346826 0.204286" rotation="0 180 0" nodeId="27">
+          <Shape name="chocolateBox_Tension06" translation="0.001582 -8.7e-05 0.002267" rotation="0 180 0" shapeId="4" nodeId="28" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="chocolateBox07" translation="0.297613 0.346032 -0.197137" rotation="0 180 0" nodeId="29">
+          <Shape name="chocolateBox_Tension07" translation="0.00074 0.000707 0.00266" rotation="0 180 0" shapeId="4" nodeId="30" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="chocolateBox08" translation="0.299194 0.346032 0.204286" rotation="0 180 0" nodeId="31">
+          <Shape name="chocolateBox_Tension08" translation="0.00232 0.000707 0.002267" rotation="0 180 0" shapeId="4" nodeId="32" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="chocolateBox09" translation="-0.303998 0.547071 -0.197137" nodeId="33">
+          <Shape name="chocolateBox_Tension09" translation="-2e-06 -0.000393 -0.00266" shapeId="4" nodeId="34" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="chocolateBox10" translation="-0.302418 0.547071 0.204286" nodeId="35">
+          <Shape name="chocolateBox_Tension10" translation="-0.001582 -0.000393 -0.002267" shapeId="4" nodeId="36" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="chocolateBox11" translation="0.297613 0.546277 -0.197137" nodeId="37">
+          <Shape name="chocolateBox_Tension11" translation="-0.00074 0.000401 -0.00266" shapeId="4" nodeId="38" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="chocolateBox12" translation="0.299194 0.546277 0.204286" nodeId="39">
+          <Shape name="chocolateBox_Tension12" translation="-0.00232 0.000401 -0.002267" shapeId="4" nodeId="40" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="41">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="48"/>
+      <Shape name="fillTrigger" shapeId="6" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="49" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="7" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="50" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

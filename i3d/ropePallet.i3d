@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="ropePallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/maps/mapAS/textures/props/rope_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/mapAS/textures/props/rope_normal.png"/>
+    <File fileId="4" filename="$data/maps/mapAS/textures/props/rope_specular.png"/>
+    <File fileId="5" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="11" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="9" filename="$data/shared/default_normal.png"/>
+    <File fileId="10" filename="$data/shared/default_vmask.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPaintedRough_normal.png"/>
+    <File fileId="12" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPaintedRough_specular.png"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="8" filename="$data/shared/white_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default_metalPaintedRoughBlack_mat" materialId="7" customShaderId="11">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <Custommap name="detailSpecular" fileId="12"/>
+      <Custommap name="detailNormal" fileId="13"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+      <CustomParameter name="colorScale" value="0.03 0.03 0.03"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="rope_mat" materialId="6" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="ropePallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="ropePallet_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" clipDistance="300" nodeId="17" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <TransformGroup name="contents" nodeId="18">
+        <TransformGroup name="rope02_lod" lockedgroup="true" lodDistance="0 25" clipDistance="60" nodeId="19">
+          <Shape name="rope02_lod0" translation="0.127094 0.27475 -0.005485" shapeId="2" nodeId="20" castsShadows="true" receiveShadows="true" materialIds="6">
+            <Shape name="ropeEnd" translation="0.179863 -0.109586 -0.372867" shapeId="3" nodeId="21" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </Shape>
+          <Shape name="rope02_lod1" translation="0.044107 0.265363 -0.001138" shapeId="4" nodeId="22" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <Shape name="collisionRope02" translation="0.025399 0.261781 -0.00071" shapeId="5" nodeId="23" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="6" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="24" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="dischargeNode" translation="0 0.75 0" static="true" nodeId="25"/>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="26">
+        <Shape name="floorCollision01" translation="-0.3 5.7e-05 0" shapeId="7" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.001" nodeId="27" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="0.3 5.7e-05 0" shapeId="8" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.001" nodeId="28" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="33"/>
+      <Shape name="fillTrigger" shapeId="9" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="34" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="10" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="35" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

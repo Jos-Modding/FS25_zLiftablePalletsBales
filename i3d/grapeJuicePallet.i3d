@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="grapeJuicePallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/objects/pallets/grapeJuicePallet/grapeJuiceFoil_diffuse.png"/>
+    <File fileId="6" filename="$data/objects/pallets/grapeJuicePallet/grapeJuiceFoil_normal.png"/>
+    <File fileId="7" filename="$data/objects/pallets/grapeJuicePallet/grapeJuiceFoil_specular.png"/>
+    <File fileId="2" filename="$data/objects/pallets/grapeJuicePallet/grapeJuice_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/grapeJuicePallet/grapeJuice_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/grapeJuicePallet/grapeJuice_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="grapeJuice_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="grapeJuiceFoil_mat" materialId="7" alphaBlending="true">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="grapeJuicePallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="grapeJuicePallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="17" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="18" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="content" nodeId="19">
+        <Shape name="grapeJuice01" translation="0.401 0.145818 0" shapeId="3" nodeId="20" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="foil" shapeId="4" nodeId="21" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="grapeJuice_Tension01" translation="-0.001 -0.000615 0" shapeId="5" nodeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="grapeJuice02" translation="0 0.145818 -0.002" shapeId="3" nodeId="23" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="foil" shapeId="4" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="grapeJuice_Tension02" translation="0 -0.000615 0.002" shapeId="5" nodeId="25" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="grapeJuice03" translation="-0.402 0.145818 0.002" shapeId="3" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="foil" shapeId="4" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="grapeJuice_Tension03" translation="0.002 -0.000615 -0.002" shapeId="5" nodeId="28" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="grapeJuice04" translation="0.401 0.346167 0.002" shapeId="3" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="foil" shapeId="4" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="grapeJuice_Tension04" translation="-0.001 0.001327 -0.002" shapeId="5" nodeId="31" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="grapeJuice05" translation="0 0.346167 0.002" shapeId="3" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="foil" shapeId="4" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="grapeJuice_Tension05" translation="0 0.001327 -0.002" shapeId="5" nodeId="34" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="grapeJuice06" translation="-0.402 0.346167 0" shapeId="3" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="foil" shapeId="4" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="grapeJuice_Tension06" translation="0.002 0.001327 0" shapeId="5" nodeId="37" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="grapeJuice07" translation="0.4028 0.546698 -0.000312" shapeId="3" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="foil" shapeId="4" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="grapeJuice_Tension07" translation="-0.0028 0.00259 0.000312" shapeId="5" nodeId="40" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="grapeJuice08" translation="0.0018 0.546698 0.002" shapeId="3" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="foil" shapeId="4" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="grapeJuice_Tension08" translation="-0.0018 0.00259 -0.002" shapeId="5" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="grapeJuice09" translation="-0.4002 0.546698 0.001445" shapeId="3" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="foil" shapeId="4" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="grapeJuice_Tension09" translation="0.0002 0.00259 -0.001445" shapeId="5" nodeId="46" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="47">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="48" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="49" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="54"/>
+      <Shape name="fillTrigger" shapeId="7" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="55" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="56" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

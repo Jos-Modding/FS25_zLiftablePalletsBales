@@ -8,17 +8,11 @@
         <showInStore>false</showInStore>
         <canBeSold>false</canBeSold>
         <financeCategory>OTHER</financeCategory>
-        <vertexBufferMemoryUsage>47104</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>14080</indexBufferMemoryUsage>
-        <textureMemoryUsage>2621440</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
         <typeDesc>$l10n_typeDesc_pallet</typeDesc>
-        <filename>$data/objects/pallets/stonePallet/stonePallet.i3d</filename>
+        <filename>i3d/stonePallet.i3d</filename>
         <size width="1.5" length="1.2" height="1.1"/>
         <canBeReset>false</canBeReset>
         <components maxMass="100">
@@ -40,6 +34,16 @@
         </fillUnitConfigurations>
     </fillUnit>
 
+	<dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="raycastNode" emptySpeed="500" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true">
+            <raycast useWorldNegYDirection="true" />
+            <info width="0.4" length="0.4" />
+            <activationTrigger node="dischargeActivationTrigger" />
+        </dischargeNode>
+    </dischargeable>
+
+	<fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="500"/>
+	
     <pallet fillUnitIndex="1" node="bigBagContainer_vis">
         <content>
             <object node="fill" tensionBeltNode="tensionBeltShape"/>
@@ -51,21 +55,21 @@
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="1.09" jointTransY="0.097" jointLimitToRotY="true"/>
 
-    <dischargeable requiresTipOcclusionArea="false">
-        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
-    </dischargeable>
-
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
-
-    <i3dMappings>
-        <i3dMapping id="bigBagContainer_main_component1" node="0>"/>
-        <i3dMapping id="bigBagContainer_vis" node="0>0|0"/>
-        <i3dMapping id="tensionBeltShape" node="0>0|0|0"/>
-        <i3dMapping id="grid" node="0>0|0|1"/>
-        <i3dMapping id="fill" node="0>0|0|2"/>
-        <i3dMapping id="col_bigBagContainer" node="0>0|0|3"/>
-        <i3dMapping id="dynamicMountTrigger" node="0>1"/>
-        <i3dMapping id="dischargeNode" node="0>2"/>
-        <i3dMapping id="fillTrigger" node="0>4"/>
-    </i3dMappings>
+<i3dMappings>
+  <i3dMapping id="bigBagContainer_main_component1" node="0>" />
+  <i3dMapping id="content" node="0>0" />
+  <i3dMapping id="bigBagContainer_vis" node="0>0|0" />
+  <i3dMapping id="tensionBeltShape" node="0>0|0|0" />
+  <i3dMapping id="grid" node="0>0|0|1" />
+  <i3dMapping id="fill" node="0>0|0|2" />
+  <i3dMapping id="col_bigBagContainer" node="0>0|0|3" />
+  <i3dMapping id="dynamicMountTrigger" node="0>1" />
+  <i3dMapping id="dischargeNode" node="0>2" />
+  <i3dMapping id="collisions" node="0>3" />
+  <i3dMapping id="floorCollision01" node="0>3|0" />
+  <i3dMapping id="floorCollision02" node="0>3|1" />
+  <i3dMapping id="raycastNode" node="0>4" />
+  <i3dMapping id="fillTrigger" node="0>5" />
+  <i3dMapping id="dischargeActivationTrigger" node="0>6" />
+</i3dMappings>
 </vehicle>

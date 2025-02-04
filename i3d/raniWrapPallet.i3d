@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="raniWrapPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/objects/pallets/raniWrapPallet/raniWrapPalletNail_diffuse.png"/>
+    <File fileId="6" filename="$data/objects/pallets/raniWrapPallet/raniWrapPalletNail_normal.png"/>
+    <File fileId="2" filename="$data/objects/pallets/raniWrapPallet/raniWrapPallet_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/raniWrapPallet/raniWrapPallet_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/raniWrapPallet/raniWrapPallet_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="raniWrapPallet_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="raniWrapPalletNail_mat" materialId="7" specularColor="0.501961 1 0.501961">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="raniWrapPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="raniWrapPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" clipDistance="300" nodeId="17" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="pallet_vis" shapeId="2" clipDistance="300" nodeId="18" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="3" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="19" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="fillTrigger" shapeId="4" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="20" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="content" nodeId="21">
+          <TransformGroup name="baleWrapSlot01" translation="0.5 0.89434 -0.375" nodeId="22"/>
+          <TransformGroup name="baleWrapSlot02" translation="0.5 0.89434 -0.125" nodeId="23"/>
+          <TransformGroup name="baleWrapSlot03" translation="0.5 0.89434 0.125" nodeId="24"/>
+          <TransformGroup name="baleWrapSlot04" translation="0.5 0.89434 0.375" nodeId="25"/>
+          <TransformGroup name="baleWrapSlot05" translation="0.25 0.89434 -0.375" nodeId="26"/>
+          <TransformGroup name="baleWrapSlot06" translation="0.25 0.89434 -0.125" nodeId="27"/>
+          <TransformGroup name="baleWrapSlot07" translation="0.25 0.89434 0.125" nodeId="28"/>
+          <TransformGroup name="baleWrapSlot08" translation="0.25 0.89434 0.375" nodeId="29"/>
+          <TransformGroup name="baleWrapSlot09" translation="0 0.89434 -0.375" nodeId="30"/>
+          <TransformGroup name="baleWrapSlot10" translation="0 0.89434 -0.125" nodeId="31"/>
+          <TransformGroup name="baleWrapSlot11" translation="0 0.89434 0.125" nodeId="32"/>
+          <TransformGroup name="baleWrapSlot12" translation="0 0.89434 0.375" nodeId="33"/>
+          <TransformGroup name="baleWrapSlot13" translation="-0.25 0.89434 -0.375" nodeId="34"/>
+          <TransformGroup name="baleWrapSlot14" translation="-0.25 0.89434 -0.125" nodeId="35"/>
+          <TransformGroup name="baleWrapSlot15" translation="-0.25 0.89434 0.125" nodeId="36"/>
+          <TransformGroup name="baleWrapSlot16" translation="-0.25 0.89434 0.375" nodeId="37"/>
+          <TransformGroup name="baleWrapSlot17" translation="-0.5 0.89434 -0.375" nodeId="38"/>
+          <TransformGroup name="baleWrapSlot18" translation="-0.5 0.89434 -0.125" nodeId="39"/>
+          <TransformGroup name="baleWrapSlot19" translation="-0.5 0.89434 0.125" nodeId="40"/>
+          <TransformGroup name="baleWrapSlot20" translation="-0.5 0.89434 0.375" nodeId="41"/>
+          <TransformGroup name="baleWrapSlot21" translation="0.5 0.144671 -0.375" nodeId="42"/>
+          <TransformGroup name="baleWrapSlot22" translation="0.5 0.144671 -0.125" nodeId="43"/>
+          <TransformGroup name="baleWrapSlot23" translation="0.5 0.144671 0.125" nodeId="44"/>
+          <TransformGroup name="baleWrapSlot24" translation="0.5 0.144671 0.375" nodeId="45"/>
+          <TransformGroup name="baleWrapSlot25" translation="0.25 0.144671 -0.375" nodeId="46"/>
+          <TransformGroup name="baleWrapSlot26" translation="0.25 0.144671 -0.125" nodeId="47"/>
+          <TransformGroup name="baleWrapSlot27" translation="0.25 0.144671 0.125" nodeId="48"/>
+          <TransformGroup name="baleWrapSlot28" translation="0.25 0.144671 0.375" nodeId="49"/>
+          <TransformGroup name="baleWrapSlot29" translation="0 0.144671 -0.375" nodeId="50"/>
+          <TransformGroup name="baleWrapSlot30" translation="0 0.144671 -0.125" nodeId="51"/>
+          <TransformGroup name="baleWrapSlot31" translation="0 0.144671 0.125" nodeId="52"/>
+          <TransformGroup name="baleWrapSlot32" translation="0 0.144671 0.375" nodeId="53"/>
+          <TransformGroup name="baleWrapSlot33" translation="-0.25 0.144671 -0.375" nodeId="54"/>
+          <TransformGroup name="baleWrapSlot34" translation="-0.25 0.144671 -0.125" nodeId="55"/>
+          <TransformGroup name="baleWrapSlot35" translation="-0.25 0.144671 0.125" nodeId="56"/>
+          <TransformGroup name="baleWrapSlot36" translation="-0.25 0.144671 0.375" nodeId="57"/>
+          <TransformGroup name="baleWrapSlot37" translation="-0.5 0.144671 -0.375" nodeId="58"/>
+          <TransformGroup name="baleWrapSlot38" translation="-0.5 0.144671 -0.125" nodeId="59"/>
+          <TransformGroup name="baleWrapSlot39" translation="-0.5 0.144671 0.125" nodeId="60"/>
+          <TransformGroup name="baleWrapSlot40" translation="-0.5 0.144671 0.375" nodeId="61"/>
+          <Shape name="topLayerCollision" translation="0 0.526 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="62" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="collisions" clipDistance="10" nodeId="63">
+          <Shape name="floorCollision01" translation="-0.299202 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="64" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="floorCollision02" translation="0.299202 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="65" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <Shape name="decals" shapeId="7" clipDistance="6" nodeId="66" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+      </Shape>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="71"/>
+      <Shape name="fillTrigger" shapeId="4" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="72" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="73" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

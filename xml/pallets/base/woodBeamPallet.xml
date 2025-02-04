@@ -9,21 +9,15 @@
         <showInStore>false</showInStore>
         <canBeSold>false</canBeSold>
         <financeCategory>OTHER</financeCategory>
-        <vertexBufferMemoryUsage>32256</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>5376</indexBufferMemoryUsage>
-        <textureMemoryUsage>655360</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
 
         <storeIconRendering>
             <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
         </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
         <typeDesc>$l10n_typeDesc_pallet</typeDesc>
-        <filename>$data/objects/pallets/woodBeamPallet/woodBeamPallet.i3d</filename>
+        <filename>i3d/woodBeamPallet.i3d</filename>
         <size width="2.8" length="0.95" height="0.95" lengthOffset="0"/>
         <canBeReset>false</canBeReset>
         <components maxMass="100">
@@ -45,6 +39,16 @@
         </fillUnitConfigurations>
     </fillUnit>
 
+	<dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="raycastNode" emptySpeed="500" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true">
+            <raycast useWorldNegYDirection="true" />
+            <info width="0.4" length="0.4" />
+            <activationTrigger node="dischargeActivationTrigger" />
+        </dischargeNode>
+    </dischargeable>
+
+	<fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="500"/>
+
     <pallet fillUnitIndex="1" node="woodBeamPallet_vis">
         <content>
             <object node="woodBeam01" tensionBeltNode="woodBeam01"/>
@@ -63,25 +67,25 @@
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.92" jointTransY="0.092" jointLimitToRotY="true"/>
 
-    <dischargeable requiresTipOcclusionArea="false">
-        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
-    </dischargeable>
-
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
-
-    <i3dMappings>
-        <i3dMapping id="woodBeamPallet_component1" node="0>"/>
-        <i3dMapping id="woodBeamPallet_vis" node="0>0"/>
-        <i3dMapping id="woodBeam01" node="0>0|0|0"/>
-        <i3dMapping id="woodBeam02" node="0>0|0|1"/>
-        <i3dMapping id="woodBeam03" node="0>0|0|2"/>
-        <i3dMapping id="woodBeam04" node="0>0|0|3"/>
-        <i3dMapping id="woodBeam05" node="0>0|0|4"/>
-        <i3dMapping id="woodBeam06" node="0>0|0|5"/>
-        <i3dMapping id="woodBeam07" node="0>0|0|6"/>
-        <i3dMapping id="woodBeam08" node="0>0|0|7"/>
-        <i3dMapping id="dynamicMountTrigger" node="0>0|1"/>
-        <i3dMapping id="dischargeNode" node="0>0|2"/>
-        <i3dMapping id="fillTrigger" node="0>4"/>
-    </i3dMappings>
+<i3dMappings>
+  <i3dMapping id="woodBeamPallet_component1" node="0>" />
+  <i3dMapping id="woodBeamPallet_vis" node="0>0" />
+  <i3dMapping id="contents" node="0>0|0" />
+  <i3dMapping id="woodBeam01" node="0>0|0|0" />
+  <i3dMapping id="woodBeam02" node="0>0|0|1" />
+  <i3dMapping id="woodBeam03" node="0>0|0|2" />
+  <i3dMapping id="woodBeam04" node="0>0|0|3" />
+  <i3dMapping id="woodBeam05" node="0>0|0|4" />
+  <i3dMapping id="woodBeam06" node="0>0|0|5" />
+  <i3dMapping id="woodBeam07" node="0>0|0|6" />
+  <i3dMapping id="woodBeam08" node="0>0|0|7" />
+  <i3dMapping id="dynamicMountTrigger" node="0>0|1" />
+  <i3dMapping id="dischargeNode" node="0>0|2" />
+  <i3dMapping id="collisions" node="0>0|3" />
+  <i3dMapping id="floorCollision01" node="0>0|3|0" />
+  <i3dMapping id="floorCollision02" node="0>0|3|1" />
+  <i3dMapping id="raycastNode" node="0>0|4" />
+  <i3dMapping id="fillTrigger" node="0>0|5" />
+  <i3dMapping id="dischargeActivationTrigger" node="0>0|6" />
+</i3dMappings>
 </vehicle>

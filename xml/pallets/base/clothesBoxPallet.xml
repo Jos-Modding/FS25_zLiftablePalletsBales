@@ -9,21 +9,15 @@
         <showInStore>false</showInStore>
         <canBeSold>false</canBeSold>
         <financeCategory>OTHER</financeCategory>
-        <vertexBufferMemoryUsage>6912</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>3328</indexBufferMemoryUsage>
-        <textureMemoryUsage>1245184</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
 
         <storeIconRendering>
             <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
         </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
         <typeDesc>$l10n_typeDesc_pallet</typeDesc>
-        <filename>$data/objects/pallets/clothesBoxPallet/clothesBoxPallet.i3d</filename>
+        <filename>i3d/clothesBoxPallet.i3d</filename>
         <size width="1.3" length="0.9" height="1.0"/>
         <canBeReset>false</canBeReset>
         <components maxMass="100">
@@ -38,13 +32,23 @@
     <fillUnit>
         <fillUnitConfigurations>
             <fillUnitConfiguration>
-                <fillUnits removeVehicleIfEmpty="true">
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="CLOTHES" capacity="1000" ignoreFillLimit="true"/>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="CLOTHES" capacity="1000" ignoreFillLimit="true" removeVehicleIfEmpty="true"/>
                 </fillUnits>
             </fillUnitConfiguration>
         </fillUnitConfigurations>
     </fillUnit>
 
+	<dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="raycastNode" emptySpeed="500" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true">
+            <raycast useWorldNegYDirection="true" />
+            <info width="0.4" length="0.4" />
+            <activationTrigger node="dischargeActivationTrigger" />
+        </dischargeNode>
+    </dischargeable>
+
+	<fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="500"/>
+	
     <pallet fillUnitIndex="1" linkNode="clothesBoxPallet_component1">
         <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
         <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
@@ -68,32 +72,31 @@
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.95" jointTransY="0.11" jointLimitToRotY="true"/>
 
-    <dischargeable requiresTipOcclusionArea="false">
-        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
-    </dischargeable>
-
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
-
-    <i3dMappings>
-        <i3dMapping id="clothesBoxPallet_component1" node="0>"/>
-        <i3dMapping id="dynamicMountTrigger" node="0>0"/>
-        <i3dMapping id="clothesBox01" node="0>1|0"/>
-        <i3dMapping id="clothesBox_Tension01" node="0>1|0|0"/>
-        <i3dMapping id="clothesBox02" node="0>1|1"/>
-        <i3dMapping id="clothesBox_Tension02" node="0>1|1|0"/>
-        <i3dMapping id="clothesBox03" node="0>1|2"/>
-        <i3dMapping id="clothesBox_Tension03" node="0>1|2|0"/>
-        <i3dMapping id="clothesBox04" node="0>1|3"/>
-        <i3dMapping id="clothesBox_Tension04" node="0>1|3|0"/>
-        <i3dMapping id="clothesBox05" node="0>1|4"/>
-        <i3dMapping id="clothesBox_Tension05" node="0>1|4|0"/>
-        <i3dMapping id="clothesBox06" node="0>1|5"/>
-        <i3dMapping id="clothesBox_Tension06" node="0>1|5|0"/>
-        <i3dMapping id="clothesBox07" node="0>1|6"/>
-        <i3dMapping id="clothesBox_Tension07" node="0>1|6|0"/>
-        <i3dMapping id="clothesBox08" node="0>1|7"/>
-        <i3dMapping id="clothesBox_Tension08" node="0>1|7|0"/>
-        <i3dMapping id="dischargeNode" node="0>3"/>
-        <i3dMapping id="fillTrigger" node="0>4"/>
-    </i3dMappings>
+<i3dMappings>
+  <i3dMapping id="clothesBoxPallet_component1" node="0>" />
+  <i3dMapping id="dynamicMountTrigger" node="0>0" />
+  <i3dMapping id="content" node="0>1" />
+  <i3dMapping id="clothesBox01" node="0>1|0" />
+  <i3dMapping id="clothesBox_Tension01" node="0>1|0|0" />
+  <i3dMapping id="clothesBox02" node="0>1|1" />
+  <i3dMapping id="clothesBox_Tension02" node="0>1|1|0" />
+  <i3dMapping id="clothesBox03" node="0>1|2" />
+  <i3dMapping id="clothesBox_Tension03" node="0>1|2|0" />
+  <i3dMapping id="clothesBox04" node="0>1|3" />
+  <i3dMapping id="clothesBox_Tension04" node="0>1|3|0" />
+  <i3dMapping id="clothesBox05" node="0>1|4" />
+  <i3dMapping id="clothesBox_Tension05" node="0>1|4|0" />
+  <i3dMapping id="clothesBox06" node="0>1|5" />
+  <i3dMapping id="clothesBox_Tension06" node="0>1|5|0" />
+  <i3dMapping id="clothesBox07" node="0>1|6" />
+  <i3dMapping id="clothesBox_Tension07" node="0>1|6|0" />
+  <i3dMapping id="clothesBox08" node="0>1|7" />
+  <i3dMapping id="clothesBox_Tension08" node="0>1|7|0" />
+  <i3dMapping id="collisions" node="0>2" />
+  <i3dMapping id="floorCollision01" node="0>2|0" />
+  <i3dMapping id="floorCollision02" node="0>2|1" />
+  <i3dMapping id="raycastNode" node="0>3" />
+  <i3dMapping id="fillTrigger" node="0>4" />
+  <i3dMapping id="dischargeActivationTrigger" node="0>5" />
+</i3dMappings>
 </vehicle>

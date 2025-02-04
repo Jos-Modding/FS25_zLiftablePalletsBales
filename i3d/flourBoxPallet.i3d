@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="flourBoxPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/flourPallet/flourBox_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/flourPallet/flourBox_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/flourPallet/flourBox_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="flourBox_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="flourBoxPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="flourBoxPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="15" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="16" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="content" nodeId="17">
+        <TransformGroup name="flourBox01" translation="-0.307783 0.144671 0.199748" nodeId="18">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="19">
+            <Shape name="LOD0" shapeId="3" clipDistance="300" nodeId="20" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" clipDistance="300" nodeId="21" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <Shape name="flourBox_Tension01" shapeId="5" nodeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="flourBox02" translation="-0.307783 0.144671 -0.200642" nodeId="23">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="24">
+            <Shape name="LOD0" shapeId="3" clipDistance="300" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" clipDistance="300" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <Shape name="flourBox_Tension02" shapeId="5" nodeId="27" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="flourBox03" translation="0.293436 0.144671 0.199748" nodeId="28">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="29">
+            <Shape name="LOD0" shapeId="3" clipDistance="300" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" clipDistance="300" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <Shape name="flourBox_Tension03" shapeId="5" nodeId="32" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="flourBox04" translation="0.293436 0.144671 -0.200642" nodeId="33">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="34">
+            <Shape name="LOD0" shapeId="3" clipDistance="300" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" clipDistance="300" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <Shape name="flourBox_Tension04" shapeId="5" nodeId="37" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="flourBox05" translation="-0.307783 0.407523 0.199748" nodeId="38">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="39">
+            <Shape name="LOD0" shapeId="3" clipDistance="300" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" clipDistance="300" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <Shape name="flourBox_Tension05" shapeId="5" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="flourBox06" translation="-0.307783 0.407523 -0.200642" nodeId="43">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="44">
+            <Shape name="LOD0" shapeId="3" clipDistance="300" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" clipDistance="300" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <Shape name="flourBox_Tension06" shapeId="5" nodeId="47" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="flourBox07" translation="0.293436 0.407523 0.199748" nodeId="48">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="49">
+            <Shape name="LOD0" shapeId="3" clipDistance="300" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" clipDistance="300" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <Shape name="flourBox_Tension07" shapeId="5" nodeId="52" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="flourBox08" translation="0.293436 0.407523 -0.200642" nodeId="53">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="54">
+            <Shape name="LOD0" shapeId="3" clipDistance="300" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" clipDistance="300" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <Shape name="flourBox_Tension08" shapeId="5" nodeId="57" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="flourBox09" translation="0.293436 0.674534 -0.200642" nodeId="58">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="59">
+            <Shape name="LOD0" shapeId="3" clipDistance="300" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" clipDistance="300" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <Shape name="flourBox_Tension09" translation="0 0.003 0" shapeId="5" nodeId="62" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="flourBox10" translation="0.293436 0.674534 0.199748" nodeId="63">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="64">
+            <Shape name="LOD0" shapeId="3" clipDistance="300" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" clipDistance="300" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <Shape name="flourBox_Tension10" translation="0 0.003 0" shapeId="5" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="flourBox11" translation="-0.307783 0.674534 -0.200642" nodeId="68">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="69">
+            <Shape name="LOD0" shapeId="3" clipDistance="300" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" clipDistance="300" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <Shape name="flourBox_Tension11" translation="0 0.003 0" shapeId="5" nodeId="72" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="flourBox12" translation="-0.307783 0.674534 0.199748" nodeId="73">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="74">
+            <Shape name="LOD0" shapeId="3" clipDistance="300" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" clipDistance="300" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <Shape name="flourBox_Tension12" translation="0 0.003 0" shapeId="5" nodeId="77" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="78">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="79" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="80" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="85"/>
+      <Shape name="fillTrigger" shapeId="7" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="86" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="87" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="strawberriesBoxPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/strawberriesBoxPallet/strawberriesBox_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/strawberriesBoxPallet/strawberriesBox_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/strawberriesBoxPallet/strawberriesBox_specular.png"/>
+    <File fileId="5" filename="$data/objects/pallets/strawberriesBoxPallet/strawberry_diffuse.png"/>
+    <File fileId="11" filename="$data/objects/pallets/strawberriesBoxPallet/strawberry_height.png"/>
+    <File fileId="6" filename="$data/objects/pallets/strawberriesBoxPallet/strawberry_normal.png"/>
+    <File fileId="7" filename="$data/objects/pallets/strawberriesBoxPallet/strawberry_specular.png"/>
+    <File fileId="8" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="strawberriesBox_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="strawberry_mat" materialId="7" customShaderId="8" customShaderVariation="customParallax">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6" bumpDepth="1.5"/>
+      <Glossmap fileId="7"/>
+      <Custommap name="mParallaxMap" fileId="11"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="strawberriesBoxPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="strawberriesBoxPallet_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="24" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="25" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="content" nodeId="26">
+        <Shape name="strawberriesBox01" translation="0.450225 0.147528 0.203753" shapeId="3" clipDistance="150" nodeId="27" castsShadows="true" receiveShadows="true" skinBindNodeIds="27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72" materialIds="6">
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="strawberriesBox_Tension01" translation="0.000223 0.000223 0.003117" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="29" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <TransformGroup name="strawberriesBox02" translation="0.450225 0.147528 -0.195344" clipDistance="150" nodeId="30">
+          <Shape name="strawberriesBox_Tension02" translation="-0.000223 0.000223 0.003214" rotation="0 180 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="31" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="strawberriesBox03" translation="0.148598 0.147528 0.203753" clipDistance="150" nodeId="33">
+          <Shape name="strawberriesBox_Tension03" translation="-0.001199 0.000223 -0.003117" rotation="0 180 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="34" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="strawberriesBox04" translation="0.148598 0.147528 -0.195344" clipDistance="150" nodeId="36">
+          <Shape name="strawberriesBox_Tension04" translation="0.001199 0.000223 -0.003214" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="37" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="strawberriesBox05" translation="-0.150719 0.147528 0.203753" clipDistance="150" nodeId="39">
+          <Shape name="strawberriesBox_Tension05" translation="0.00048 0.000223 -0.003117" rotation="0 180 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="40" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="strawberriesBox06" translation="-0.150719 0.147528 -0.195344" clipDistance="150" nodeId="42">
+          <Shape name="strawberriesBox_Tension06" translation="-0.00048 0.000223 -0.003214" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="strawberriesBox07" translation="-0.451164 0.147528 0.203753" clipDistance="150" nodeId="45">
+          <Shape name="strawberriesBox_Tension07" translation="-0.001393 0.000223 0.003117" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="46" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="strawberriesBox08" translation="-0.451164 0.147528 -0.195344" clipDistance="150" nodeId="48">
+          <Shape name="strawberriesBox_Tension08" translation="0.001393 0.000223 0.003214" rotation="0 180 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="49" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="strawberriesBox09" translation="-0.451164 0.459476 -0.195344" clipDistance="150" nodeId="51">
+          <Shape name="strawberriesBox_Tension09" translation="0.001393 0 0.003214" rotation="0 180 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="52" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="strawberriesBox10" translation="-0.150719 0.459476 -0.195344" clipDistance="150" nodeId="54">
+          <Shape name="strawberriesBox_Tension10" translation="-0.00048 0 -0.003214" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="55" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="strawberriesBox11" translation="0.148598 0.459476 -0.195344" clipDistance="150" nodeId="57">
+          <Shape name="strawberriesBox_Tension11" translation="0.001199 0 -0.003214" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="58" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="strawberriesBox12" translation="0.450225 0.459476 -0.195344" clipDistance="150" nodeId="60">
+          <Shape name="strawberriesBox_Tension12" translation="-0.000223 0 0.003214" rotation="0 180 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="61" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="strawberriesBox13" translation="0.450225 0.459476 0.203753" clipDistance="150" nodeId="63">
+          <Shape name="strawberriesBox_Tension13" translation="0.000223 0 0.003117" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="64" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="strawberriesBox14" translation="0.148598 0.459476 0.203753" clipDistance="150" nodeId="66">
+          <Shape name="strawberriesBox_Tension14" translation="-0.001199 0 -0.003117" rotation="0 180 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="strawberriesBox15" translation="-0.150719 0.459476 0.203753" clipDistance="150" nodeId="69">
+          <Shape name="strawberriesBox_Tension15" translation="0.00048 0 -0.003117" rotation="0 180 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="70" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="strawberriesBox16" translation="-0.451164 0.459476 0.203753" clipDistance="150" nodeId="72">
+          <Shape name="strawberriesBox_Tension16" translation="-0.001393 0 0.003117" shapeId="5" compoundChild="true" collisionFilterGroup="0x40000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="73" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="strawberries" translation="0 -0.000829 0" shapeId="4" clipDistance="50" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="75">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="76" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="77" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="82"/>
+      <Shape name="fillTrigger" shapeId="7" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="83" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="84" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

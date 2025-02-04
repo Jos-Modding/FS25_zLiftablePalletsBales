@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cakePallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="$data/objects/pallets/cakePallet/cakeBox_diffuse.png"/>
+    <File fileId="9" filename="$data/objects/pallets/cakePallet/cakeBox_normal.png"/>
+    <File fileId="10" filename="$data/objects/pallets/cakePallet/cakeBox_specular.png"/>
+    <File fileId="2" filename="$data/objects/pallets/cakePallet/cakeLeaves_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/cakePallet/cakeLeaves_normal.png"/>
+    <File fileId="5" filename="$data/objects/pallets/cakePallet/cake_diffuse.png"/>
+    <File fileId="6" filename="$data/objects/pallets/cakePallet/cake_normal.png"/>
+    <File fileId="7" filename="$data/objects/pallets/cakePallet/cake_specular.png"/>
+    <File fileId="4" filename="$data/shared/default_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cake_02_mat" materialId="9">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="cakeBox_alphaBlended_02_mat" materialId="7" alphaBlending="true">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="cakeBox_opaque_02_mat" materialId="6">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="cakeLeaves_02_mat" materialId="8">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cakePallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="cakePallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="29" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="30" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="content" nodeId="31">
+        <TransformGroup name="cakeBox1" translation="-0.398488 0.144671 -0.202796" nodeId="32">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="33">
+            <TransformGroup name="LOD0" nodeId="34">
+              <Shape name="cakeTransparent" shapeId="3" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="cake1" shapeId="4" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              <Shape name="cakeBox" shapeId="5" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="cakeBoxTransparent" translation="0 0.299244 0" shapeId="6" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </TransformGroup>
+            <TransformGroup name="LOD1" nodeId="39">
+              <Shape name="cake2" shapeId="7" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              <Shape name="cakeBox" shapeId="8" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="cakeBoxTransparent" translation="0 0.299244 0" shapeId="6" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="cakeTransparent1" shapeId="9" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="cakeBox1Tension" translation="0 6e-05 0" shapeId="10" nodeId="44" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="cakeBox2" translation="0 0.144671 -0.202796" nodeId="45">
+          <Shape name="cakeBox2Tension" translation="0 6e-05 0" shapeId="10" nodeId="46" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="47">
+            <TransformGroup name="LOD0" nodeId="48">
+              <Shape name="cakeTransparent" shapeId="3" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="cake1" shapeId="4" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              <Shape name="cakeBox" shapeId="5" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="cakeBoxTransparent" translation="0 0.299244 0" shapeId="6" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </TransformGroup>
+            <TransformGroup name="LOD1" nodeId="53">
+              <Shape name="cake2" shapeId="7" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              <Shape name="cakeBox" shapeId="8" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="cakeBoxTransparent" translation="0 0.299244 0" shapeId="6" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="cakeTransparent1" shapeId="9" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cakeBox3" translation="0.403 0.144671 -0.202796" nodeId="58">
+          <Shape name="cakeBox3Tension" translation="0 6e-05 0" shapeId="10" nodeId="59" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="60">
+            <TransformGroup name="LOD0" nodeId="61">
+              <Shape name="cakeTransparent" shapeId="3" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="cake1" shapeId="4" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              <Shape name="cakeBox" shapeId="5" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="cakeBoxTransparent" translation="0 0.299244 0" shapeId="6" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </TransformGroup>
+            <TransformGroup name="LOD1" nodeId="66">
+              <Shape name="cake2" shapeId="7" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              <Shape name="cakeBox" shapeId="8" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="cakeBoxTransparent" translation="0 0.299244 0" shapeId="6" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="cakeTransparent1" shapeId="9" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cakeBox4" translation="-0.398488 0.144671 0.2" nodeId="71">
+          <Shape name="cakeBox4Tension" translation="0 0.000334 0" shapeId="10" nodeId="72" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="73">
+            <TransformGroup name="LOD0" nodeId="74">
+              <Shape name="cakeTransparent" shapeId="3" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="cake1" shapeId="4" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              <Shape name="cakeBox" shapeId="5" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="cakeBoxTransparent" translation="0 0.299244 0" shapeId="6" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </TransformGroup>
+            <TransformGroup name="LOD1" nodeId="79">
+              <Shape name="cake2" shapeId="7" nodeId="80" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              <Shape name="cakeBox" shapeId="8" nodeId="81" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="cakeBoxTransparent" translation="0 0.299244 0" shapeId="6" nodeId="82" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="cakeTransparent1" shapeId="9" nodeId="83" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cakeBox5" translation="0 0.144671 0.2" nodeId="84">
+          <Shape name="cakeBox5Tension" translation="0 0.000334 0" shapeId="10" nodeId="85" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="86">
+            <TransformGroup name="LOD0" nodeId="87">
+              <Shape name="cakeTransparent" shapeId="3" nodeId="88" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="cake1" shapeId="4" nodeId="89" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              <Shape name="cakeBox" shapeId="5" nodeId="90" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="cakeBoxTransparent" translation="0 0.299244 0" shapeId="6" nodeId="91" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </TransformGroup>
+            <TransformGroup name="LOD1" nodeId="92">
+              <Shape name="cake2" shapeId="7" nodeId="93" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              <Shape name="cakeBox" shapeId="8" nodeId="94" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="cakeBoxTransparent" translation="0 0.299244 0" shapeId="6" nodeId="95" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="cakeTransparent1" shapeId="9" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cakeBox6" translation="0.403 0.144671 0.2" nodeId="97">
+          <Shape name="cakeBox6Tension" translation="0 0.000334 0" shapeId="10" nodeId="98" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="99">
+            <TransformGroup name="LOD0" nodeId="100">
+              <Shape name="cakeTransparent" shapeId="3" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="cake1" shapeId="4" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              <Shape name="cakeBox" shapeId="5" nodeId="103" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="cakeBoxTransparent" translation="0 0.299244 0" shapeId="6" nodeId="104" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </TransformGroup>
+            <TransformGroup name="LOD1" nodeId="105">
+              <Shape name="cake2" shapeId="7" nodeId="106" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              <Shape name="cakeBox" shapeId="8" nodeId="107" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="cakeBoxTransparent" translation="0 0.299244 0" shapeId="6" nodeId="108" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="cakeTransparent1" shapeId="9" nodeId="109" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="110">
+        <Shape name="floorCollision01" translation="-0.3 0 0" shapeId="11" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="111" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="0.3 0 0" shapeId="11" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="112" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="117"/>
+      <Shape name="fillTrigger" shapeId="12" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="118" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="13" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="119" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

@@ -9,12 +9,6 @@
         <showInStore>false</showInStore>
         <canBeSold>false</canBeSold>
         <financeCategory>OTHER</financeCategory>
-        <vertexBufferMemoryUsage>14080</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>4352</indexBufferMemoryUsage>
-        <textureMemoryUsage>1245184</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
@@ -55,17 +49,13 @@
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.75" jointTransY="0.11" jointLimitToRotY="true"/>
 
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="500"/>
+
     <tensionBeltObject>
         <meshNodes>
             <meshNode node="tensionBeltMesh"/>
         </meshNodes>
     </tensionBeltObject>
-
-    <dischargeable requiresTipOcclusionArea="false">
-        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
-    </dischargeable>
-
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
 
     <i3dMappings>
         <i3dMapping id="grapePallet_component1" node="0>"/>

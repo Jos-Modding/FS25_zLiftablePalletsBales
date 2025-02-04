@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="woodBeamPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/woodBeamPallet/woodBeamPallet_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/woodBeamPallet/woodBeamPallet_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/woodBeamPallet/woodBeamPallet_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="woodBeamPallet_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="woodBeamPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="woodBeamPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" clipDistance="300" nodeId="21" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="woodBeamPallet_vis" shapeId="2" clipDistance="120" nodeId="22" castsShadows="true" receiveShadows="true" materialIds="6">
+        <TransformGroup name="contents" nodeId="23">
+          <Shape name="woodBeam01" shapeId="3" clipDistance="120" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="woodBeam02" translation="0.0007 0.249898 -0.006222" shapeId="4" clipDistance="120" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="woodBeam03" translation="-0.003848 0.353303 -0.008627" shapeId="5" clipDistance="120" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="woodBeam04" translation="-0.003848 0.456708 -0.00976" shapeId="6" clipDistance="120" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="woodBeam05" translation="-0.008396 0.560112 -0.010276" shapeId="7" clipDistance="120" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="woodBeam06" translation="-0.008226 0.663517 -0.012103" shapeId="8" clipDistance="120" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="woodBeam07" translation="-0.008226 0.766922 -0.011214" shapeId="9" clipDistance="120" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="woodBeam08" translation="-0.011815 0.870326 -0.006107" shapeId="10" clipDistance="120" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="11" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="32" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="dischargeNode" translation="0 0.75 0" static="true" collisionFilterMask="0xfe3ffb83" nodeId="33"/>
+        <TransformGroup name="collisions" clipDistance="10" nodeId="34">
+          <Shape name="floorCollision01" translation="0.3 5.7e-05 0" shapeId="12" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.001" nodeId="35" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="floorCollision02" translation="-0.3 5.7e-05 0" shapeId="13" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.001" nodeId="36" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="41"/>
+        <Shape name="fillTrigger" shapeId="14" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="15" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </Shape>
+    </Shape>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="silageAdditivePallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="9" filename="$data/objects/pallets/silageAdditive/cartonBox_diffuse.png"/>
+    <File fileId="10" filename="$data/objects/pallets/silageAdditive/cartonBox_normal.png"/>
+    <File fileId="11" filename="$data/objects/pallets/silageAdditive/cartonBox_specular.png"/>
+    <File fileId="5" filename="$data/objects/pallets/silageAdditive/silageAdditiveBottlesDecal_diffuse.png"/>
+    <File fileId="2" filename="$data/objects/pallets/silageAdditive/silageAdditiveBottles_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/silageAdditive/silageAdditiveBottles_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/silageAdditive/silageAdditiveBottles_specular.png"/>
+    <File fileId="8" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="6" filename="$data/shared/default_normal.png"/>
+    <File fileId="7" filename="$data/shared/default_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cartonBox_mat" materialId="8">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="silageAdditiveBottles_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="silageAdditiveBottlesDecal_mat" materialId="7" alphaBlending="true" customShaderId="8">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="silageAdditivePallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="silageAdditivePallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="40" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="41" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="fillTrigger" shapeId="3" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="dischargeNode" translation="0 0.5 0" nodeId="43"/>
+      <TransformGroup name="content" nodeId="44">
+        <TransformGroup name="bottles" nodeId="45">
+          <Shape name="bottles01" translation="-0.291405 0.214671 0.333492" shapeId="4" clipDistance="100" nodeId="46" castsShadows="true" receiveShadows="true" skinBindNodeIds="46 49 52 55 58 61" materialIds="6">
+            <Shape name="decals" shapeId="5" clipDistance="30" nodeId="47" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            <Shape name="bottles01Tension" shapeId="6" nodeId="48" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          </Shape>
+          <TransformGroup name="bottles02" translation="0.28964 0.214671 0.333492" clipDistance="100" nodeId="49">
+            <Shape name="decals" shapeId="7" clipDistance="30" nodeId="50" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            <Shape name="bottles02Tension" shapeId="6" nodeId="51" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          </TransformGroup>
+          <TransformGroup name="bottles03" translation="-0.291405 0.214671 0.164899" clipDistance="100" nodeId="52">
+            <Shape name="decals" shapeId="8" clipDistance="30" nodeId="53" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            <Shape name="bottles03Tension" shapeId="6" nodeId="54" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          </TransformGroup>
+          <TransformGroup name="bottles04" translation="0.28964 0.214671 0.164899" clipDistance="100" nodeId="55">
+            <Shape name="decals" shapeId="9" clipDistance="30" nodeId="56" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            <Shape name="bottles04Tension" shapeId="6" nodeId="57" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          </TransformGroup>
+          <TransformGroup name="bottles05" translation="-0.291405 0.214671 0.006299" clipDistance="100" nodeId="58">
+            <Shape name="decals" shapeId="10" clipDistance="30" nodeId="59" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            <Shape name="bottles05Tension" shapeId="6" nodeId="60" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          </TransformGroup>
+          <TransformGroup name="bottles06" translation="0.28964 0.214671 0.006299" clipDistance="100" nodeId="61">
+            <Shape name="decals" shapeId="11" clipDistance="30" nodeId="62" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            <Shape name="bottles06Tension" shapeId="6" nodeId="63" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cartons" nodeId="64">
+          <Shape name="carton01" translation="-0.438902 0.144671 -0.24152" shapeId="12" clipDistance="100" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="decals1" shapeId="13" clipDistance="30" nodeId="66" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            <Shape name="decals2" translation="0.002398 0.187147 -0.000127" shapeId="14" clipDistance="30" nodeId="67" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+          </Shape>
+          <Shape name="carton02" translation="-0.146061 0.144671 -0.24152" shapeId="12" clipDistance="100" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="decals1" shapeId="15" clipDistance="30" nodeId="69" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            <Shape name="decals2" translation="0.002398 0.187147 -0.000127" shapeId="14" clipDistance="30" nodeId="70" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+          </Shape>
+          <Shape name="carton03" translation="0.148766 0.144671 -0.24152" shapeId="12" clipDistance="100" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="decals1" shapeId="15" clipDistance="30" nodeId="72" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            <Shape name="decals2" translation="0.002398 0.187147 -0.000127" shapeId="14" clipDistance="30" nodeId="73" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+          </Shape>
+          <Shape name="carton04" translation="0.435329 0.144671 -0.24152" shapeId="12" clipDistance="100" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="decals1" shapeId="15" clipDistance="30" nodeId="75" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            <Shape name="decals2" translation="0.002398 0.187147 -0.000127" shapeId="14" clipDistance="30" nodeId="76" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="77">
+        <Shape name="floorCollision01" translation="-0.299202 0 0" shapeId="16" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="78" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="0.299202 0 0" shapeId="16" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="79" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="84"/>
+      <Shape name="fillTrigger" shapeId="3" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="85" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="17" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="86" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

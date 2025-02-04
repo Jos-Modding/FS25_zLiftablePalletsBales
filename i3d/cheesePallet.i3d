@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cheesePallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/cheesePallet/cheeseCrate_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/cheesePallet/cheeseCrate_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/cheesePallet/cheeseCrate_specular.png"/>
+    <File fileId="5" filename="$data/objects/pallets/cheesePallet/cheeseDairyCounterCheese_diffuse.png"/>
+    <File fileId="6" filename="$data/objects/pallets/cheesePallet/cheeseDairyCounterCheese_normal.png"/>
+    <File fileId="7" filename="$data/objects/pallets/cheesePallet/cheeseDairyCounterCheese_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cheeseCrate_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="cheeseDairyCounterCheese_mat" materialId="7">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cheesePallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="cheesePallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="26" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="27" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="content" nodeId="28">
+        <TransformGroup name="cheeseCrate01_lod" lodDistance="0 4" nodeId="29">
+          <Shape name="cheeseCrate01_LOD0" translation="-0.402 0.145 0.005" rotation="0 180 0" shapeId="3" clipDistance="50" nodeId="30" castsShadows="true" receiveShadows="true" skinBindNodeIds="30 36 42 48 54 60 66 72 78" materialIds="6">
+            <Shape name="cheese" shapeId="4" clipDistance="40" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="cheeseCrate_Tension01" translation="-0.002 0.000311 0.005" rotation="0 180 0" shapeId="5" nodeId="32" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          </Shape>
+          <Shape name="cheeseCrate01_LOD1" translation="-0.402 0.145 0.005" rotation="0 180 0" shapeId="6" clipDistance="50" nodeId="33" castsShadows="true" receiveShadows="true" skinBindNodeIds="33 39 45 51 57 63 69 75 81" materialIds="6">
+            <Shape name="cheese" shapeId="7" clipDistance="40" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="cheeseCrate02_lod" lodDistance="0 4" nodeId="35">
+          <TransformGroup name="cheeseCrate02_LOD0" translation="0 0.145 0" clipDistance="50" nodeId="36">
+            <Shape name="cheeseCrate_Tension02" translation="0 0.000311 0" shapeId="5" nodeId="37" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="cheese" shapeId="4" clipDistance="40" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="cheeseCrate02_LOD1" translation="0 0.145 0.005" clipDistance="50" nodeId="39">
+            <Shape name="cheese" shapeId="7" clipDistance="40" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cheeseCrate03_lod" lodDistance="0 4" nodeId="41">
+          <TransformGroup name="cheeseCrate03_LOD0" translation="0.402 0.145 -0.003" clipDistance="50" nodeId="42">
+            <Shape name="cheeseCrate_Tension03" translation="-0.002 0.000311 0.003" shapeId="5" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="cheese" shapeId="4" clipDistance="40" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="cheeseCrate03_LOD1" translation="0.402 0.145 0.005" clipDistance="50" nodeId="45">
+            <Shape name="cheese" shapeId="7" clipDistance="40" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cheeseCrate04_lod" lodDistance="0 4" nodeId="47">
+          <TransformGroup name="cheeseCrate04_LOD0" translation="-0.405 0.411 0" rotation="0 180 0" clipDistance="50" nodeId="48">
+            <Shape name="cheeseCrate_Tension04" translation="-0.005 0 0" rotation="0 180 0" shapeId="5" nodeId="49" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="cheese" shapeId="4" clipDistance="40" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="cheeseCrate04_LOD1" translation="-0.405 0.411 0.005" clipDistance="50" nodeId="51">
+            <Shape name="cheese" shapeId="8" clipDistance="40" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cheeseCrate05_lod" lodDistance="0 4" nodeId="53">
+          <TransformGroup name="cheeseCrate05_LOD0" translation="0 0.411 0.006" rotation="0 180 0" clipDistance="50" nodeId="54">
+            <Shape name="cheeseCrate_Tension05" translation="0 0 0.006" rotation="0 180 0" shapeId="5" nodeId="55" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="cheese" shapeId="4" clipDistance="40" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="cheeseCrate05_LOD1" translation="0 0.411 0.005" clipDistance="50" nodeId="57">
+            <Shape name="cheese" shapeId="8" clipDistance="40" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cheeseCrate06_lod" lodDistance="0 4" nodeId="59">
+          <TransformGroup name="cheeseCrate06_LOD0" translation="0.402 0.411 0" clipDistance="50" nodeId="60">
+            <Shape name="cheeseCrate_Tension06" translation="-0.002 0 0" shapeId="5" nodeId="61" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="cheese" shapeId="4" clipDistance="40" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="cheeseCrate06_LOD1" translation="0.402 0.411 0.005" clipDistance="50" nodeId="63">
+            <Shape name="cheese" shapeId="7" clipDistance="40" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cheeseCrate07_lod" lodDistance="0 4" nodeId="65">
+          <TransformGroup name="cheeseCrate07_LOD0" translation="-0.402 0.678 0.003" clipDistance="50" nodeId="66">
+            <Shape name="cheeseCrate_Tension07" translation="0.002 0 -0.003" shapeId="5" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="cheese" shapeId="4" clipDistance="40" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="cheeseCrate07_LOD1" translation="-0.402 0.678 0.005" clipDistance="50" nodeId="69">
+            <Shape name="cheese" shapeId="7" clipDistance="40" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cheeseCrate08_lod" lodDistance="0 4" nodeId="71">
+          <TransformGroup name="cheeseCrate08_LOD0" translation="0 0.678 0" clipDistance="50" nodeId="72">
+            <Shape name="cheeseCrate_Tension08" shapeId="5" nodeId="73" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="cheese" shapeId="4" clipDistance="40" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="cheeseCrate08_LOD1" translation="0 0.678 0.005" clipDistance="50" nodeId="75">
+            <Shape name="cheese" shapeId="7" clipDistance="40" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cheeseCrate09_lod" lodDistance="0 4" nodeId="77">
+          <TransformGroup name="cheeseCrate09_LOD0" translation="0.405 0.678 0.003" rotation="0 180 0" clipDistance="50" nodeId="78">
+            <Shape name="cheeseCrate_Tension09" translation="0.005 0 0.003" rotation="0 180 0" shapeId="5" nodeId="79" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="cheese" shapeId="4" clipDistance="40" nodeId="80" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="cheeseCrate09_LOD1" translation="0.402 0.678 0.005" clipDistance="50" nodeId="81">
+            <Shape name="cheese" shapeId="8" clipDistance="40" nodeId="82" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="83">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="9" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="84" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="9" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="85" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="90"/>
+      <Shape name="fillTrigger" shapeId="10" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="91" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="11" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="92" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

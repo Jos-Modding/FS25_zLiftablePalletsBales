@@ -20,17 +20,10 @@
         <shopHeight>2</shopHeight>
         <brand>HELM</brand>
         <category>ibc palletFertilizerHerbicide</category>
-        <financeCategory>PURCHASE_FERTILIZER</financeCategory>
-        <vertexBufferMemoryUsage>54784</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>18176</indexBufferMemoryUsage>
-        <textureMemoryUsage>2162688</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
 
         <storeIconRendering>
             <settings cameraXRot="-15" cameraYRot="25" />
         </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
@@ -66,7 +59,7 @@
         </fillUnitConfigurations>
     </fillUnit>
 
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="500"/>
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="5" additionalMountDistance="1.5" jointTransY="0.11" jointLimitToRotY="true"/>
 

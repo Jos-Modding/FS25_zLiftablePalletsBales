@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="boardsStackPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/boardsStackPallet/boardsStack_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/boardsStackPallet/boardsStack_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/boardsStackPallet/boardsStack_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="boardsStack_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="boardsStackPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="boardsStackPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" clipDistance="150" nodeId="21" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="content" clipDistance="120" nodeId="23">
+        <Shape name="boardsStack1" shapeId="3" nodeId="24" castsShadows="true" receiveShadows="true" skinBindNodeIds="24 26 28 30 32 34 36 38" materialIds="6">
+          <Shape name="boardsStack1Tension" shapeId="4" nodeId="25" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <TransformGroup name="boardsStack2" nodeId="26">
+          <Shape name="boardsStack2Tension" shapeId="5" nodeId="27" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="boardsStack3" nodeId="28">
+          <Shape name="boardsStack3Tension" shapeId="6" nodeId="29" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="boardsStack4" nodeId="30">
+          <Shape name="boardsStack4Tension" shapeId="7" nodeId="31" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="boardsStack5" nodeId="32">
+          <Shape name="boardsStack5Tension" shapeId="8" nodeId="33" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="boardsStack6" nodeId="34">
+          <Shape name="boardsStack6Tension" shapeId="9" nodeId="35" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="boardsStack7" nodeId="36">
+          <Shape name="boardsStack7Tension" shapeId="10" nodeId="37" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="boardsStack8" nodeId="38">
+          <Shape name="boardsStack8Tension" shapeId="11" nodeId="39" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="40">
+        <Shape name="floorCollision01" translation="0.2998 0 0" shapeId="12" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="41" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.2998 0 0" shapeId="12" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="48"/>
+      <Shape name="fillTrigger" shapeId="13" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="49" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="14" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="50" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

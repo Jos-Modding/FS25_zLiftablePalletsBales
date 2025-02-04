@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="potatoChipsPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/potatoChipsPallet/potatoChipsPallet_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/potatoChipsPallet/potatoChipsPallet_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/potatoChipsPallet/potatoChipsPallet_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="potatoChipsPallet_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="potatoChipsPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="potatoChipsPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" clipDistance="300" nodeId="25" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <TransformGroup name="contents" nodeId="26">
+        <Shape name="potatoChipsPallet01" translation="-0.300407 0.308328 -0.269031" rotation="-90 0 0" shapeId="2" clipDistance="300" nodeId="27" castsShadows="true" receiveShadows="true" skinBindNodeIds="27 29 31 33 35 37 39 41 43 45 47 49" materialIds="6">
+          <Shape name="potatoChipsPallet_Tension01" rotation="90 0 0" shapeId="3" nodeId="28" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <TransformGroup name="potatoChipsPallet02" translation="0.301739 0.308328 -0.269031" rotation="-90 0 0" clipDistance="300" nodeId="29">
+          <Shape name="potatoChipsPallet_Tension02" rotation="90 0 0" shapeId="3" nodeId="30" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="potatoChipsPallet03" translation="-0.300407 0.308328 0.000134" rotation="-90 0 0" clipDistance="300" nodeId="31">
+          <Shape name="potatoChipsPallet_Tension03" rotation="90 0 0" shapeId="3" nodeId="32" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="potatoChipsPallet04" translation="0.301739 0.308328 0.000134" rotation="-90 0 0" clipDistance="300" nodeId="33">
+          <Shape name="potatoChipsPallet_Tension04" rotation="90 0 0" shapeId="3" nodeId="34" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="potatoChipsPallet05" translation="-0.300407 0.308328 0.271055" rotation="-90 0 0" clipDistance="300" nodeId="35">
+          <Shape name="potatoChipsPallet_Tension05" rotation="90 0 0" shapeId="3" nodeId="36" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="potatoChipsPallet06" translation="0.301739 0.308328 0.271055" rotation="-90 0 0" clipDistance="300" nodeId="37">
+          <Shape name="potatoChipsPallet_Tension06" rotation="90 0 0" shapeId="3" nodeId="38" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="potatoChipsPallet07" translation="-0.300407 0.639155 -0.269031" rotation="-90 0 0" clipDistance="300" nodeId="39">
+          <Shape name="potatoChipsPallet_Tension07" rotation="90 0 0" shapeId="3" nodeId="40" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="potatoChipsPallet08" translation="0.301739 0.639155 -0.269031" rotation="-90 0 0" clipDistance="300" nodeId="41">
+          <Shape name="potatoChipsPallet_Tension08" rotation="90 0 0" shapeId="3" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="potatoChipsPallet09" translation="-0.300407 0.639155 0.000134" rotation="-90 0 0" clipDistance="300" nodeId="43">
+          <Shape name="potatoChipsPallet_Tension09" rotation="90 0 0" shapeId="3" nodeId="44" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="potatoChipsPallet10" translation="0.301739 0.639155 0.000134" rotation="-90 0 0" clipDistance="300" nodeId="45">
+          <Shape name="potatoChipsPallet_Tension10" rotation="90 0 0" shapeId="3" nodeId="46" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="potatoChipsPallet11" translation="-0.300407 0.639155 0.271055" rotation="-90 0 0" clipDistance="300" nodeId="47">
+          <Shape name="potatoChipsPallet_Tension11" rotation="90 0 0" shapeId="3" nodeId="48" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="potatoChipsPallet12" translation="0.301739 0.639155 0.271055" rotation="-90 0 0" clipDistance="300" nodeId="49">
+          <Shape name="potatoChipsPallet_Tension12" rotation="90 0 0" shapeId="3" nodeId="50" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="4" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="51" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="dischargeNode" translation="0 0.8 0" nodeId="52"/>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="53">
+        <Shape name="floorCollision01" translation="-0.299024 0.060435 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="54" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="0.299024 0.060435 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="55" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="60"/>
+      <Shape name="fillTrigger" shapeId="6" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="61" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="7" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="62" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

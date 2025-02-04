@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="chilliBoxPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/chilliBoxPallet/chilliBox_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/chilliBoxPallet/chilliBox_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/chilliBoxPallet/chilliBox_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="chilliBox_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="chilliBoxPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="chilliBoxPallet_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="38" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="39" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="dischargeNode" translation="0 0.5 0" nodeId="40"/>
+      <TransformGroup name="content" nodeId="41">
+        <TransformGroup name="chilliBox01" translation="0.448087 0.144671 0.206699" nodeId="42">
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="43">
+            <Shape name="LOD0" shapeId="3" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <Shape name="chilliBox_Tension01" shapeId="5" nodeId="46" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="chilliBox02" translation="0.448087 0.144671 -0.183156" nodeId="47">
+          <Shape name="chilliBox_Tension02" shapeId="5" nodeId="48" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="49">
+            <Shape name="LOD0" shapeId="3" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox03" translation="0.154586 0.144671 0.206699" nodeId="52">
+          <Shape name="chilliBox_Tension03" shapeId="5" nodeId="53" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="54">
+            <Shape name="LOD0" shapeId="3" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox04" translation="0.154586 0.144671 -0.183156" nodeId="57">
+          <Shape name="chilliBox_Tension04" shapeId="5" nodeId="58" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="59">
+            <Shape name="LOD0" shapeId="3" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox05" translation="-0.137593 0.144671 0.206699" nodeId="62">
+          <Shape name="chilliBox_Tension05" shapeId="5" nodeId="63" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="64">
+            <Shape name="LOD0" shapeId="3" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox06" translation="-0.137593 0.144671 -0.183156" nodeId="67">
+          <Shape name="chilliBox_Tension06" shapeId="5" nodeId="68" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="69">
+            <Shape name="LOD0" shapeId="3" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox07" translation="-0.431094 0.144671 0.206699" nodeId="72">
+          <Shape name="chilliBox_Tension07" shapeId="5" nodeId="73" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="74">
+            <Shape name="LOD0" shapeId="3" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox08" translation="-0.431094 0.144671 -0.183156" nodeId="77">
+          <Shape name="chilliBox_Tension08" shapeId="5" nodeId="78" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="79">
+            <Shape name="LOD0" shapeId="3" nodeId="80" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="81" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox09" translation="0.448087 0.339177 0.206699" nodeId="82">
+          <Shape name="chilliBox_Tension09" shapeId="5" nodeId="83" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="84">
+            <Shape name="LOD0" shapeId="3" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="86" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox10" translation="0.448087 0.339177 -0.183156" nodeId="87">
+          <Shape name="chilliBox_Tension10" shapeId="5" nodeId="88" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="89">
+            <Shape name="LOD0" shapeId="3" nodeId="90" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="91" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox11" translation="0.154586 0.339177 0.206699" nodeId="92">
+          <Shape name="chilliBox_Tension11" shapeId="5" nodeId="93" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="94">
+            <Shape name="LOD0" shapeId="3" nodeId="95" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox12" translation="0.154586 0.339177 -0.183156" nodeId="97">
+          <Shape name="chilliBox_Tension12" shapeId="5" nodeId="98" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="99">
+            <Shape name="LOD0" shapeId="3" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox13" translation="-0.137593 0.339177 0.206699" nodeId="102">
+          <Shape name="chilliBox_Tension13" shapeId="5" nodeId="103" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="104">
+            <Shape name="LOD0" shapeId="3" nodeId="105" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="106" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox14" translation="-0.137593 0.339177 -0.183156" nodeId="107">
+          <Shape name="chilliBox_Tension14" shapeId="5" nodeId="108" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="109">
+            <Shape name="LOD0" shapeId="3" nodeId="110" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="111" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox15" translation="-0.431094 0.339177 0.206699" nodeId="112">
+          <Shape name="chilliBox_Tension15" shapeId="5" nodeId="113" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="114">
+            <Shape name="LOD0" shapeId="3" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="116" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox16" translation="-0.431094 0.339177 -0.183156" nodeId="117">
+          <Shape name="chilliBox_Tension16" shapeId="5" nodeId="118" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="119">
+            <Shape name="LOD0" shapeId="3" nodeId="120" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="121" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox17" translation="0.448087 0.533683 0.206699" nodeId="122">
+          <Shape name="chilliBox_Tension17" shapeId="5" nodeId="123" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="124">
+            <Shape name="LOD0" shapeId="3" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox18" translation="0.448087 0.533683 -0.183156" nodeId="127">
+          <Shape name="chilliBox_Tension18" shapeId="5" nodeId="128" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="129">
+            <Shape name="LOD0" shapeId="3" nodeId="130" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="131" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox19" translation="0.154586 0.533683 0.206699" nodeId="132">
+          <Shape name="chilliBox_Tension19" shapeId="5" nodeId="133" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="134">
+            <Shape name="LOD0" shapeId="3" nodeId="135" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="136" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox20" translation="0.154586 0.533683 -0.183156" nodeId="137">
+          <Shape name="chilliBox_Tension20" shapeId="5" nodeId="138" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="139">
+            <Shape name="LOD0" shapeId="3" nodeId="140" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="141" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox21" translation="-0.137593 0.533683 0.206699" nodeId="142">
+          <Shape name="chilliBox_Tension21" shapeId="5" nodeId="143" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="144">
+            <Shape name="LOD0" shapeId="3" nodeId="145" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="146" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox22" translation="-0.137593 0.533683 -0.183156" nodeId="147">
+          <Shape name="chilliBox_Tension22" shapeId="5" nodeId="148" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="149">
+            <Shape name="LOD0" shapeId="3" nodeId="150" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="151" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox23" translation="-0.431094 0.533683 0.206699" nodeId="152">
+          <Shape name="chilliBox_Tension23" shapeId="5" nodeId="153" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="154">
+            <Shape name="LOD0" shapeId="3" nodeId="155" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="156" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chilliBox24" translation="-0.431094 0.533683 -0.183156" nodeId="157">
+          <Shape name="chilliBox_Tension24" shapeId="5" nodeId="158" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="159">
+            <Shape name="LOD0" shapeId="3" nodeId="160" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="LOD1" shapeId="4" nodeId="161" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="162">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="163" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="164" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="169"/>
+      <Shape name="fillTrigger" shapeId="7" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="170" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="171" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

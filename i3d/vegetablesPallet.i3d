@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="vegetablesPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/objects/pallets/vegetablesPallet/palletDewulfDecal_diffuse.png"/>
+    <File fileId="2" filename="$data/objects/pallets/vegetablesPallet/vegetablesPallet_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/vegetablesPallet/vegetablesPallet_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/vegetablesPallet/vegetablesPallet_specular.png"/>
+    <File fileId="6" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="palletDewulfDecal_mat" materialId="7" alphaBlending="true">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="vegetablesPallet_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="vegetablesPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="vegetablesPallet_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" clipDistance="150" nodeId="17" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="vegetablesPallet_vis" shapeId="2" nodeId="18" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="dewulfDecal" translation="0 0 -0.008017" shapeId="3" clipDistance="50" nodeId="19" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+        <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="4" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="20" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="fillUnit" nodeId="21">
+          <Shape name="exactFillRootNode" translation="0 1.22144 0" shapeId="5" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="fillVolume" shapeId="6" nodeId="23" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="collisions" clipDistance="10" nodeId="24">
+          <Shape name="floorCollision01" translation="0.400776 4.8e-05 0" shapeId="7" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.001" nodeId="25" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="floorCollision02" translation="-0.400776 4.8e-05 0" shapeId="8" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.001" nodeId="26" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="31"/>
+        <Shape name="fillTrigger" shapeId="9" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="32" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="10" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="33" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </Shape>
+    </Shape>
+  </Scene>
+
+</i3D>

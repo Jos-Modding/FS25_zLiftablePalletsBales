@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cannedPeasBoxPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/cannedPeasBoxPallet/cannedPeas_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/cannedPeasBoxPallet/cannedPeas_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/cannedPeasBoxPallet/cannedPeas_specular.png"/>
+    <File fileId="5" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_diffuse.png"/>
+    <File fileId="6" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_normal.png"/>
+    <File fileId="7" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cannedPeas_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="newPalletsFoil_mat" materialId="7" alphaBlending="true">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cannedPeasBoxPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="cannedPeasBoxPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="33" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="34" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="dischargeNode" translation="0 0.6 0" nodeId="35"/>
+      <TransformGroup name="content" nodeId="36">
+        <TransformGroup name="cannedPeasBox01" translation="0.444381 0.146524 -0.198229" nodeId="37">
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="38">
+            <Shape name="LOD0" shapeId="3" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="cannedPeasBox_Tension01" translation="0.008552 0 0" shapeId="7" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox02" translation="0.444381 0.146524 0.195274" nodeId="44">
+          <Shape name="cannedPeasBox_Tension02" shapeId="7" nodeId="45" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="46">
+            <Shape name="LOD0" shapeId="3" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox03" translation="0.148604 0.146524 -0.198229" nodeId="51">
+          <Shape name="cannedPeasBox_Tension03" translation="0 0 0.393503" shapeId="7" nodeId="52" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="53">
+            <Shape name="LOD0" shapeId="3" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox04" translation="0.148604 0.146524 0.195274" nodeId="58">
+          <Shape name="cannedPeasBox_Tension04" translation="0 0 -0.393503" shapeId="7" nodeId="59" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="60">
+            <Shape name="LOD0" shapeId="3" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox05" translation="-0.147342 0.146524 -0.198229" nodeId="65">
+          <Shape name="cannedPeasBox_Tension05" translation="0 0 0.393503" shapeId="7" nodeId="66" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="67">
+            <Shape name="LOD0" shapeId="3" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox06" translation="-0.147342 0.146524 0.195274" nodeId="72">
+          <Shape name="cannedPeasBox_Tension06" translation="0 0 -0.393503" shapeId="7" nodeId="73" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="74">
+            <Shape name="LOD0" shapeId="3" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox07" translation="-0.442295 0.146524 -0.198229" nodeId="79">
+          <Shape name="cannedPeasBox_Tension07" translation="0 0 0.393503" shapeId="7" nodeId="80" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="81">
+            <Shape name="LOD0" shapeId="3" nodeId="82" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="83" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox08" translation="-0.442295 0.146524 0.195274" nodeId="86">
+          <Shape name="cannedPeasBox_Tension08" translation="0 0 -0.393503" shapeId="7" nodeId="87" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="88">
+            <Shape name="LOD0" shapeId="3" nodeId="89" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="90" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="91" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="92" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox09" translation="0.444381 0.344245 -0.198229" nodeId="93">
+          <Shape name="cannedPeasBox_Tension09" translation="0.008552 0 0" shapeId="7" nodeId="94" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="95">
+            <Shape name="LOD0" shapeId="3" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="97" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="98" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="99" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox10" translation="0.444381 0.344245 0.195274" nodeId="100">
+          <Shape name="cannedPeasBox_Tension10" shapeId="7" nodeId="101" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="102">
+            <Shape name="LOD0" shapeId="3" nodeId="103" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="104" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="105" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="106" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox11" translation="0.148604 0.344245 -0.198229" nodeId="107">
+          <Shape name="cannedPeasBox_Tension11" translation="0 0 0.393503" shapeId="7" nodeId="108" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="109">
+            <Shape name="LOD0" shapeId="3" nodeId="110" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="111" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="112" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="113" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox12" translation="0.148604 0.344245 0.195274" nodeId="114">
+          <Shape name="cannedPeasBox_Tension12" translation="0 0 -0.393503" shapeId="7" nodeId="115" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="116">
+            <Shape name="LOD0" shapeId="3" nodeId="117" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="118" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="119" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="120" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox13" translation="-0.147342 0.344245 -0.198229" nodeId="121">
+          <Shape name="cannedPeasBox_Tension13" translation="0 0 0.393503" shapeId="7" nodeId="122" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="123">
+            <Shape name="LOD0" shapeId="3" nodeId="124" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="127" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox14" translation="-0.147342 0.344245 0.195274" nodeId="128">
+          <Shape name="cannedPeasBox_Tension14" translation="0 0 -0.393503" shapeId="7" nodeId="129" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="130">
+            <Shape name="LOD0" shapeId="3" nodeId="131" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="132" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="133" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="134" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox15" translation="-0.442295 0.344245 -0.198229" nodeId="135">
+          <Shape name="cannedPeasBox_Tension15" translation="0 0 0.393503" shapeId="7" nodeId="136" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="137">
+            <Shape name="LOD0" shapeId="3" nodeId="138" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="139" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="140" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="141" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cannedPeasBox16" translation="-0.442295 0.344245 0.195274" nodeId="142">
+          <Shape name="cannedPeasBox_Tension16" translation="0 0 -0.393503" shapeId="7" nodeId="143" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="144">
+            <Shape name="LOD0" shapeId="3" nodeId="145" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="4" nodeId="146" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="147" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="foil" shapeId="6" nodeId="148" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="149">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="8" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="150" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="8" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="151" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="156"/>
+      <Shape name="fillTrigger" shapeId="9" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="157" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="10" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="158" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

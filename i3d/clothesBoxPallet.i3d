@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="clothesBoxPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/clothesBoxPallet/clothesBox_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/clothesBoxPallet/clothesBox_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/clothesBoxPallet/clothesBox_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="clothesBox_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="clothesBoxPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="clothesBoxPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="21" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="content" nodeId="23">
+        <Shape name="clothesBox01" translation="-0.2992 0.144671 0.203179" shapeId="3" clipDistance="80" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="clothesBox_Tension01" shapeId="4" nodeId="25" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="clothesBox02" translation="-0.2992 0.144671 -0.199053" shapeId="3" clipDistance="80" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="clothesBox_Tension02" shapeId="4" nodeId="27" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="clothesBox03" translation="0.304199 0.144671 -0.199053" shapeId="3" clipDistance="80" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="clothesBox_Tension03" shapeId="4" nodeId="29" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="clothesBox04" translation="0.304199 0.144671 0.203179" shapeId="3" clipDistance="80" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="clothesBox_Tension04" shapeId="4" nodeId="31" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="clothesBox05" translation="-0.2992 0.544671 0.203179" shapeId="3" clipDistance="80" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="clothesBox_Tension05" shapeId="4" nodeId="33" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="clothesBox06" translation="-0.2992 0.544671 -0.199053" shapeId="3" clipDistance="80" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="clothesBox_Tension06" shapeId="4" nodeId="35" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="clothesBox07" translation="0.304199 0.544671 -0.199053" shapeId="3" clipDistance="80" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="clothesBox_Tension07" shapeId="4" nodeId="37" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="clothesBox08" translation="0.304199 0.544671 0.203179" shapeId="3" clipDistance="80" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="clothesBox_Tension08" shapeId="4" nodeId="39" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="40">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="41" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="47"/>
+      <Shape name="fillTrigger" shapeId="6" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="48" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="7" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="49" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

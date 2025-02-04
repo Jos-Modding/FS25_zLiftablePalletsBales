@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="baleNetPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="baleNetPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="baleNetPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="12" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="13" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="fillTrigger" shapeId="3" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="14" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="content" nodeId="15">
+        <TransformGroup name="baleNetSlot01" translation="0 0.442728 -0.108702" rotation="-30.1521 0 0" nodeId="16"/>
+        <TransformGroup name="baleNetSlot02" translation="0 0.442728 0.109236" rotation="62.6809 0 0" nodeId="17"/>
+        <TransformGroup name="baleNetSlot03" translation="0 0.253263 -0.219612" rotation="70.7289 0 0" nodeId="18"/>
+        <TransformGroup name="baleNetSlot04" translation="0 0.253263 -0.001122" rotation="-46.1799 0 0" nodeId="19"/>
+        <TransformGroup name="baleNetSlot05" translation="0 0.253263 0.216403" rotation="-18.0536 0 0" nodeId="20"/>
+        <TransformGroup name="strap01Start" translation="-0.419199 0.122671 -0.4" nodeId="21">
+          <TransformGroup name="strap01End" translation="0 0 0.802147" nodeId="22"/>
+          <TransformGroup name="strap01Intersection01" translation="0 0.022 0" nodeId="23"/>
+          <TransformGroup name="strap01Intersection02" translation="0 0.022 0.802147" nodeId="24"/>
+        </TransformGroup>
+        <TransformGroup name="strap02Start" translation="0.4192 0.122671 -0.4" nodeId="25">
+          <TransformGroup name="strap02End" translation="0 0 0.802147" nodeId="26"/>
+          <TransformGroup name="strap02Intersection01" translation="0 0.022 0" nodeId="27"/>
+          <TransformGroup name="strap02Intersection02" translation="0 0.022 0.802147" nodeId="28"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="29">
+        <Shape name="floorCollision01" translation="-0.299202 0 0" shapeId="4" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="30" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="0.299202 0 0" shapeId="4" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="31" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="36"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="5" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="38" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="riceBoxPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_diffuse.png"/>
+    <File fileId="6" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_normal.png"/>
+    <File fileId="7" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_specular.png"/>
+    <File fileId="2" filename="$data/objects/pallets/riceBoxPallet/riceBox_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/riceBoxPallet/riceBox_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/riceBoxPallet/riceBox_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="newPalletsFoil_mat" materialId="6" alphaBlending="true">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="riceBox_mat" materialId="7">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="riceBoxPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="riceBoxPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="41" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="dischargeNode" translation="0 0.6 0" nodeId="43"/>
+      <TransformGroup name="content" nodeId="44">
+        <TransformGroup name="riceBox01" translation="0.448503 0.144671 -0.197361" nodeId="45">
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="46">
+            <Shape name="LOD0" shapeId="3" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="riceBox_Tension01" shapeId="7" nodeId="51" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="riceBox02" translation="0.448503 0.144671 0.191772" nodeId="52">
+          <Shape name="riceBox_Tension02" shapeId="7" nodeId="53" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="54">
+            <Shape name="LOD0" shapeId="3" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox03" translation="0.15585 0.144671 -0.197361" nodeId="59">
+          <Shape name="riceBox_Tension03" shapeId="7" nodeId="60" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="61">
+            <Shape name="LOD0" shapeId="3" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox04" translation="0.15585 0.144671 0.191772" nodeId="66">
+          <Shape name="riceBox_Tension04" shapeId="7" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="68">
+            <Shape name="LOD0" shapeId="3" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox05" translation="-0.13962 0.144671 -0.197361" nodeId="73">
+          <Shape name="riceBox_Tension05" shapeId="7" nodeId="74" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="75">
+            <Shape name="LOD0" shapeId="3" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox06" translation="-0.13962 0.144671 0.191772" nodeId="80">
+          <Shape name="riceBox_Tension06" shapeId="7" nodeId="81" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="82">
+            <Shape name="LOD0" shapeId="3" nodeId="83" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="86" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox07" translation="-0.432273 0.144671 -0.197361" nodeId="87">
+          <Shape name="riceBox_Tension07" shapeId="7" nodeId="88" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="89">
+            <Shape name="LOD0" shapeId="3" nodeId="90" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="91" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="92" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="93" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox08" translation="-0.432273 0.144671 0.191772" nodeId="94">
+          <Shape name="riceBox_Tension08" shapeId="7" nodeId="95" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="96">
+            <Shape name="LOD0" shapeId="3" nodeId="97" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="98" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="99" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox09" translation="0.448503 0.340236 -0.197361" nodeId="101">
+          <Shape name="riceBox_Tension09" shapeId="7" nodeId="102" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="103">
+            <Shape name="LOD0" shapeId="3" nodeId="104" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="105" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="106" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="107" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox10" translation="0.448503 0.340236 0.191772" nodeId="108">
+          <Shape name="riceBox_Tension10" shapeId="7" nodeId="109" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="110">
+            <Shape name="LOD0" shapeId="3" nodeId="111" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="112" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="113" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="114" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox11" translation="0.15585 0.340236 -0.197361" nodeId="115">
+          <Shape name="riceBox_Tension11" shapeId="7" nodeId="116" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="117">
+            <Shape name="LOD0" shapeId="3" nodeId="118" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="119" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="120" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="121" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox12" translation="0.15585 0.340236 0.191772" nodeId="122">
+          <Shape name="riceBox_Tension12" shapeId="7" nodeId="123" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="124">
+            <Shape name="LOD0" shapeId="3" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="127" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="128" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox13" translation="-0.13962 0.340236 -0.197361" nodeId="129">
+          <Shape name="riceBox_Tension13" shapeId="7" nodeId="130" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="131">
+            <Shape name="LOD0" shapeId="3" nodeId="132" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="133" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="134" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="135" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox14" translation="-0.13962 0.340236 0.191772" nodeId="136">
+          <Shape name="riceBox_Tension14" shapeId="7" nodeId="137" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="138">
+            <Shape name="LOD0" shapeId="3" nodeId="139" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="140" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="141" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="142" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox15" translation="-0.432273 0.340236 -0.197361" nodeId="143">
+          <Shape name="riceBox_Tension15" shapeId="7" nodeId="144" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="145">
+            <Shape name="LOD0" shapeId="3" nodeId="146" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="147" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="148" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="149" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox16" translation="-0.432273 0.340236 0.191772" nodeId="150">
+          <Shape name="riceBox_Tension16" shapeId="7" nodeId="151" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="152">
+            <Shape name="LOD0" shapeId="3" nodeId="153" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="154" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="155" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="156" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox17" translation="0.448503 0.5358 -0.197361" nodeId="157">
+          <Shape name="riceBox_Tension17" shapeId="7" nodeId="158" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="159">
+            <Shape name="LOD0" shapeId="3" nodeId="160" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="161" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="162" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="163" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox18" translation="0.448503 0.5358 0.191772" nodeId="164">
+          <Shape name="riceBox_Tension18" shapeId="7" nodeId="165" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="166">
+            <Shape name="LOD0" shapeId="3" nodeId="167" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="168" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="169" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="170" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox19" translation="0.15585 0.5358 -0.197361" nodeId="171">
+          <Shape name="riceBox_Tension19" shapeId="7" nodeId="172" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="173">
+            <Shape name="LOD0" shapeId="3" nodeId="174" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="176" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="177" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox20" translation="0.15585 0.5358 0.191772" nodeId="178">
+          <Shape name="riceBox_Tension20" shapeId="7" nodeId="179" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="180">
+            <Shape name="LOD0" shapeId="3" nodeId="181" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="182" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="183" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="184" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox21" translation="-0.13962 0.5358 -0.197361" nodeId="185">
+          <Shape name="riceBox_Tension21" shapeId="7" nodeId="186" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="187">
+            <Shape name="LOD0" shapeId="3" nodeId="188" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="189" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="190" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="191" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox22" translation="-0.13962 0.5358 0.191772" nodeId="192">
+          <Shape name="riceBox_Tension22" shapeId="7" nodeId="193" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="194">
+            <Shape name="LOD0" shapeId="3" nodeId="195" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="196" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="197" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="198" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox23" translation="-0.432273 0.5358 -0.197361" nodeId="199">
+          <Shape name="riceBox_Tension23" shapeId="7" nodeId="200" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="201">
+            <Shape name="LOD0" shapeId="3" nodeId="202" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="203" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="204" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="205" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="riceBox24" translation="-0.432273 0.5358 0.191772" nodeId="206">
+          <Shape name="riceBox_Tension24" shapeId="7" nodeId="207" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 6" clipDistance="80" nodeId="208">
+            <Shape name="LOD0" shapeId="3" nodeId="209" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="4" nodeId="210" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="211" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="foil" shapeId="6" nodeId="212" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="213">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="8" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="214" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="8" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="215" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="220"/>
+      <Shape name="fillTrigger" shapeId="9" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="221" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="10" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="222" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

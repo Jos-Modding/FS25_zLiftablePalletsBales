@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="noodleSoupBoxPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_diffuse.png"/>
+    <File fileId="6" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_normal.png"/>
+    <File fileId="7" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_specular.png"/>
+    <File fileId="2" filename="$data/objects/pallets/noodleSoupPallet/noodleSoupPallet_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/noodleSoupPallet/noodleSoupPallet_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/noodleSoupPallet/noodleSoupPallet_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="newPalletsFoil_mat" materialId="6" alphaBlending="true">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="noodleSoupPallet_mat" materialId="7">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="noodleSoupBoxPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="noodleSoupBoxPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="40" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="41" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="dischargeNode" translation="0 0.5 0" nodeId="42"/>
+      <TransformGroup name="content" nodeId="43">
+        <TransformGroup name="noodleSoupBox01" translation="0.448867 0.144671 -0.198792" rotation="0 -90 0" nodeId="44">
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="45">
+            <Shape name="LOD0" shapeId="3" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="noodleSoupBox_Tension01" rotation="0 90 0" shapeId="6" nodeId="49" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox02" translation="0.448867 0.144671 0.201801" rotation="0 -90 0" nodeId="50">
+          <Shape name="noodleSoupBox_Tension02" rotation="0 90 0" shapeId="6" nodeId="51" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="52">
+            <Shape name="LOD0" shapeId="3" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox03" translation="0.148447 0.144671 -0.198792" rotation="0 -90 0" nodeId="56">
+          <Shape name="noodleSoupBox_Tension03" rotation="0 90 0" shapeId="6" nodeId="57" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="58">
+            <Shape name="LOD0" shapeId="3" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox04" translation="0.148447 0.144671 0.201801" rotation="0 -90 0" nodeId="62">
+          <Shape name="noodleSoupBox_Tension04" rotation="0 90 0" shapeId="6" nodeId="63" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="64">
+            <Shape name="LOD0" shapeId="3" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox05" translation="-0.151727 0.144671 -0.198792" rotation="0 -90 0" nodeId="68">
+          <Shape name="noodleSoupBox_Tension05" rotation="0 90 0" shapeId="6" nodeId="69" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="70">
+            <Shape name="LOD0" shapeId="3" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox06" translation="-0.151727 0.144671 0.201801" rotation="0 -90 0" nodeId="74">
+          <Shape name="noodleSoupBox_Tension06" rotation="0 90 0" shapeId="6" nodeId="75" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="76">
+            <Shape name="LOD0" shapeId="3" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox07" translation="-0.452146 0.144671 -0.198792" rotation="0 -90 0" nodeId="80">
+          <Shape name="noodleSoupBox_Tension07" rotation="0 90 0" shapeId="6" nodeId="81" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="82">
+            <Shape name="LOD0" shapeId="3" nodeId="83" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox08" translation="-0.452146 0.144671 0.201801" rotation="0 -90 0" nodeId="86">
+          <Shape name="noodleSoupBox_Tension08" rotation="0 90 0" shapeId="6" nodeId="87" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="88">
+            <Shape name="LOD0" shapeId="3" nodeId="89" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="90" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="91" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox09" translation="0.448867 0.342931 -0.198792" rotation="0 -90 0" nodeId="92">
+          <Shape name="noodleSoupBox_Tension09" rotation="0 90 0" shapeId="6" nodeId="93" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="94">
+            <Shape name="LOD0" shapeId="3" nodeId="95" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="97" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox10" translation="0.448867 0.342931 0.201801" rotation="0 -90 0" nodeId="98">
+          <Shape name="noodleSoupBox_Tension10" rotation="0 90 0" shapeId="6" nodeId="99" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="100">
+            <Shape name="LOD0" shapeId="3" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="103" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox11" translation="0.148447 0.342931 -0.198792" rotation="0 -90 0" nodeId="104">
+          <Shape name="noodleSoupBox_Tension11" rotation="0 90 0" shapeId="6" nodeId="105" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="106">
+            <Shape name="LOD0" shapeId="3" nodeId="107" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="108" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="109" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox12" translation="0.148447 0.342931 0.201801" rotation="0 -90 0" nodeId="110">
+          <Shape name="noodleSoupBox_Tension12" rotation="0 90 0" shapeId="6" nodeId="111" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="112">
+            <Shape name="LOD0" shapeId="3" nodeId="113" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="114" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox13" translation="-0.151727 0.342931 -0.198792" rotation="0 -90 0" nodeId="116">
+          <Shape name="noodleSoupBox_Tension13" rotation="0 90 0" shapeId="6" nodeId="117" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="118">
+            <Shape name="LOD0" shapeId="3" nodeId="119" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="120" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="121" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox14" translation="-0.151727 0.342931 0.201801" rotation="0 -90 0" nodeId="122">
+          <Shape name="noodleSoupBox_Tension14" rotation="0 90 0" shapeId="6" nodeId="123" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="124">
+            <Shape name="LOD0" shapeId="3" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="127" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox15" translation="-0.452146 0.342931 -0.198792" rotation="0 -90 0" nodeId="128">
+          <Shape name="noodleSoupBox_Tension15" rotation="0 90 0" shapeId="6" nodeId="129" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="130">
+            <Shape name="LOD0" shapeId="3" nodeId="131" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="132" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="133" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox16" translation="-0.452146 0.342931 0.201801" rotation="0 -90 0" nodeId="134">
+          <Shape name="noodleSoupBox_Tension16" rotation="0 90 0" shapeId="6" nodeId="135" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="136">
+            <Shape name="LOD0" shapeId="3" nodeId="137" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="138" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="139" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox17" translation="0.448867 0.541192 -0.198792" rotation="0 -90 0" nodeId="140">
+          <Shape name="noodleSoupBox_Tension17" rotation="0 90 0" shapeId="6" nodeId="141" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="142">
+            <Shape name="LOD0" shapeId="3" nodeId="143" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="144" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="145" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox18" translation="0.448867 0.541192 0.201801" rotation="0 -90 0" nodeId="146">
+          <Shape name="noodleSoupBox_Tension18" rotation="0 90 0" shapeId="6" nodeId="147" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="148">
+            <Shape name="LOD0" shapeId="3" nodeId="149" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="150" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="151" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox19" translation="0.148447 0.541192 -0.198792" rotation="0 -90 0" nodeId="152">
+          <Shape name="noodleSoupBox_Tension19" rotation="0 90 0" shapeId="6" nodeId="153" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="154">
+            <Shape name="LOD0" shapeId="3" nodeId="155" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="156" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="157" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox20" translation="0.148447 0.541192 0.201801" rotation="0 -90 0" nodeId="158">
+          <Shape name="noodleSoupBox_Tension20" rotation="0 90 0" shapeId="6" nodeId="159" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="160">
+            <Shape name="LOD0" shapeId="3" nodeId="161" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="162" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="163" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox21" translation="-0.151727 0.541192 -0.198792" rotation="0 -90 0" nodeId="164">
+          <Shape name="noodleSoupBox_Tension21" rotation="0 90 0" shapeId="6" nodeId="165" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="166">
+            <Shape name="LOD0" shapeId="3" nodeId="167" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="168" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="169" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox22" translation="-0.151727 0.541192 0.201801" rotation="0 -90 0" nodeId="170">
+          <Shape name="noodleSoupBox_Tension22" rotation="0 90 0" shapeId="6" nodeId="171" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="172">
+            <Shape name="LOD0" shapeId="3" nodeId="173" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="174" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox23" translation="-0.452146 0.541192 -0.198792" rotation="0 -90 0" nodeId="176">
+          <Shape name="noodleSoupBox_Tension23" rotation="0 90 0" shapeId="6" nodeId="177" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="178">
+            <Shape name="LOD0" shapeId="3" nodeId="179" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="180" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="181" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="noodleSoupBox24" translation="-0.452146 0.541192 0.201801" rotation="0 -90 0" nodeId="182">
+          <Shape name="noodleSoupBox_Tension24" rotation="0 90 0" shapeId="6" nodeId="183" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="80" nodeId="184">
+            <Shape name="LOD0" shapeId="3" nodeId="185" castsShadows="true" receiveShadows="true" materialIds="7">
+              <Shape name="newPalletsFoil" shapeId="4" nodeId="186" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="187" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="188">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="7" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="189" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="7" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="190" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="195"/>
+      <Shape name="fillTrigger" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="196" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="9" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="197" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

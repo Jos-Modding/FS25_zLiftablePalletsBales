@@ -19,20 +19,14 @@
         <category>pallets palletForestry</category>
         <financeCategory>PURCHASE_SAPLINGS</financeCategory>
         <shopHeight>2.5</shopHeight>
-        <vertexBufferMemoryUsage>9472</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>3072</indexBufferMemoryUsage>
-        <textureMemoryUsage>655360</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
 
         <storeIconRendering>
             <settings cameraXRot="-15" cameraYRot="35" />
         </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
-        <filename>$data/objects/pallets/treeSaplingPallet01/treeSaplingPallet01.i3d</filename>
+        <filename>i3d/treeSaplingPallet01.i3d</filename>
         <size width="1.6" length="1.2"/>
         <canBeReset>false</canBeReset>
         <input allowed="false"/>
@@ -72,7 +66,17 @@
         </fillUnitConfigurations>
     </fillUnit>
 
+	<dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="raycastNode" emptySpeed="500" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true">
+            <raycast useWorldNegYDirection="true" />
+            <info width="0.4" length="0.4" />
+            <activationTrigger node="dischargeActivationTrigger" />
+        </dischargeNode>
+    </dischargeable>
+
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="6" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="10"/>
 
     <tensionBeltObject>
         <meshNodes>
@@ -80,18 +84,19 @@
         </meshNodes>
     </tensionBeltObject>
 
-    <dischargeable requiresTipOcclusionArea="false">
-        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
-    </dischargeable>
-
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="10"/>
-
-    <i3dMappings>
-        <i3dMapping id="treeSaplingPallet01_component1" node="0>" />
-        <i3dMapping id="dynamicMountTrigger" node="0>0" />
-        <i3dMapping id="fillTrigger" node="0>1" />
-        <i3dMapping id="saplingLinkNode" node="0>2" />
-        <i3dMapping id="tensionBeltShape" node="0>3" />
-        <i3dMapping id="exactFillRootNode" node="0>4" />
-    </i3dMappings>
+<i3dMappings>
+  <i3dMapping id="treeSaplingPallet01_component1" node="0>" />
+  <i3dMapping id="dynamicMountTrigger" node="0>0" />
+  <i3dMapping id="fillTrigger" node="0>1" />
+  <i3dMapping id="saplingLinkNode" node="0>2" />
+  <i3dMapping id="tensionBeltShape" node="0>3" />
+  <i3dMapping id="exactFillRootNode" node="0>4" />
+  <i3dMapping id="border" node="0>5" />
+  <i3dMapping id="borderMetal" node="0>5|0" />
+  <i3dMapping id="collisions" node="0>6" />
+  <i3dMapping id="floorCollision01" node="0>6|0" />
+  <i3dMapping id="floorCollision02" node="0>6|1" />
+  <i3dMapping id="raycastNode" node="0>7" />
+  <i3dMapping id="dischargeActivationTrigger" node="0>8" />
+</i3dMappings>
 </vehicle>

@@ -9,21 +9,15 @@
         <showInStore>false</showInStore>
         <canBeSold>false</canBeSold>
         <financeCategory>OTHER</financeCategory>
-        <vertexBufferMemoryUsage>100352</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>35072</indexBufferMemoryUsage>
-        <textureMemoryUsage>2228224</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
 
         <storeIconRendering>
             <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
         </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
         <typeDesc>$l10n_typeDesc_pallet</typeDesc>
-        <filename>$data/objects/pallets/cakePallet/cakePallet.i3d</filename>
+        <filename>i3d/cakePallet.i3d</filename>
         <size width="1.3" length="0.9" height="0.5"/>
         <canBeReset>false</canBeReset>
         <components maxMass="100">
@@ -45,6 +39,16 @@
         </fillUnitConfigurations>
     </fillUnit>
 
+	<dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="raycastNode" emptySpeed="500" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true">
+            <raycast useWorldNegYDirection="true" />
+            <info width="0.4" length="0.4" />
+            <activationTrigger node="dischargeActivationTrigger" />
+        </dischargeNode>
+    </dischargeable>
+	
+	<fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="500"/>
+	
     <pallet fillUnitIndex="1" linkNode="cakePallet_component1">
         <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
         <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
@@ -66,28 +70,94 @@
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.45" jointTransY="0.11" jointLimitToRotY="true"/>
 
-    <dischargeable requiresTipOcclusionArea="false">
-        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
-    </dischargeable>
+<i3dMappings>
+  <i3dMapping id="cakePallet_component1" node="0>" />
+  <i3dMapping id="dynamicMountTrigger" node="0>0" />
+  <i3dMapping id="content" node="0>1" />
+  <i3dMapping id="cakeBox1" node="0>1|0" />
+  <i3dMapping id="visual_lod_0" node="0>1|0|0" />
+  <i3dMapping id="LOD0_0" node="0>1|0|0|0" />
+  <i3dMapping id="cakeTransparent_0" node="0>1|0|0|0|0" />
+  <i3dMapping id="cake1_0" node="0>1|0|0|0|1" />
+  <i3dMapping id="cakeBox_0" node="0>1|0|0|0|2" />
+  <i3dMapping id="cakeBoxTransparent_0" node="0>1|0|0|0|3" />
+  <i3dMapping id="LOD1_0" node="0>1|0|0|1" />
+  <i3dMapping id="cake2_0" node="0>1|0|0|1|0" />
+  <i3dMapping id="cakeBox_1" node="0>1|0|0|1|1" />
+  <i3dMapping id="cakeBoxTransparent_1" node="0>1|0|0|1|2" />
+  <i3dMapping id="cakeTransparent1_0" node="0>1|0|0|1|3" />
+  <i3dMapping id="cakeBox1Tension" node="0>1|0|1" />
+  <i3dMapping id="cakeBox2" node="0>1|1" />
+  <i3dMapping id="cakeBox2Tension" node="0>1|1|0" />
+  <i3dMapping id="visual_lod_1" node="0>1|1|1" />
+  <i3dMapping id="LOD0_1" node="0>1|1|1|0" />
+  <i3dMapping id="cakeTransparent_1" node="0>1|1|1|0|0" />
+  <i3dMapping id="cake1_1" node="0>1|1|1|0|1" />
+  <i3dMapping id="cakeBox_2" node="0>1|1|1|0|2" />
+  <i3dMapping id="cakeBoxTransparent_2" node="0>1|1|1|0|3" />
+  <i3dMapping id="LOD1_1" node="0>1|1|1|1" />
+  <i3dMapping id="cake2_1" node="0>1|1|1|1|0" />
+  <i3dMapping id="cakeBox_3" node="0>1|1|1|1|1" />
+  <i3dMapping id="cakeBoxTransparent_3" node="0>1|1|1|1|2" />
+  <i3dMapping id="cakeTransparent1_1" node="0>1|1|1|1|3" />
+  <i3dMapping id="cakeBox3" node="0>1|2" />
+  <i3dMapping id="cakeBox3Tension" node="0>1|2|0" />
+  <i3dMapping id="visual_lod_2" node="0>1|2|1" />
+  <i3dMapping id="LOD0_2" node="0>1|2|1|0" />
+  <i3dMapping id="cakeTransparent_2" node="0>1|2|1|0|0" />
+  <i3dMapping id="cake1_2" node="0>1|2|1|0|1" />
+  <i3dMapping id="cakeBox_4" node="0>1|2|1|0|2" />
+  <i3dMapping id="cakeBoxTransparent_4" node="0>1|2|1|0|3" />
+  <i3dMapping id="LOD1_2" node="0>1|2|1|1" />
+  <i3dMapping id="cake2_2" node="0>1|2|1|1|0" />
+  <i3dMapping id="cakeBox_5" node="0>1|2|1|1|1" />
+  <i3dMapping id="cakeBoxTransparent_5" node="0>1|2|1|1|2" />
+  <i3dMapping id="cakeTransparent1_2" node="0>1|2|1|1|3" />
+  <i3dMapping id="cakeBox4" node="0>1|3" />
+  <i3dMapping id="cakeBox4Tension" node="0>1|3|0" />
+  <i3dMapping id="visual_lod_3" node="0>1|3|1" />
+  <i3dMapping id="LOD0_3" node="0>1|3|1|0" />
+  <i3dMapping id="cakeTransparent_3" node="0>1|3|1|0|0" />
+  <i3dMapping id="cake1_3" node="0>1|3|1|0|1" />
+  <i3dMapping id="cakeBox_6" node="0>1|3|1|0|2" />
+  <i3dMapping id="cakeBoxTransparent_6" node="0>1|3|1|0|3" />
+  <i3dMapping id="LOD1_3" node="0>1|3|1|1" />
+  <i3dMapping id="cake2_3" node="0>1|3|1|1|0" />
+  <i3dMapping id="cakeBox_7" node="0>1|3|1|1|1" />
+  <i3dMapping id="cakeBoxTransparent_7" node="0>1|3|1|1|2" />
+  <i3dMapping id="cakeTransparent1_3" node="0>1|3|1|1|3" />
+  <i3dMapping id="cakeBox5" node="0>1|4" />
+  <i3dMapping id="cakeBox5Tension" node="0>1|4|0" />
+  <i3dMapping id="visual_lod_4" node="0>1|4|1" />
+  <i3dMapping id="LOD0_4" node="0>1|4|1|0" />
+  <i3dMapping id="cakeTransparent_4" node="0>1|4|1|0|0" />
+  <i3dMapping id="cake1_4" node="0>1|4|1|0|1" />
+  <i3dMapping id="cakeBox_8" node="0>1|4|1|0|2" />
+  <i3dMapping id="cakeBoxTransparent_8" node="0>1|4|1|0|3" />
+  <i3dMapping id="LOD1_4" node="0>1|4|1|1" />
+  <i3dMapping id="cake2_4" node="0>1|4|1|1|0" />
+  <i3dMapping id="cakeBox_9" node="0>1|4|1|1|1" />
+  <i3dMapping id="cakeBoxTransparent_9" node="0>1|4|1|1|2" />
+  <i3dMapping id="cakeTransparent1_4" node="0>1|4|1|1|3" />
+  <i3dMapping id="cakeBox6" node="0>1|5" />
+  <i3dMapping id="cakeBox6Tension" node="0>1|5|0" />
+  <i3dMapping id="visual_lod_5" node="0>1|5|1" />
+  <i3dMapping id="LOD0_5" node="0>1|5|1|0" />
+  <i3dMapping id="cakeTransparent_5" node="0>1|5|1|0|0" />
+  <i3dMapping id="cake1_5" node="0>1|5|1|0|1" />
+  <i3dMapping id="cakeBox_10" node="0>1|5|1|0|2" />
+  <i3dMapping id="cakeBoxTransparent_10" node="0>1|5|1|0|3" />
+  <i3dMapping id="LOD1_5" node="0>1|5|1|1" />
+  <i3dMapping id="cake2_5" node="0>1|5|1|1|0" />
+  <i3dMapping id="cakeBox_11" node="0>1|5|1|1|1" />
+  <i3dMapping id="cakeBoxTransparent_11" node="0>1|5|1|1|2" />
+  <i3dMapping id="cakeTransparent1_5" node="0>1|5|1|1|3" />
+  <i3dMapping id="collisions" node="0>2" />
+  <i3dMapping id="floorCollision01" node="0>2|0" />
+  <i3dMapping id="floorCollision02" node="0>2|1" />
+  <i3dMapping id="raycastNode" node="0>3" />
+  <i3dMapping id="fillTrigger" node="0>4" />
+  <i3dMapping id="dischargeActivationTrigger" node="0>5" />
+</i3dMappings>
 
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
-
-    <i3dMappings>
-        <i3dMapping id="cakePallet_component1" node="0>"/>
-        <i3dMapping id="dynamicMountTrigger" node="0>0"/>
-        <i3dMapping id="cakeBox1" node="0>1|0"/>
-        <i3dMapping id="cakeBox1Tension" node="0>1|0|1"/>
-        <i3dMapping id="cakeBox2" node="0>1|1"/>
-        <i3dMapping id="cakeBox2Tension" node="0>1|1|0"/>
-        <i3dMapping id="cakeBox3" node="0>1|2"/>
-        <i3dMapping id="cakeBox3Tension" node="0>1|2|0"/>
-        <i3dMapping id="cakeBox4" node="0>1|3"/>
-        <i3dMapping id="cakeBox4Tension" node="0>1|3|0"/>
-        <i3dMapping id="cakeBox5" node="0>1|4"/>
-        <i3dMapping id="cakeBox5Tension" node="0>1|4|0"/>
-        <i3dMapping id="cakeBox6" node="0>1|5"/>
-        <i3dMapping id="cakeBox6Tension" node="0>1|5|0"/>
-        <i3dMapping id="dischargeNode" node="0>3"/>
-        <i3dMapping id="fillTrigger" node="0>4"/>
-    </i3dMappings>
 </vehicle>

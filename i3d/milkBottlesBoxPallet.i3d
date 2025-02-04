@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="milkBottlesBoxPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/objects/pallets/milkBottlesBoxPallet/milkBottlesBox_normal.png"/>
+    <File fileId="8" filename="$data/objects/pallets/milkBottlesBoxPallet/milkBottlesBox_specular.png"/>
+    <File fileId="5" filename="$data/objects/pallets/milkBottlesBoxPallet/milkBottlesBuffalotBox_diffuse.png"/>
+    <File fileId="2" filename="$data/objects/pallets/milkBottlesBoxPallet/milkBottlesCowBox_diffuse.png"/>
+    <File fileId="7" filename="$data/objects/pallets/milkBottlesBoxPallet/milkBottlesGoatBox_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="milkBottlesBuffalotBox_mat" materialId="8" specularColor="0.905882 1 0">
+      <Texture fileId="5"/>
+      <Normalmap fileId="3"/>
+    </Material>
+    <Material name="milkBottlesCowBox_mat" materialId="6" specularColor="0.858824 1 0">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+    </Material>
+    <Material name="milkBottlesGoatBox_mat" materialId="7">
+      <Texture fileId="7"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="8"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="milkBottlesBoxPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="milkBoxPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="dischargeNode" translation="0 0.5 0" nodeId="44"/>
+      <TransformGroup name="content" nodeId="45">
+        <TransformGroup name="milkBottlesBox01" translation="0.446605 0.144671 0.270873" nodeId="46">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="47">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <Shape name="milkBottlesBox_Tension01" shapeId="5" nodeId="50" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox02" translation="0.446605 0.144671 0.003438" nodeId="51">
+          <Shape name="milkBottlesBox_Tension02" shapeId="5" nodeId="52" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="53">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox03" translation="0.446605 0.144671 -0.264428" nodeId="56">
+          <Shape name="milkBottlesBox_Tension03" shapeId="5" nodeId="57" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="58">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox04" translation="0.146482 0.144671 0.270873" nodeId="61">
+          <Shape name="milkBottlesBox_Tension04" shapeId="5" nodeId="62" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="63">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox05" translation="0.146482 0.144671 0.003438" nodeId="66">
+          <Shape name="milkBottlesBox_Tension05" shapeId="5" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="68">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox06" translation="0.146482 0.144671 -0.264428" nodeId="71">
+          <Shape name="milkBottlesBox_Tension06" shapeId="5" nodeId="72" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="73">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox07" translation="-0.153727 0.144671 0.270873" nodeId="76">
+          <Shape name="milkBottlesBox_Tension07" shapeId="5" nodeId="77" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="78">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="80" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox08" translation="-0.153727 0.144671 0.003438" nodeId="81">
+          <Shape name="milkBottlesBox_Tension08" shapeId="5" nodeId="82" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="83">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox09" translation="-0.153727 0.144671 -0.264428" nodeId="86">
+          <Shape name="milkBottlesBox_Tension09" shapeId="5" nodeId="87" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="88">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="89" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="90" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox10" translation="-0.454616 0.144671 0.270873" nodeId="91">
+          <Shape name="milkBottlesBox_Tension10" shapeId="5" nodeId="92" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="93">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="94" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="95" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox11" translation="-0.454616 0.144671 0.003438" nodeId="96">
+          <Shape name="milkBottlesBox_Tension11" shapeId="5" nodeId="97" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="98">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="99" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox12" translation="-0.454616 0.144671 -0.264428" nodeId="101">
+          <Shape name="milkBottlesBox_Tension12" shapeId="5" nodeId="102" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="103">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="104" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="105" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox13" translation="0.446605 0.389822 0.270873" nodeId="106">
+          <Shape name="milkBottlesBox_Tension13" shapeId="5" nodeId="107" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="108">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="109" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="110" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox14" translation="0.446605 0.389822 0.003438" nodeId="111">
+          <Shape name="milkBottlesBox_Tension14" shapeId="5" nodeId="112" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="113">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="114" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox15" translation="0.446605 0.389822 -0.264428" nodeId="116">
+          <Shape name="milkBottlesBox_Tension15" shapeId="5" nodeId="117" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="118">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="119" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="120" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox16" translation="0.146482 0.389822 0.270873" nodeId="121">
+          <Shape name="milkBottlesBox_Tension16" shapeId="5" nodeId="122" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="123">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="124" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox17" translation="0.146482 0.389822 0.003438" nodeId="126">
+          <Shape name="milkBottlesBox_Tension17" shapeId="5" nodeId="127" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="128">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="129" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="130" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox18" translation="0.146482 0.389822 -0.264428" nodeId="131">
+          <Shape name="milkBottlesBox_Tension18" shapeId="5" nodeId="132" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="133">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="134" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="135" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox19" translation="-0.153727 0.389822 0.270873" nodeId="136">
+          <Shape name="milkBottlesBox_Tension19" shapeId="5" nodeId="137" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="138">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="139" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="140" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox20" translation="-0.153727 0.389822 0.003438" nodeId="141">
+          <Shape name="milkBottlesBox_Tension20" shapeId="5" nodeId="142" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="143">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="144" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="145" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox21" translation="-0.153727 0.389822 -0.264428" nodeId="146">
+          <Shape name="milkBottlesBox_Tension21" shapeId="5" nodeId="147" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="148">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="149" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="150" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox22" translation="-0.454616 0.389822 0.270873" nodeId="151">
+          <Shape name="milkBottlesBox_Tension22" shapeId="5" nodeId="152" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="153">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="154" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="155" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox23" translation="-0.454616 0.389822 0.003438" nodeId="156">
+          <Shape name="milkBottlesBox_Tension23" shapeId="5" nodeId="157" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="158">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="159" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="160" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="milkBottlesBox24" translation="-0.454616 0.389822 -0.264428" nodeId="161">
+          <Shape name="milkBottlesBox_Tension24" shapeId="5" nodeId="162" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="150" nodeId="163">
+            <Shape name="milkBottlesBox01_lod0" shapeId="3" nodeId="164" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="milkBottlesBox01_lod1" shapeId="4" nodeId="165" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="166">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="167" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="168" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="materialHolders" visibility="false" nodeId="169">
+        <Shape name="materialHolder_buffaloBoxPallet" shapeId="7" nodeId="170" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="materialHolder_goatBoxPallet" shapeId="7" nodeId="171" castsShadows="true" receiveShadows="true" materialIds="7"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="176"/>
+      <Shape name="fillTrigger" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="177" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="9" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="178" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

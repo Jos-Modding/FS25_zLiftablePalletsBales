@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="95">
     <author>Jos</author>
-    <version>1.0.1.0</version>
+    <version>1.0.2.0</version>
     <title>
         <en>Liftable Pallets And Bales</en>
         <de>Anhebbare Paletten Und Ballen</de>
@@ -17,7 +17,11 @@ Liftable grass/silage/hay/straw bales in all sizes available for purchase throug
 
 This mod will not make pallets, big bags, or bales added by other mods liftable.
 
-Changelog 1.0.0.1:
+Changelog 1.0.2.0:
+- Fixed error with Case IH Module Express 635
+- Added triggers for (console) autoloading
+
+Changelog 1.0.1.0:
 - Updated balers to match changes made in game version 1.4.0.0
 - Added buyable round bales for grass/silage/hay/straw in sizes 125/150/180 cm
 - Added buyable square bales for grass/silage/hay/straw in sizes 180/220/240 cm
@@ -32,7 +36,11 @@ Hebebare Gras-/Silage-/Heu-/Strohballen in allen Größen im Shop erhältlich.
 
 Mit diesem Mod können Paletten, große Säcke oder Ballen, die durch andere Mods hinzugefügt wurden, nicht angehoben werden.
 
-Changelog 1.0.0.1:
+Changelog 1.0.2.0:
+- Fehler mit Case IH Module Express 635 behoben
+- Trigger für (Konsolen-)Autoloading hinzugefügt
+
+Changelog 1.0.1.0:
 - Die Ballenpressen wurden aktualisiert, um den Änderungen in der Spielversion 1.4.0.0 zu entsprechen.
 - Kaufbare Rundballen für Gras/Silage/Heu/Stroh in den Größen 125/150/180 cm hinzugefügt
 - Kaufbare Quaderballen für Gras/Silage/Heu/Stroh in den Größen 180/220/240 cm hinzugefügt
@@ -56,8 +64,6 @@ Changelog 1.0.0.1:
         <bale filename="xml/bales/squarebales/squarebale240.xml" />
     </bales>
     <storeItems>
-        <!-- Testing -->
-        <storeItem xmlFilename="xml/gx520.xml"/>
         <!-- Base/Production Pallets -->
         <storeItem xmlFilename="xml/pallets/base/bakeryBoxPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/base/baleNetPallet.xml"/>

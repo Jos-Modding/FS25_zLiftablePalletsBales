@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="fabricsPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/fabricsPallet/fabrics_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/fabricsPallet/fabrics_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/fabricsPallet/fabrics_specular.png"/>
+    <File fileId="5" filename="$data/shaders/colorShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="fabrics_mat" materialId="6" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="color" value="0.5 0.5 0"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="fabricsPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="fabricsPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="29" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="30" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="content" nodeId="31">
+        <Shape name="fabrics01" translation="0.445787 0.144671 0" shapeId="3" clipDistance="80" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension01" shapeId="4" nodeId="33" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics02" translation="0.144161 0.144671 0" shapeId="3" clipDistance="80" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension02" shapeId="4" nodeId="35" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics03" translation="-0.155526 0.144671 0" shapeId="3" clipDistance="80" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension03" shapeId="4" nodeId="37" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics04" translation="-0.453613 0.144671 0" shapeId="3" clipDistance="80" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension04" shapeId="4" nodeId="39" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics05" translation="0.445787 0.244671 0" shapeId="3" clipDistance="80" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension05" shapeId="4" nodeId="41" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics06" translation="0.144161 0.244671 0" shapeId="3" clipDistance="80" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension06" shapeId="4" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics07" translation="-0.155526 0.244671 0" shapeId="3" clipDistance="80" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension07" shapeId="4" nodeId="45" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics08" translation="-0.453613 0.244671 0" shapeId="3" clipDistance="80" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension08" shapeId="4" nodeId="47" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics09" translation="0.445787 0.344671 0" shapeId="3" clipDistance="80" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension09" shapeId="4" nodeId="49" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics10" translation="0.144161 0.344671 0" shapeId="3" clipDistance="80" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension10" shapeId="4" nodeId="51" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics11" translation="-0.155526 0.344671 0" shapeId="3" clipDistance="80" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension11" shapeId="4" nodeId="53" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics12" translation="-0.453613 0.344671 0" shapeId="3" clipDistance="80" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension12" shapeId="4" nodeId="55" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics13" translation="0.445787 0.444671 0" shapeId="3" clipDistance="80" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension13" shapeId="4" nodeId="57" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics14" translation="0.144161 0.444671 0" shapeId="3" clipDistance="80" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension14" shapeId="4" nodeId="59" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics15" translation="-0.155526 0.444671 0" shapeId="3" clipDistance="80" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension15" shapeId="4" nodeId="61" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="fabrics16" translation="-0.453613 0.444671 0" shapeId="3" clipDistance="80" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics_Tension16" shapeId="4" nodeId="63" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="64">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="65" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="66" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="raycastNode" translation="0 0.15 0" nodeId="71"/>
+      <Shape name="fillTrigger" shapeId="6" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="72" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="dischargeActivationTrigger" translation="0 3.15 0" shapeId="7" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="73" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>
