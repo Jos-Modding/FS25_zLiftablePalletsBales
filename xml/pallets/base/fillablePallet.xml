@@ -32,16 +32,14 @@
     <fillUnit>
         <fillUnitConfigurations>
             <fillUnitConfiguration>
-                <fillUnits removeVehicleIfEmpty="true">
-                    <!-- <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="BULK" capacity="1000" ignoreFillLimit="true"> -->
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleReward="150">
                     <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="BULK PRODUCTS" capacity="1000" ignoreFillLimit="true">
                         <exactFillRootNode node="exactFillRootNode" />
                     </fillUnit>
                 </fillUnits>
             </fillUnitConfiguration>
             <fillUnitConfiguration>
-                <fillUnits removeVehicleIfEmpty="true">
-                    <!-- <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="BULK" capacity="1000" ignoreFillLimit="true"> -->
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleReward="150">
                     <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="BULK PRODUCTS" capacity="100000" updateMass="false" ignoreFillLimit="true">
                         <exactFillRootNode node="exactFillRootNode" />
                     </fillUnit>

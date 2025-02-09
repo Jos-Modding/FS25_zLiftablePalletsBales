@@ -32,8 +32,8 @@
     <fillUnit>
         <fillUnitConfigurations>
             <fillUnitConfiguration>
-                <fillUnits>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="CEMENTBRICKS" capacity="1000" ignoreFillLimit="true" removeVehicleIfEmpty="true"/>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="CEMENTBRICKS" capacity="1000" ignoreFillLimit="true" />
                 </fillUnits>
             </fillUnitConfiguration>
         </fillUnitConfigurations>
