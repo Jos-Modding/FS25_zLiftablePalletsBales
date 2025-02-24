@@ -33,14 +33,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits removeVehicleIfEmpty="true" removeVehicleReward="150">
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="BULK PRODUCTS" capacity="1000" ignoreFillLimit="true">
-                        <exactFillRootNode node="exactFillRootNode" />
-                    </fillUnit>
-                </fillUnits>
-            </fillUnitConfiguration>
-            <fillUnitConfiguration>
-                <fillUnits removeVehicleIfEmpty="true" removeVehicleReward="150">
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="BULK PRODUCTS" capacity="100000" updateMass="false" ignoreFillLimit="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="BULK PRODUCT" capacity="1000" ignoreFillLimit="true">
                         <exactFillRootNode node="exactFillRootNode" />
                     </fillUnit>
                 </fillUnits>

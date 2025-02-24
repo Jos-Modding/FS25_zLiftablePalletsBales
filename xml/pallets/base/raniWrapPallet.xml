@@ -65,7 +65,7 @@
         </dischargeNode>
     </dischargeable>
 
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="1.5"/>
+    <fillTriggerVehicle triggerNode="fillTrigger_1" fillUnitIndex="1" litersPerSecond="1.5"/>
 
     <consumable>
         <consumableConfigurations title="$l10n_configuration_baleWrap" typeName="BALE_WRAP">

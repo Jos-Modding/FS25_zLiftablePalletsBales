@@ -56,7 +56,7 @@
         </dischargeNode>
     </dischargeable>
 
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="5"/>
+    <fillTriggerVehicle triggerNode="fillTrigger_1" fillUnitIndex="1" litersPerSecond="5"/>
 
     <pallet fillUnitIndex="1" linkNode="silageAdditivePallet_component1">
         <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
