@@ -1,5 +1,7 @@
 # Liftable Pallets and Bales
 
+[Download](https://github.com/Jos-Modding/FS25_zLiftablePalletsBales/releases)
+
 All base game pallets, big bags, and bales are now liftable by hand, weighing only 100 kg.
 
 Productions/animal pens will spawn these lightweight pallets after installing this mod. Anything existing before activation will remain original weight.
@@ -8,6 +10,12 @@ Bales and pallets brought through this mod are compatible with (console)autoload
 
 Included are balers and cotton harvesters producing bales weighing only 100 kg, making them liftable by hand! Produced bales can be wrapped and transported by all base game equipment.
 Liftable grass/silage/hay/straw bales in all sizes available for purchase through the shop.
+
+Baler features:
+- Creates 100kg bale no matter the size
+- Variable working width: 3 / 12 / 24 meters
+- Unload unfinished bales
+- Pickup on unowned land
 
 This mod will not make pallets, big bags, or bales added by other mods liftable, unless mentioned by this mod.
 ## Requirements
