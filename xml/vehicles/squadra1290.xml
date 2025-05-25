@@ -2,6 +2,8 @@
 <vehicle type="baler" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
     <parentFile xmlFilename="$data/vehicles/masseyFerguson/baler2370UHD/baler2370UHD.xml">
         <attributes>
+            <remove path="vehicle.storeData.specs.workingWidth" />
+
             <set path="vehicle.storeData.name" value="Squadra 1290 N UD"/>
             <set path="vehicle.storeData.image" value="$data/vehicles/fendt/squadra1290/store_squadra1290.png"/>
             <set path="vehicle.storeData.brand" value="FENDT"/>
@@ -16,9 +18,14 @@
             <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#isSelectable" value="true"/>
             <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#isDefault"    value="true"/>
 
+            <set path="vehicle.baler#canUnloadUnfinishedBale" value="true" />
+            <set path="vehicle.baler#unfinishedBaleThreshold" value="100" />
             <set path="vehicle.baler.baleTypes.baleType(0)#width" value="1.20" />
             <set path="vehicle.baler.baleTypes.baleType(1)#width" value="1.20" />
             <set path="vehicle.baler.baleTypes.baleType(2)#width" value="1.20" />
+
+            <set path="vehicle.workAreas.workArea(0)#requiresOwnedFarmland" value="false" />
+            <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true" />
         </attributes>
     </parentFile>
 </vehicle>

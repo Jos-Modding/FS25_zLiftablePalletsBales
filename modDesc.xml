@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="96">
+<modDesc descVersion="98">
     <author>Jos</author>
-    <version>1.0.2.1</version>
+    <version>1.0.3.0</version>
     <title>
         <en>Liftable Pallets And Bales</en>
         <de>Anhebbare Paletten Und Ballen</de>
@@ -17,6 +17,16 @@ Included are balers and cotton harvesters producing bales weighing only 100 kg, 
 Liftable grass/silage/hay/straw bales in all sizes available for purchase through the shop.
 
 This mod will not make pallets, big bags, or bales added by other mods liftable, unless mentioned by this mod.
+
+Latest version and bug reports on <a href="https://github.com/Jos-Modding/FS25_zLiftablePalletsBales">GitHub</a>.
+
+Changelog 1.0.3.0:
+- Added Goweil G-1 F125 Kombi baler
+- Default pickup with for balers is now 3 meter
+- Added 12 meter and 24 meter pickup width configuration to all balers
+- Added support for unloading unfinished bales
+- Added option for rim color configuration
+- Balers can pickup on unowned land
 
 Changelog 1.0.2.1:
 - Fixed woodchips pallet not spawning
@@ -41,6 +51,16 @@ Im Lieferumfang sind Ballenpressen und Baumwollerntemaschinen enthalten, die Bal
 Hebebare Gras-/Silage-/Heu-/Strohballen in allen Größen im Shop erhältlich.
 
 Dieser Mod macht Paletten, Big Bags oder Ballen, die von anderen Mods hinzugefügt wurden, nicht hebbar, es sei denn, dieser Mod erwähnt sie.
+
+Aktuelle Version und Fehlerberichte auf <a href="https://github.com/Jos-Modding/FS25_zLiftablePalletsBales">GitHub</a>.
+
+Changelog 1.0.3.0:
+- Goweil G-1 F125 Kombipresse hinzugefügt
+- Die Standard-Aufnahmebreite für Ballenpressen beträgt jetzt 3 Meter
+- Allen Ballenpressen wurde eine Aufnahmebreitenkonfiguration von 12 und 24 Metern hinzugefügt
+- Unterstützung für das Entladen unfertiger Ballen hinzugefügt
+- Option zur Konfiguration der Felgenfarbe hinzugefügt
+- Ballenpressen können auf unbewohntem Land aufsammeln
 
 Changelog 1.0.2.1:
 - Problem behoben, bei dem keine Palette mit Holzspänen erschien
@@ -215,6 +235,7 @@ Changelog 1.0.1.0:
         <storeItem xmlFilename="xml/vehicles/bioBalerWB55.xml" />
         <storeItem xmlFilename="xml/vehicles/c441R.xml" />
         <storeItem xmlFilename="xml/vehicles/g1F125.xml" />
+        <storeItem xmlFilename="xml/vehicles/g1F125Kombi.xml" />
         <storeItem xmlFilename="xml/vehicles/proBelt165.xml" />
         <storeItem xmlFilename="xml/vehicles/rb456.xml" />
         <storeItem xmlFilename="xml/vehicles/varioMaster.xml" />

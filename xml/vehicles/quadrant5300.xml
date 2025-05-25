@@ -2,9 +2,53 @@
 <vehicle type="baler" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
     <parentFile xmlFilename="$data/vehicles/claas/quadrant5300/quadrant5300.xml">
         <attributes>
+            <remove path="vehicle.storeData.specs.workingWidth" />
+
+            <set path="vehicle.baler#canUnloadUnfinishedBale" value="true" />
+            <set path="vehicle.baler#unfinishedBaleThreshold" value="100" />
             <set path="vehicle.baler.baleTypes.baleType(0)#width" value="1.20" />
             <set path="vehicle.baler.baleTypes.baleType(1)#width" value="1.20" />
             <set path="vehicle.baler.baleTypes.baleType(2)#width" value="1.20" />
+
+            <set path="vehicle.designConfigurations#title" value="$l10n_configuration_workingWidth" />
+            <set path="vehicle.designConfigurations#isYesNoOption" value="false" />
+
+            <set path="vehicle.designConfigurations.designConfiguration(0)#isDefault" value="true" />
+            <set path="vehicle.designConfigurations.designConfiguration(0)#price" value="0" />
+            <set path="vehicle.designConfigurations.designConfiguration(0)#name" value="3 %s" />
+            <set path="vehicle.designConfigurations.designConfiguration(0)#params" value="$l10n_unit_m" />
+            <set path="vehicle.designConfigurations.designConfiguration(0)#workingWidth" value="3" />
+            <set path="vehicle.designConfigurations.designConfiguration(0).objectChange(0)#node" value="workAreaStart" />
+            <set path="vehicle.designConfigurations.designConfiguration(0).objectChange(0)#translationActive" value="1.5 0 2.7" />
+            <set path="vehicle.designConfigurations.designConfiguration(0).objectChange(1)#node" value="workAreaWidth" />
+            <set path="vehicle.designConfigurations.designConfiguration(0).objectChange(1)#translationActive" value="-1.5 0 2.7" />
+            <set path="vehicle.designConfigurations.designConfiguration(0).objectChange(2)#node" value="workAreaHeight" />
+            <set path="vehicle.designConfigurations.designConfiguration(0).objectChange(2)#translationActive" value="1.5 0 2.262" />
+
+            <set path="vehicle.designConfigurations.designConfiguration(1)#price" value="500" />
+            <set path="vehicle.designConfigurations.designConfiguration(1)#name" value="12 %s" />
+            <set path="vehicle.designConfigurations.designConfiguration(1)#params" value="$l10n_unit_m" />
+            <set path="vehicle.designConfigurations.designConfiguration(1)#workingWidth" value="12" />
+            <set path="vehicle.designConfigurations.designConfiguration(1).objectChange(0)#node" value="workAreaStart" />
+            <set path="vehicle.designConfigurations.designConfiguration(1).objectChange(0)#translationActive" value="6 0 2.7" />
+            <set path="vehicle.designConfigurations.designConfiguration(1).objectChange(1)#node" value="workAreaWidth" />
+            <set path="vehicle.designConfigurations.designConfiguration(1).objectChange(1)#translationActive" value="-6 0 2.7" />
+            <set path="vehicle.designConfigurations.designConfiguration(1).objectChange(2)#node" value="workAreaHeight" />
+            <set path="vehicle.designConfigurations.designConfiguration(1).objectChange(2)#translationActive" value="6 0 2.262" />
+
+            <set path="vehicle.designConfigurations.designConfiguration(2)#price" value="1000" />
+            <set path="vehicle.designConfigurations.designConfiguration(2)#name" value="24 %s" />
+            <set path="vehicle.designConfigurations.designConfiguration(2)#params" value="$l10n_unit_m" />
+            <set path="vehicle.designConfigurations.designConfiguration(2)#workingWidth" value="24" />
+            <set path="vehicle.designConfigurations.designConfiguration(2).objectChange(0)#node" value="workAreaStart" />
+            <set path="vehicle.designConfigurations.designConfiguration(2).objectChange(0)#translationActive" value="12 0 2.7" />
+            <set path="vehicle.designConfigurations.designConfiguration(2).objectChange(1)#node" value="workAreaWidth" />
+            <set path="vehicle.designConfigurations.designConfiguration(2).objectChange(1)#translationActive" value="-12 0 2.7" />
+            <set path="vehicle.designConfigurations.designConfiguration(2).objectChange(2)#node" value="workAreaHeight" />
+            <set path="vehicle.designConfigurations.designConfiguration(2).objectChange(2)#translationActive" value="12 0 2.262" />
+
+            <set path="vehicle.workAreas.workArea(0)#requiresOwnedFarmland" value="false" />
+            <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true" />
         </attributes>
     </parentFile>
 </vehicle>
