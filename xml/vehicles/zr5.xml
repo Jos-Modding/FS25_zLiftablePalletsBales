@@ -47,6 +47,7 @@
             <set path="vehicle.designConfigurations.designConfiguration(2).objectChange(2)#node" value="workAreaHeight" />
             <set path="vehicle.designConfigurations.designConfiguration(2).objectChange(2)#translationActive" value="12 0 -0.057" />
 
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration.fillUnits(0).fillUnit(0)#showInShop" value="false" />
             <set path="vehicle.workAreas.workArea(0)#requiresOwnedFarmland" value="false" />
             <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true" />
         </attributes>
