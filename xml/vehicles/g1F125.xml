@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <vehicle type="baler" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
     <parentFile xmlFilename="$data/vehicles/goeweil/g1F125/g1F125.xml">
+        <!-- Round baler without wrapper -->
         <attributes>
             <remove path="vehicle.storeData.specs.workingWidth" />
 
@@ -10,6 +11,14 @@
 
             <set path="vehicle.designConfigurations#title" value="$l10n_configuration_workingWidth" />
             <set path="vehicle.designConfigurations#isYesNoOption" value="false" />
+            <!-- Instant hay -->
+            <set path="vehicle.baler.baleTypes.baleType(2)#isRoundBale" value="true" />
+            <set path="vehicle.baler.baleTypes.baleType(2)#width" value="1.20" />
+            <set path="vehicle.baler.baleTypes.baleType(2)#diameter" value="1.27" />
+            <set path="vehicle.baler.baleTypes.baleType(2).nodes#baleNode" value="baleNode125" />
+            <set path="vehicle.baler.baleTypes.baleType(2).animations#fillAnimation" value="baleFillAnimation125" />
+            <set path="vehicle.baler.baleTypes.baleType(2).animations#unloadAnimation" value="baleDropAnimation125" />
+            <set path="vehicle.baler.baleTypes.baleType(2).animations#dropAnimationTime" value="2.5" />
 
             <set path="vehicle.designConfigurations.designConfiguration(0)#isDefault" value="true" />
             <set path="vehicle.designConfigurations.designConfiguration(0)#price" value="0" />

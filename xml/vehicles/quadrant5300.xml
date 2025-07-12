@@ -9,6 +9,49 @@
             <set path="vehicle.baler.baleTypes.baleType(0)#width" value="1.20" />
             <set path="vehicle.baler.baleTypes.baleType(1)#width" value="1.20" />
             <set path="vehicle.baler.baleTypes.baleType(2)#width" value="1.20" />
+            <!-- Instant hay -->
+            <set path="vehicle.baler.baleTypes.baleType(0)#isRoundBale" value="false" />
+            <set path="vehicle.baler.baleTypes.baleType(0)#width" value="1.20" />
+            <set path="vehicle.baler.baleTypes.baleType(0)#height" value="0.90" />
+            <set path="vehicle.baler.baleTypes.baleType(0)#length" value="1.81" />
+            <set path="vehicle.baler.baleTypes.baleType(0)#consumableUsage" value="0.0150" />
+            <set path="vehicle.baler.baleTypes.baleType(0).nodes#baleRootNode" value="baleRootNode" />
+            <set path="vehicle.baler.baleTypes.baleType(0).nodes#baleNode" value="baleNode" />
+            <set path="vehicle.baler.baleTypes.baleType(0).nodes#scaleNode" value="baleAnimation" />
+            <set path="vehicle.baler.baleTypes.baleType(0).objectChange#node" value="baleNode" />
+            <set path="vehicle.baler.baleTypes.baleType(0).objectChange#translationActive" value="0 0 -0.9" />
+            <set path="vehicle.baler.baleTypes.baleType(0).detailVisibilityCutNode#node" value="detailVisibilityCutNode" />
+            <set path="vehicle.baler.baleTypes.baleType(0).detailVisibilityCutNode#axis" value="3" />
+            <set path="vehicle.baler.baleTypes.baleType(0).detailVisibilityCutNode#direction" value="1" />
+            <!-- Instant hay -->
+            <set path="vehicle.baler.baleTypes.baleType(1)#isRoundBale" value="false" />
+            <set path="vehicle.baler.baleTypes.baleType(1)#width" value="1.20" />
+            <set path="vehicle.baler.baleTypes.baleType(1)#height" value="0.90" />
+            <set path="vehicle.baler.baleTypes.baleType(1)#length" value="2.21" />
+            <set path="vehicle.baler.baleTypes.baleType(1)#consumableUsage" value="0.0185" />
+            <set path="vehicle.baler.baleTypes.baleType(1)#isDefault" value="true" />
+            <set path="vehicle.baler.baleTypes.baleType(1).nodes#baleRootNode" value="baleRootNode" />
+            <set path="vehicle.baler.baleTypes.baleType(1).nodes#baleNode" value="baleNode" />
+            <set path="vehicle.baler.baleTypes.baleType(1).nodes#scaleNode" value="baleAnimation" />
+            <set path="vehicle.baler.baleTypes.baleType(1).objectChange#node" value="baleNode" />
+            <set path="vehicle.baler.baleTypes.baleType(1).objectChange#translationActive" value="0 0 -1.1" />
+            <set path="vehicle.baler.baleTypes.baleType(1).detailVisibilityCutNode#node" value="detailVisibilityCutNode" />
+            <set path="vehicle.baler.baleTypes.baleType(1).detailVisibilityCutNode#axis" value="3" />
+            <set path="vehicle.baler.baleTypes.baleType(1).detailVisibilityCutNode#direction" value="1" />
+            <!-- Instant hay -->
+            <set path="vehicle.baler.baleTypes.baleType(2)#isRoundBale" value="false" />
+            <set path="vehicle.baler.baleTypes.baleType(2)#width" value="1.20" />
+            <set path="vehicle.baler.baleTypes.baleType(2)#height" value="0.90" />
+            <set path="vehicle.baler.baleTypes.baleType(2)#length" value="2.41" />
+            <set path="vehicle.baler.baleTypes.baleType(2)#consumableUsage" value="0.0200" />
+            <set path="vehicle.baler.baleTypes.baleType(2).nodes#baleRootNode" value="baleRootNode" />
+            <set path="vehicle.baler.baleTypes.baleType(2).nodes#baleNode" value="baleNode" />
+            <set path="vehicle.baler.baleTypes.baleType(2).nodes#scaleNode" value="baleAnimation" />
+            <set path="vehicle.baler.baleTypes.baleType(2).objectChange#node" value="baleNode" />
+            <set path="vehicle.baler.baleTypes.baleType(2).objectChange#translationActive" value="0 0 -1.2" />
+            <set path="vehicle.baler.baleTypes.baleType(2).detailVisibilityCutNode#node" value="detailVisibilityCutNode" />
+            <set path="vehicle.baler.baleTypes.baleType(2).detailVisibilityCutNode#axis" value="3" />
+            <set path="vehicle.baler.baleTypes.baleType(2).detailVisibilityCutNode#direction" value="1" />
 
             <set path="vehicle.designConfigurations#title" value="$l10n_configuration_workingWidth" />
             <set path="vehicle.designConfigurations#isYesNoOption" value="false" />

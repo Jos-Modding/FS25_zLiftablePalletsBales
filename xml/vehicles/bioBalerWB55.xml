@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <vehicle type="baler" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
     <parentFile xmlFilename="$data/vehicles/andersonGroup/bioBalerWB55/bioBalerWB55.xml">
+        <!-- Round baler poplar -->
         <attributes>
             <remove path="vehicle.storeData.specs.workingWidth" />
 

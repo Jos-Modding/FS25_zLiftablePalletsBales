@@ -2,6 +2,7 @@
 <vehicle type="baler" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
     <parentFile xmlFilename="$data/vehicles/masseyFerguson/baler4160V/baler4160V.xml">
         <attributes>
+            <!-- Round baler with wrapper -->
             <remove path="vehicle.storeData.specs.workingWidth" />
 
             <set path="vehicle.storeData.brand" value="FENDT"/>
@@ -21,6 +22,38 @@
             <set path="vehicle.baler#unfinishedBaleThreshold" value="100" />
             <set path="vehicle.baler.baleTypes.baleType(0)#width" value="1.20" />
             <set path="vehicle.baler.baleTypes.baleType(1)#width" value="1.20" />
+            <!-- Instant silage -->
+            <set path="vehicle.baler.baleTypes.baleType(2)#isRoundBale" value="true" />
+            <set path="vehicle.baler.baleTypes.baleType(2)#width" value="1.20" />
+            <set path="vehicle.baler.baleTypes.baleType(2)#diameter" value="1.26" />
+            <set path="vehicle.baler.baleTypes.baleType(2).nodes#baleNode" value="baleNode125" />
+            <set path="vehicle.baler.baleTypes.baleType(2).animations#fillAnimation" value="baleFillAnimation125" />
+            <set path="vehicle.baler.baleTypes.baleType(2).animations#unloadAnimation" value="baleDropAnimation125" />
+            <set path="vehicle.baler.baleTypes.baleType(2).animations#dropAnimationTime" value="4.5" />
+            <!-- Instant hay -->
+            <set path="vehicle.baler.baleTypes.baleType(3)#isRoundBale" value="true" />
+            <set path="vehicle.baler.baleTypes.baleType(3)#width" value="1.20" />
+            <set path="vehicle.baler.baleTypes.baleType(3)#diameter" value="1.27" />
+            <set path="vehicle.baler.baleTypes.baleType(3).nodes#baleNode" value="baleNode125" />
+            <set path="vehicle.baler.baleTypes.baleType(3).animations#fillAnimation" value="baleFillAnimation125" />
+            <set path="vehicle.baler.baleTypes.baleType(3).animations#unloadAnimation" value="baleDropAnimation125" />
+            <set path="vehicle.baler.baleTypes.baleType(3).animations#dropAnimationTime" value="4.5" />
+            <!-- Instant silage -->
+            <set path="vehicle.baler.baleTypes.baleType(5)#isRoundBale" value="true" />
+            <set path="vehicle.baler.baleTypes.baleType(5)#width" value="1.20" />
+            <set path="vehicle.baler.baleTypes.baleType(5)#diameter" value="1.51" />
+            <set path="vehicle.baler.baleTypes.baleType(5).nodes#baleNode" value="baleNode150" />
+            <set path="vehicle.baler.baleTypes.baleType(5).animations#fillAnimation" value="baleFillAnimation150" />
+            <set path="vehicle.baler.baleTypes.baleType(5).animations#unloadAnimation" value="baleDropAnimation150" />
+            <set path="vehicle.baler.baleTypes.baleType(5).animations#dropAnimationTime" value="5.5" />
+            <!-- Instant hay -->
+            <set path="vehicle.baler.baleTypes.baleType(4)#isRoundBale" value="true" />
+            <set path="vehicle.baler.baleTypes.baleType(4)#width" value="1.20" />
+            <set path="vehicle.baler.baleTypes.baleType(4)#diameter" value="1.52" />
+            <set path="vehicle.baler.baleTypes.baleType(4).nodes#baleNode" value="baleNode150" />
+            <set path="vehicle.baler.baleTypes.baleType(4).animations#fillAnimation" value="baleFillAnimation150" />
+            <set path="vehicle.baler.baleTypes.baleType(4).animations#unloadAnimation" value="baleDropAnimation150" />
+            <set path="vehicle.baler.baleTypes.baleType(4).animations#dropAnimationTime" value="5.5" />
 
             <set path="vehicle.design2Configurations#title" value="$l10n_configuration_workingWidth" />
             <set path="vehicle.design2Configurations#isYesNoOption" value="false" />
