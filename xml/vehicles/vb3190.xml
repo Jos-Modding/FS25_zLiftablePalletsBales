@@ -3,8 +3,6 @@
     <parentFile xmlFilename="$data/vehicles/kuhn/vb3190/vb3190.xml">
         <!-- Round baler without wrapper -->
         <attributes>
-            <remove path="vehicle.storeData.specs.workingWidth" />
-
             <set path="vehicle.baler#canUnloadUnfinishedBale" value="true" />
             <set path="vehicle.baler#unfinishedBaleThreshold" value="100" />
             <set path="vehicle.baler.baleTypes.baleType(0)#width" value="1.20" />

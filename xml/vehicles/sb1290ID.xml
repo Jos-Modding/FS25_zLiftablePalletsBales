@@ -2,8 +2,6 @@
 <vehicle type="baler" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
     <parentFile xmlFilename="$data/vehicles/kuhn/sb1290ID/sb1290ID.xml">
         <attributes>
-            <remove path="vehicle.storeData.specs.workingWidth" />
-
             <set path="vehicle.baler#canUnloadUnfinishedBale" value="true" />
             <set path="vehicle.baler#unfinishedBaleThreshold" value="100" />
             <set path="vehicle.baler.baleTypes.baleType(0)#width" value="1.20" />

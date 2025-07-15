@@ -2,8 +2,6 @@
 <vehicle type="baler" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
     <parentFile xmlFilename="$data/vehicles/masseyFerguson/baler2370UHD/baler2370UHD.xml">
         <attributes>
-            <remove path="vehicle.storeData.specs.workingWidth" />
-
             <set path="vehicle.storeData.name" value="Squadra 1290 N UD"/>
             <set path="vehicle.storeData.image" value="$data/vehicles/fendt/squadra1290/store_squadra1290.png"/>
             <set path="vehicle.storeData.brand" value="FENDT"/>

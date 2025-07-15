@@ -3,8 +3,6 @@
     <parentFile xmlFilename="$data/vehicles/newHolland/proBelt165/proBelt165.xml">
         <!-- Round baler without wrapper -->
         <attributes>
-            <remove path="vehicle.storeData.specs.workingWidth" />
-
             <set path="vehicle.storeData.brand" value="CASEIH"/>
             <set path="vehicle.storeData.name"  value="RB 456 HD Pro"/>
             <set path="vehicle.storeData.image" value="$data/vehicles/caseIH/rb456/store_rb456.png"/>
