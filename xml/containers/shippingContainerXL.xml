@@ -17,11 +17,9 @@
         <rotation>0</rotation>
         <brand>LIZARD</brand>
         <category>shippingContainers</category>
-
         <storeIconRendering>
             <settings cameraXRot="-15" cameraYRot="26"/>
         </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
