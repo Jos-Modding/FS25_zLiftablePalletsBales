@@ -23,7 +23,7 @@
             <!-- Instant silage -->
             <set path="vehicle.baler.baleTypes.baleType(2)#isRoundBale" value="true" />
             <set path="vehicle.baler.baleTypes.baleType(2)#width" value="1.20" />
-            <set path="vehicle.baler.baleTypes.baleType(2)#diameter" value="1.26" />
+=            <set path="vehicle.baler.baleTypes.baleType(2)#diameter" value="1.26" />
             <set path="vehicle.baler.baleTypes.baleType(2).nodes#baleNode" value="baleNode125" />
             <set path="vehicle.baler.baleTypes.baleType(2).animations#fillAnimation" value="baleFillAnimation125" />
             <set path="vehicle.baler.baleTypes.baleType(2).animations#unloadAnimation" value="baleDropAnimation125" />
@@ -31,7 +31,7 @@
             <!-- Instant hay -->
             <set path="vehicle.baler.baleTypes.baleType(3)#isRoundBale" value="true" />
             <set path="vehicle.baler.baleTypes.baleType(3)#width" value="1.20" />
-            <set path="vehicle.baler.baleTypes.baleType(3)#diameter" value="1.27" />
+=            <set path="vehicle.baler.baleTypes.baleType(3)#diameter" value="1.27" />
             <set path="vehicle.baler.baleTypes.baleType(3).nodes#baleNode" value="baleNode125" />
             <set path="vehicle.baler.baleTypes.baleType(3).animations#fillAnimation" value="baleFillAnimation125" />
             <set path="vehicle.baler.baleTypes.baleType(3).animations#unloadAnimation" value="baleDropAnimation125" />

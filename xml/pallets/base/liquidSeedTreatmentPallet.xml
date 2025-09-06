@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_fillType_seedTreatingLiquid</name>
+        <specs>
+            <combination xmlFilename="$data/vehicles/agi/stormFX/stormFX.xml"/>
+            <capacity>280</capacity>
+            <fillTypes>LIQUIDSEEDTREATMENT</fillTypes>
+            <weight ignore="true"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_seedTreatingLiquid</function>
+        </functions>
+        <image>$data/objects/pallets/liquidSeedTreatmentPallet/store_liquidSeedTreatmentPallet.png</image>
+        <!-- <price>3450</price> -->
+        <price>0</price>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <rotation>0</rotation>
+        <shopHeight>1.5</shopHeight>
+        <brand>LIZARD</brand>
+        <category>pallets</category>
+        <financeCategory>OTHER</financeCategory>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="35" />
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>327424</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>134400</indexBufferMemoryUsage>
+        <textureMemoryUsage>327680</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/liquidSeedTreatmentPallet/liquidSeedTreatmentPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.45" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="100">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="100" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+        <input allowed="false"/>
+        <supportsPickUp>true</supportsPickUp>
+    </base>
+
+    <animations>
+        <animation name="fillAnimation">
+            <part node="content" startTime="0.0" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="55.01 0 0 0" shaderEndValues="-0.01 0 0 0"/>
+        </animation>
+    </animations>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="LIQUIDSEEDTREATMENT" capacity="280" startFillType="LIQUIDSEEDTREATMENT" startFillLevel="280" ignoreFillLimit="true">
+                        <fillRootNode node="0>" />
+                        <fillLevelAnimation name="fillAnimation" resetOnEmpty="true" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="seedTreatingLiquid_main_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+    </pallet>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="5" additionalMountDistance="0.43" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <!-- <tensionBeltObject> -->
+        <!-- <meshNodes> -->
+            <!-- <meshNode node="pallet_ignore"/> -->
+        <!-- </meshNodes> -->
+    <!-- </tensionBeltObject> -->
+
+    <i3dMappings>
+        <i3dMapping id="seedTreatingLiquid_main_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="fillTrigger" node="0>1" />
+        <i3dMapping id="content" node="0>2" />
+    </i3dMappings>
+</vehicle>

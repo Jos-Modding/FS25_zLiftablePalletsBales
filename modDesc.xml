@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="100">
+<modDesc descVersion="101">
     <author>Jos</author>
-    <version>1.0.4.0</version>
+    <version>1.0.4.1</version>
     <title>
         <en>Liftable Pallets And Bales</en>
         <de>Anhebbare Paletten Und Ballen</de>
@@ -26,6 +26,11 @@ Baler features:
 This mod will not make pallets, big bags, or bales added by other mods liftable, unless mentioned by this mod.
 
 Latest version and bug reports on <a href="https://github.com/Jos-Modding/FS25_zLiftablePalletsBales">GitHub</a>.
+
+Changelog 1.0.4.1:
+- Fixed xml bale sizes on various balers
+- Added Seed Treating Liquid pallet
+- Added liftable wood containers: regular and XL capacity (handle with care)
 
 Changelog 1.0.4.0:
 - Fixed textures and working width on Pro-Belt 165, RB 465 HD Pro, MF 2370 UHD, and Squadro 1290 N UD balers
@@ -74,6 +79,11 @@ Funktionen der Ballenpresse:
 Dieser Mod macht Paletten, Big Bags oder Ballen, die von anderen Mods hinzugefügt wurden, nicht hebbar, es sei denn, dieser Mod erwähnt sie.
 
 Aktuelle Version und Fehlerberichte auf <a href="https://github.com/Jos-Modding/FS25_zLiftablePalletsBales">GitHub</a>.
+
+Changelog 1.0.4.1:
+– XML-Ballengrößen verschiedener Ballenpressen korrigiert
+– Palette für Saatgutbehandlungsflüssigkeit hinzugefügt
+– Anhebbare Holzbehälter hinzugefügt: Normal- und XL-Kapazität (Vorsicht beim Umgang).
 
 Changelog 1.0.4.0:
 – Texturen und Arbeitsbreite der Ballenpressen Pro-Belt 165, RB 465 HD Pro, MF 2370 UHD und Squadro 1290 N UD korrigiert.
@@ -174,6 +184,7 @@ Changelog 1.0.1.0:
         <storeItem xmlFilename="xml/pallets/base/honeyBoxPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/base/jarredGreenBeansPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/base/lettuceBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/base/liquidSeedTreatmentPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/base/milkBottlesBoxPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/base/mineralFeedPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/base/mozzarellaBufalaBoxPallet.xml"/>
@@ -220,6 +231,7 @@ Changelog 1.0.1.0:
         <storeItem xmlFilename="xml/pallets/base/woodBeamPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/base/woolPallet.xml"/>
         <!-- MultiPurchase Pallets -->
+        <storeItem xmlFilename="xml/pallets/shop/multiPurchase_liquidSeedTreatmentPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/shop/multiPurchase_vegetablesPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/shop/multiPurchaseLiquidTank_fertilizerTank.xml"/>
         <storeItem xmlFilename="xml/pallets/shop/multiPurchaseLiquidTank_fertilizerTankHelm.xml"/>
@@ -319,5 +331,8 @@ Changelog 1.0.1.0:
         <storeItem xmlFilename="xml/bales/buyable/buyableBales_strawSquare180.xml" />
         <storeItem xmlFilename="xml/bales/buyable/buyableBales_strawSquare220.xml" />
         <storeItem xmlFilename="xml/bales/buyable/buyableBales_strawSquare240.xml" />
+        <!-- Containers -->
+        <storeItem xmlFilename="xml/containers/shippingContainer.xml" />
+        <storeItem xmlFilename="xml/containers/shippingContainerXL.xml" />
     </storeItems>
 </modDesc>

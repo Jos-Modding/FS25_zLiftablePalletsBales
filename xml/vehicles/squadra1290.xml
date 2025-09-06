@@ -32,7 +32,7 @@
             <set path="vehicle.baler.baleTypes.baleType(3).nodes#scaleNode" value="baleAnimation" />
             <set path="vehicle.baler.baleTypes.baleType(3).objectChange#node" value="baleNode" />
             <set path="vehicle.baler.baleTypes.baleType(3).objectChange#translationActive" value="0 0 -0.9" />
-            <set path="vehicle.baler.baleTypes.baleType(3).detailVisibilityCutNode#node" value="detailVisibilityCutNode" />
+            <set path="vehicle.baler.baleTypes.baleType(3).detailVisibilityCutNode#node" value="baleDetailVisibilityCutNodeZ" />
             <set path="vehicle.baler.baleTypes.baleType(3).detailVisibilityCutNode#axis" value="3" />
             <set path="vehicle.baler.baleTypes.baleType(3).detailVisibilityCutNode#direction" value="1" />
             <!-- Instant hay -->
@@ -47,7 +47,7 @@
             <set path="vehicle.baler.baleTypes.baleType(4).nodes#scaleNode" value="baleAnimation" />
             <set path="vehicle.baler.baleTypes.baleType(4).objectChange#node" value="baleNode" />
             <set path="vehicle.baler.baleTypes.baleType(4).objectChange#translationActive" value="0 0 -1.1" />
-            <set path="vehicle.baler.baleTypes.baleType(4).detailVisibilityCutNode#node" value="detailVisibilityCutNode" />
+            <set path="vehicle.baler.baleTypes.baleType(4).detailVisibilityCutNode#node" value="baleDetailVisibilityCutNodeZ" />
             <set path="vehicle.baler.baleTypes.baleType(4).detailVisibilityCutNode#axis" value="3" />
             <set path="vehicle.baler.baleTypes.baleType(4).detailVisibilityCutNode#direction" value="1" />
             <!-- Instant hay -->
@@ -61,7 +61,7 @@
             <set path="vehicle.baler.baleTypes.baleType(5).nodes#scaleNode" value="baleAnimation" />
             <set path="vehicle.baler.baleTypes.baleType(5).objectChange#node" value="baleNode" />
             <set path="vehicle.baler.baleTypes.baleType(5).objectChange#translationActive" value="0 0 -1.2" />
-            <set path="vehicle.baler.baleTypes.baleType(5).detailVisibilityCutNode#node" value="detailVisibilityCutNode" />
+            <set path="vehicle.baler.baleTypes.baleType(5).detailVisibilityCutNode#node" value="baleDetailVisibilityCutNodeZ" />
             <set path="vehicle.baler.baleTypes.baleType(5).detailVisibilityCutNode#axis" value="3" />
             <set path="vehicle.baler.baleTypes.baleType(5).detailVisibilityCutNode#direction" value="1" />
 

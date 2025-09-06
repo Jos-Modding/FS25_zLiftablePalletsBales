@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="woodContainer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_shippingContainer</name>
+        <specs>
+            <combination xmlFilename="$data/vehicles/fliegl/varioV2/varioV2.xml"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_shippingContainer</function>
+        </functions>
+        <image>$data/objects/shippingContainer/store_shippingContainer.png</image>
+        <price>3850</price>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>shippingContainers</category>
+        <vertexBufferMemoryUsage>1262336</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>324352</indexBufferMemoryUsage>
+        <textureMemoryUsage>851968</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="26"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>$data/objects/shippingContainer/shippingContainer.i3d</filename>
+        <size width="3.2" length="12.8" height="3"/>
+        <input allowed="false"/>
+        <components maxMass="100">
+            <component centerOfMass="0 0.05 0" solverIterationCount="40" mass="3700" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot type="OTHER" />
+        <supportsPickUp>true</supportsPickUp>
+    </base>
+
+    <configurationSets>
+        <configurationSet name="40FT (12m)">
+            <configuration name="design" index="1"/>
+            <configuration name="fillUnit" index="1"/>
+            <configuration name="woodContainer" index="1"/>
+        </configurationSet>
+        <configurationSet name="30FT (9m)">
+            <configuration name="design" index="2"/>
+            <configuration name="fillUnit" index="2"/>
+            <configuration name="woodContainer" index="2"/>
+        </configurationSet>
+        <configurationSet name="20FT (6m)">
+            <configuration name="design" index="3"/>
+            <configuration name="fillUnit" index="3"/>
+            <configuration name="woodContainer" index="3"/>
+        </configurationSet>
+    </configurationSets>
+
+    <designConfigurations>
+        <designConfiguration name="40FT">
+            <objectChange node="configuration40FT" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="doorDecals40FT" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="doors" translationActive="0 0 6.0615"/>
+            <objectChange node="colPart40FT01" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart40FT02" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart40FT03" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart40FT04" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart40FT05" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart40FT06" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart40FT07" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart40FT08" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart40FT09" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart40FT10" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart40FT11" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart40FT12" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="backCollision40FT" compoundChildActive="true" compoundChildInactive="false"/>
+        </designConfiguration>
+        <designConfiguration name="30FT">
+            <objectChange node="configuration30FT" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="doorDecals30FT" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="doors" translationActive="0 0 4.527"/>
+            <objectChange node="shippingContainer_main_component1" massActive="2950"/>
+            <objectChange node="colPart30FT01" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart30FT02" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart30FT03" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart30FT04" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart30FT05" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart30FT06" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart30FT07" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart30FT08" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart30FT09" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart30FT10" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart30FT11" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart30FT12" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="backCollision30FT" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="tensionBeltObject01" scaleActive="1 1 0.745"/>
+            <objectChange node="tensionBeltObject02" translationActive="0.000 1.295 -4.471"/>
+            <objectChange node="tensionBeltObject03" translationActive="0.000 1.295 4.472"/>
+        </designConfiguration>
+        <designConfiguration name="20FT">
+            <objectChange node="configuration20FT" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="doorDecals20FT" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="doors" translationActive="0 0 2.997"/>
+            <objectChange node="shippingContainer_main_component1" massActive="2300"/>
+            <objectChange node="colPart20FT01" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart20FT02" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart20FT03" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart20FT04" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart20FT05" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart20FT06" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart20FT07" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="backCollision20FT" compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="tensionBeltObject01" scaleActive="1 1 0.489"/>
+            <objectChange node="tensionBeltObject02" translationActive="0.000 1.295 -2.941"/>
+            <objectChange node="tensionBeltObject03" translationActive="0.000 1.295 2.941"/>
+        </designConfiguration>
+    </designConfigurations>
+
+    <design2Configurations>
+        <design2Configuration name="$l10n_configuration_valueDefault" isDefault="true"/>
+        <design2Configuration name="Lizard Logistics">
+            <objectChange node="lizardLogisticsDecal40FT" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="lizardLogisticsDecal30FT" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="lizardLogisticsDecal20FT" visibilityActive="true" visibilityInactive="false"/>
+        </design2Configuration>
+        <design2Configuration name="Lizard Forestry">
+            <objectChange node="lizardForestryDecal40FT" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="lizardForestryDecal30FT" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="lizardForestryDecal20FT" visibilityActive="true" visibilityInactive="false"/>
+        </design2Configuration>
+    </design2Configurations>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration price="1650">
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="wood" capacity="44000" ignoreFillLimit="true"> <!-- 35% air between the loaded trees -->
+                        <fillLevelAnimation name="fillLevelAnimation40FT"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration price="830">
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="wood" capacity="33000" ignoreFillLimit="true"> <!-- 35% air between the loaded trees -->
+                        <fillLevelAnimation name="fillLevelAnimation30FT"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration price="0">
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="wood" capacity="21700" ignoreFillLimit="true"> <!-- 35% air between the loaded trees -->
+                        <fillLevelAnimation name="fillLevelAnimation20FT"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <woodContainer>
+        <woodContainerConfigurations>
+            <woodContainerConfiguration fillUnitIndex="1" triggerNode="woodTrigger" targetLength="12" foldMinLimit="0.01">
+                <pushAnimation name="pushAnimation" speedScale="1"/>
+            </woodContainerConfiguration>
+            <woodContainerConfiguration fillUnitIndex="1" triggerNode="woodTrigger" targetLength="9" foldMinLimit="0.01">
+                <pushAnimation name="pushAnimation" speedScale="1"/>
+            </woodContainerConfiguration>
+            <woodContainerConfiguration fillUnitIndex="1" triggerNode="woodTrigger" targetLength="6" foldMinLimit="0.01">
+                <pushAnimation name="pushAnimation" speedScale="1"/>
+            </woodContainerConfiguration>
+        </woodContainerConfigurations>
+
+        <sounds numLogs="34">
+            <load file="$data/objects/shippingContainer/sounds/logImpact01.wav" volumeScale="2.0" pitchScale="1.00" outerRadius="45">
+                <randomization minPitch="-0.10" maxPitch="0.00" isInside="true" isOutside="true"/>
+                <sourceRandomization file="$data/objects/shippingContainer/sounds/logImpact02.wav"/>
+                <sourceRandomization file="$data/objects/shippingContainer/sounds/logImpact03.wav"/>
+            </load>
+        </sounds>
+    </woodContainer>
+
+    <externalVehicleControl>
+        <trigger node="playerTrigger">
+            <function name="folding"/>
+        </trigger>
+    </externalVehicleControl>
+
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="0" turnOnFoldDirection="-1" posDirectionText="$l10n_action_openDoor" negDirectionText="$l10n_action_closeDoor">
+                    <foldingPart animationName="folding" speedScale="0.3" />
+                </foldingParts>
+              </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+
+    <animations>
+        <animation name="folding">
+            <part node="doorLeft" startTime="0.133" endTime="0.2" startRot="0.0 0.0 0.0" endRot="0.0 2.502 0.0" />
+            <part node="doorLeft" startTime="0.2" endTime="1.0" startRot="0.0 2.502 0.0" endRot="0.0 265.0 0.0" />
+            <part node="doorLeftLockArm01" startTime="0.133" endTime="0.2" startRot="0.0 0.0 0.0" endRot="0.0 -80.0 0.0" />
+            <part node="doorLeftLockArm01" startTime="0.267" endTime="0.333" startRot="0.0 -80.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="doorLeftLockArm01Part" startTime="0.067" endTime="0.133" startRot="0.0 0.0 0.0" endRot="0.0 0.0 3.47" />
+            <part node="doorLeftLockArm01Part" startTime="0.333" endTime="0.367" startRot="0.0 0.0 3.47" endRot="0.0 0.0 0.0" />
+            <part node="doorLeftLockArm01Clip" startTime="0.0" endTime="0.067" startRot="0.0 0.0 0.0" endRot="0.0 0.0 105.0" />
+            <part node="doorLeftLockArm01Clip" startTime="0.333" endTime="0.367" startRot="0.0 0.0 105.0" endRot="0.0 0.0 0.0" />
+            <part node="doorLeftLockArm02" startTime="0.133" endTime="0.2" startRot="0.0 0.0 0.0" endRot="0.0 -67.0 0.0" />
+            <part node="doorLeftLockArm02" startTime="0.267" endTime="0.333" startRot="0.0 -67.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="doorLeftLockArm02Part" startTime="0.067" endTime="0.133" startRot="0.0 0.0 0.0" endRot="0.0 0.0 3.47" />
+            <part node="doorLeftLockArm02Part" startTime="0.333" endTime="0.367" startRot="0.0 0.0 3.47" endRot="0.0 0.0 0.0" />
+            <part node="doorLeftLockArm02Clip" startTime="0.0" endTime="0.067" startRot="0.0 0.0 0.0" endRot="0.0 0.0 105.0" />
+            <part node="doorLeftLockArm02Clip" startTime="0.333" endTime="0.367" startRot="0.0 0.0 105.0" endRot="0.0 0.0 0.0" />
+            <part node="doorRight" startTime="0.133" endTime="0.2" startRot="0.0 0.0 0.0" endRot="0.0 -2.502 0.0" />
+            <part node="doorRight" startTime="0.2" endTime="1.0" startRot="0.0 -2.502 0.0" endRot="0.0 -265.0 0.0" />
+            <part node="doorRightLockArm01" startTime="0.133" endTime="0.2" startRot="0.0 0.0 0.0" endRot="0.0 80.0 0.0" />
+            <part node="doorRightLockArm01" startTime="0.267" endTime="0.333" startRot="0.0 80.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="doorRightLockArm01Part" startTime="0.067" endTime="0.133" startRot="0.0 0.0 0.0" endRot="0.0 0.0 -3.47" />
+            <part node="doorRightLockArm01Part" startTime="0.333" endTime="0.367" startRot="0.0 0.0 -3.47" endRot="0.0 0.0 0.0" />
+            <part node="doorRightLockArm01Clip" startTime="0.0" endTime="0.067" startRot="0.0 0.0 0.0" endRot="0.0 0.0 -105.0" />
+            <part node="doorRightLockArm01Clip" startTime="0.333" endTime="0.367" startRot="0.0 0.0 -105.0" endRot="0.0 0.0 0.0" />
+            <part node="doorRightLockArm02" startTime="0.133" endTime="0.2" startRot="0.0 0.0 0.0" endRot="0.0 67.0 0.0" />
+            <part node="doorRightLockArm02" startTime="0.267" endTime="0.333" startRot="0.0 67.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="doorRightLockArm02Part" startTime="0.067" endTime="0.133" startRot="0.0 0.0 0.0" endRot="0.0 0.0 -3.47" />
+            <part node="doorRightLockArm02Part" startTime="0.333" endTime="0.367" startRot="0.0 0.0 -3.47" endRot="0.0 0.0 0.0" />
+            <part node="doorRightLockArm02Clip" startTime="0.0" endTime="0.067" startRot="0.0 0.0 0.0" endRot="0.0 0.0 -105.0" />
+            <part node="doorRightLockArm02Clip" startTime="0.333" endTime="0.367" startRot="0.0 0.0 -105.0" endRot="0.0 0.0 0.0" />
+
+            <sound file="$data/objects/shippingContainer/sounds/containerOpenStart.wav"  startTime="0.05" direction="1" pitchScale="1.0" outerRadius="55">
+                <volume indoor="0.5" outdoor="3.0"/>
+            </sound>
+            <sound file="$data/objects/shippingContainer/sounds/containerOpenEnd.wav"    startTime="0.99" direction="1" pitchScale="1.0" outerRadius="55">
+                <volume indoor="0.5" outdoor="4.0"/>
+            </sound>
+            <sound file="$data/objects/shippingContainer/sounds/containerHingeOpen.wav"  startTime="0.20" endTime="1.00" direction="1" pitchScale="1.0" fadeOut="0.1" outerRadius="55">
+                <volume indoor="0.5" outdoor="3.0"/>
+            </sound>
+            <sound file="$data/objects/shippingContainer/sounds/containerHingeClose.wav" startTime="0.20" endTime="1.00" direction="-1" pitchScale="1.0" fadeOut="0.1" outerRadius="55">
+                <volume indoor="0.5" outdoor="3.0"/>
+            </sound>
+            <sound file="$data/objects/shippingContainer/sounds/containerCloseEnd.wav"   startTime="0.25" direction="-1" pitchScale="1.0" outerRadius="55">
+                <volume indoor="0.5" outdoor="3.0"/>
+            </sound>
+            <sound template="clackVar6" startTime="0.01" direction="0" volumeScale="3.0" pitchScale="1.10" />
+        </animation>
+        <animation name="fillLevelAnimation40FT">
+            <part node="logs40FT" startTime="0.0" endTime="0.1" shaderParameter="hideByIndex" shaderStartValues="33.01 0 0 0" shaderEndValues="-0.01 0 0 0"/>
+        </animation>
+        <animation name="fillLevelAnimation30FT">
+            <part node="logs30FT" startTime="0.0" endTime="0.1" shaderParameter="hideByIndex" shaderStartValues="33.01 0 0 0" shaderEndValues="-0.01 0 0 0"/>
+        </animation>
+        <animation name="fillLevelAnimation20FT">
+            <part node="logs20FT" startTime="0.0" endTime="0.1" shaderParameter="hideByIndex" shaderStartValues="33.01 0 0 0" shaderEndValues="-0.01 0 0 0"/>
+        </animation>
+        <animation name="pushAnimation">
+            <part node="backCollision40FT" startTime="0.0" endTime="2" startTrans="0.000 1.325 -6.047" endTrans="0.000 1.325 5.695"/>
+            <part node="backCollision30FT" startTime="0.0" endTime="2" startTrans="0.000 1.325 -4.496" endTrans="0.000 1.325 4.202"/>
+            <part node="backCollision20FT" startTime="0.0" endTime="2" startTrans="0.000 1.325 -2.984" endTrans="0.000 1.325 2.617"/>
+        </animation>
+    </animations>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="1" jointTransY="0.134" jointLimitToRotY="true" />
+
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="tensionBeltObject01"/>
+            <meshNode node="tensionBeltObject02"/>
+            <meshNode node="tensionBeltObject03"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+    <baseColorConfigurations useDefaultColors="true" defaultColorIndex="5" price="0" defaultColorMaterialTemplateName="calibratedPaint">
+        <material materialSlotName="mainColor_mat"/>
+        <material materialSlotName="decalsColor_mat" useContrastColor="true" contrastThreshold="0.3"/>
+        <material materialSlotName="lizardLogisticsColor_mat" useContrastColor="true" contrastThreshold="0.3"/>
+        <material materialSlotName="lizardForestryColor_mat" useContrastColor="true" contrastThreshold="0.3"/>
+    </baseColorConfigurations>
+
+    <i3dMappings>
+        <i3dMapping id="shippingContainer_main_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0|0" />
+        <i3dMapping id="configuration20FT" node="0>0|1|0" />
+        <i3dMapping id="colPart20FT01" node="0>0|1|0|0|0" />
+        <i3dMapping id="colPart20FT02" node="0>0|1|0|0|1" />
+        <i3dMapping id="colPart20FT03" node="0>0|1|0|0|2" />
+        <i3dMapping id="colPart20FT04" node="0>0|1|0|0|3" />
+        <i3dMapping id="colPart20FT05" node="0>0|1|0|0|4" />
+        <i3dMapping id="colPart20FT06" node="0>0|1|0|0|5" />
+        <i3dMapping id="colPart20FT07" node="0>0|1|0|0|6" />
+        <i3dMapping id="backCollision20FT" node="0>0|1|0|0|7" />
+        <i3dMapping id="logs20FT" node="0>0|1|0|1" />
+        <i3dMapping id="lizardLogisticsDecal20FT" node="0>0|1|0|2" />
+        <i3dMapping id="lizardForestryDecal20FT" node="0>0|1|0|3" />
+        <i3dMapping id="configuration30FT" node="0>0|1|1" />
+        <i3dMapping id="colPart30FT01" node="0>0|1|1|0|0" />
+        <i3dMapping id="colPart30FT02" node="0>0|1|1|0|1" />
+        <i3dMapping id="colPart30FT03" node="0>0|1|1|0|2" />
+        <i3dMapping id="colPart30FT04" node="0>0|1|1|0|3" />
+        <i3dMapping id="colPart30FT05" node="0>0|1|1|0|4" />
+        <i3dMapping id="colPart30FT06" node="0>0|1|1|0|5" />
+        <i3dMapping id="colPart30FT07" node="0>0|1|1|0|6" />
+        <i3dMapping id="colPart30FT08" node="0>0|1|1|0|7" />
+        <i3dMapping id="colPart30FT09" node="0>0|1|1|0|8" />
+        <i3dMapping id="colPart30FT10" node="0>0|1|1|0|9" />
+        <i3dMapping id="colPart30FT11" node="0>0|1|1|0|10" />
+        <i3dMapping id="colPart30FT12" node="0>0|1|1|0|11" />
+        <i3dMapping id="backCollision30FT" node="0>0|1|1|0|12" />
+        <i3dMapping id="logs30FT" node="0>0|1|1|1" />
+        <i3dMapping id="lizardLogisticsDecal30FT" node="0>0|1|1|2" />
+        <i3dMapping id="lizardForestryDecal30FT" node="0>0|1|1|3" />
+        <i3dMapping id="configuration40FT" node="0>0|1|2" />
+        <i3dMapping id="colPart40FT01" node="0>0|1|2|0|0" />
+        <i3dMapping id="colPart40FT02" node="0>0|1|2|0|1" />
+        <i3dMapping id="colPart40FT03" node="0>0|1|2|0|2" />
+        <i3dMapping id="colPart40FT04" node="0>0|1|2|0|3" />
+        <i3dMapping id="colPart40FT05" node="0>0|1|2|0|4" />
+        <i3dMapping id="colPart40FT06" node="0>0|1|2|0|5" />
+        <i3dMapping id="colPart40FT07" node="0>0|1|2|0|6" />
+        <i3dMapping id="colPart40FT08" node="0>0|1|2|0|7" />
+        <i3dMapping id="colPart40FT09" node="0>0|1|2|0|8" />
+        <i3dMapping id="colPart40FT10" node="0>0|1|2|0|9" />
+        <i3dMapping id="colPart40FT11" node="0>0|1|2|0|10" />
+        <i3dMapping id="colPart40FT12" node="0>0|1|2|0|11" />
+        <i3dMapping id="backCollision40FT" node="0>0|1|2|0|12" />
+        <i3dMapping id="logs40FT" node="0>0|1|2|1" />
+        <i3dMapping id="lizardLogisticsDecal40FT" node="0>0|1|2|2" />
+        <i3dMapping id="lizardLogisticsDecal40FT_colorMask" node="0>0|1|2|2|0" />
+        <i3dMapping id="lizardForestryDecal40FT" node="0>0|1|2|3" />
+        <i3dMapping id="lizardForestryDecal40FT_colorMask" node="0>0|1|2|3|0" />
+        <i3dMapping id="tensionBeltObject01" node="0>0|2|0" />
+        <i3dMapping id="tensionBeltObject02" node="0>0|2|1" />
+        <i3dMapping id="tensionBeltObject03" node="0>0|2|2" />
+        <i3dMapping id="doors" node="0>0|3" />
+        <i3dMapping id="doorLeft" node="0>0|3|0" />
+        <i3dMapping id="doorLeftLockArm01" node="0>0|3|0|0" />
+        <i3dMapping id="doorLeftLockArm01Part" node="0>0|3|0|0|0" />
+        <i3dMapping id="doorLeftLockArm01Clip" node="0>0|3|0|1" />
+        <i3dMapping id="doorLeftLockArm02" node="0>0|3|0|2" />
+        <i3dMapping id="doorLeftLockArm02Part" node="0>0|3|0|2|0" />
+        <i3dMapping id="doorLeftLockArm02Clip" node="0>0|3|0|3" />
+        <i3dMapping id="doorDecals20FT" node="0>0|3|0|4" />
+        <i3dMapping id="doorDecals30FT" node="0>0|3|0|5" />
+        <i3dMapping id="doorDecals40FT" node="0>0|3|0|6" />
+        <i3dMapping id="doorDecals40FT_colorMask" node="0>0|3|0|6|0" />
+        <i3dMapping id="doorRight" node="0>0|3|1" />
+        <i3dMapping id="doorRightLockArm01" node="0>0|3|1|0" />
+        <i3dMapping id="doorRightLockArm01Part" node="0>0|3|1|0|0" />
+        <i3dMapping id="doorRightLockArm01Clip" node="0>0|3|1|1" />
+        <i3dMapping id="doorRightLockArm02" node="0>0|3|1|2" />
+        <i3dMapping id="doorRightLockArm02Part" node="0>0|3|1|2|0" />
+        <i3dMapping id="doorRightLockArm02Clip" node="0>0|3|1|3" />
+        <i3dMapping id="woodTrigger" node="0>0|3|2" />
+        <i3dMapping id="playerTrigger" node="0>0|3|3" />
+    </i3dMappings>
+</vehicle>
