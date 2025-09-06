@@ -16,8 +16,10 @@ Baler features:
 - Variable working width: 3 / 12 / 24 meters
 - Unload unfinished bales
 - Pickup on unowned land
+- Special bale sizes for instant silage/hay from grass. You will need special equipment to load these bales, use Custom Bale Support Pack by Bb Mods for example.
 
 This mod will not make pallets, big bags, or bales added by other mods liftable, unless mentioned by this mod.
+
 ## Requirements
 
 - **Farming Simulator Version:** FS25
