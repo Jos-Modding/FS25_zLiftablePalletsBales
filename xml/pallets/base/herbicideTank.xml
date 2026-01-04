@@ -33,7 +33,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_pallet</typeDesc>
-        <filename>$data/objects/pallets/liquidTank/liquidTank.i3d</filename>
+        <filename>i3d/liquidTank.i3d</filename>
         <size width="1.35" length="1.35" height="1.55" />
         <input allowed="false"/>
         <canBeReset>false</canBeReset>
@@ -64,7 +64,18 @@
 
     <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="500"/>
 
-    <dischargeable requiresTipOcclusionArea="false" />
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="raycastNode" emptySpeed="750" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true">
+            <raycast useWorldNegYDirection="true" />
+            <info width="0.4" length="0.4" />
+            <activationTrigger node="dischargeActivationTrigger" />
+
+            <effects>
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"  materialType="pipe"           delay="0"   maxBending="1"  positionUpdateNodes="smokeEffect"/>
+                <effectNode                          effectNode="smokeEffect" materialType="unloadingSmoke" delay="0.1" alignToWorldY="true"/>
+            </effects>
+        </dischargeNode>
+    </dischargeable>
 
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="5" additionalMountDistance="1.5" jointTransY="0.11" jointLimitToRotY="true"/>
 
@@ -91,5 +102,10 @@
         <i3dMapping id="cortevaConfiguration" node="0>2|1" />
         <i3dMapping id="fertilizerTank_vis" node="0>3|0" />
         <i3dMapping id="materialHerbicide" node="0>3|1" />
+        <i3dMapping id="raycastNode" node="0>4|0" />
+        <i3dMapping id="fillTrigger" node="0>4|1" />
+        <i3dMapping id="pipeEffect" node="0>4|2|0" />
+        <i3dMapping id="smokeEffect" node="0>4|2|1" />
+        <i3dMapping id="dischargeActivationTrigger" node="0>4|3" />
     </i3dMappings>
 </vehicle>

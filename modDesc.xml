@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="101">
+<modDesc descVersion="105">
     <author>Jos</author>
     <version>1.0.4.2</version>
     <title>
@@ -26,6 +26,10 @@ Baler features:
 This mod will not make pallets, big bags, or bales added by other mods liftable, unless mentioned by this mod.
 
 Latest version and bug reports on <a href="https://github.com/Jos-Modding/FS25_zLiftablePalletsBales">GitHub</a>.
+
+Changelog 1.0.4.2:
+- Fixed capacity of lime bigbag pallet
+- Added autoload trigger to liquid fertilizer and herbicide IBC tanks
 
 Changelog 1.0.4.1:
 - Fixed xml bale sizes on various balers
@@ -79,6 +83,10 @@ Funktionen der Ballenpresse:
 Dieser Mod macht Paletten, Big Bags oder Ballen, die von anderen Mods hinzugefügt wurden, nicht hebbar, es sei denn, dieser Mod erwähnt sie.
 
 Aktuelle Version und Fehlerberichte auf <a href="https://github.com/Jos-Modding/FS25_zLiftablePalletsBales">GitHub</a>.
+
+Changelog 1.0.4.2:
+- Feste Kapazität der Kalk-Big-Bag-Palette
+- Automatischer Beladeauslöser für IBC-Tanks mit Flüssigdünger und Herbiziden hinzugefügt
 
 Changelog 1.0.4.1:
 – XML-Ballengrößen verschiedener Ballenpressen korrigiert
