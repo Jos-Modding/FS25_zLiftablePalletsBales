@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="baleBuyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_baleSpawner_free</name>
+        <functions>
+            <function>$l10n_function_baleSpawner_free</function>
+        </functions>
+        <image>store/store_baleSpawner.dds</image>
+        <price>0</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>tools</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>i3d/baleSpawner.i3d</filename>
+        <boughtWithFarmland>true</boughtWithFarmland>
+        <canBeRenamed>true</canBeRenamed>
+        <canBeDeleted>true</canBeDeleted>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp"/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01" />
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01"/>
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01"/>
+        </updateAreas>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="teleportNode" filename="$data/shared/assets/marker/markerIconBales.i3d" />
+        <triggerMarker node="warningStripesLarge" adjustToGround="true"/>
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="SHOP" linkNode="playerTrigger" teleportNode="playerTrigger" />
+    </hotspots>
+
+    <vehicleBuyingStation title="$l10n_shopItem_baleSpawner" description="$l10n_description_baleSpawner">
+        <trigger node="playerTrigger" text="$l10n_trigger_baleSpawner" />
+
+        <spawnPlaces>
+            <spawnPlace startNode="spawnPlaceStart01" endNode="spawnPlaceEnd01"/>
+            <spawnPlace startNode="spawnPlaceStart02" endNode="spawnPlaceEnd02"/>
+        </spawnPlaces>
+
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_dryGrassRound125.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_dryGrassRound150.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_dryGrassRound180.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_dryGrassSquare180.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_dryGrassSquare220.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_dryGrassSquare240.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_grassRound125.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_grassRound150.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_grassRound180.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_grassSquare180.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_grassSquare220.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_grassSquare240.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_silageRound125.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_silageRound150.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_silageRound180.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_silageSquare180.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_silageSquare220.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_silageSquare240.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_strawRound125.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_strawRound150.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_strawRound180.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_strawSquare180.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_strawSquare220.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_strawSquare240.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_cottonRound238.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_cottonSquare488.xml" price="0" transportCosts="0" />
+        <storeItem xmlFilename="xml/objects/bales/buyableBales_biomassRound125.xml" price="0" transportCosts="0" />
+    </vehicleBuyingStation>
+
+    <i3dMappings>
+        <i3dMapping id="baleSpawner" node="0>" />
+        <i3dMapping id="warningStripesLarge" node="0>0|0|0" />
+        <i3dMapping id="playerTrigger" node="0>1|0" />
+        <i3dMapping id="teleportNode" node="0>1|1" />
+        <i3dMapping id="clearAreaStart01" node="0>2|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>2|0|1" />
+        <i3dMapping id="testAreaStart01" node="0>3|0" />
+        <i3dMapping id="testAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>4|0|0" />
+        <i3dMapping id="spawnPlaceStart01" node="0>5|0" />
+        <i3dMapping id="spawnPlaceEnd01" node="0>5|0|0" />
+        <i3dMapping id="spawnPlaceStart02" node="0>5|1" />
+        <i3dMapping id="spawnPlaceEnd02" node="0>5|1|0" />
+    </i3dMappings>
+</placeable>

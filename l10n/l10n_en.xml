@@ -1,0 +1,10 @@
+<l10n>
+    <elements>
+        <e k="shopItem_baleSpawner" v="Bale Spawner"/>
+        <e k="shopItem_baleSpawner_free" v="Bale Spawner (free)"/>
+        <e k="function_baleSpawner" v="A placeable bale shop."/>
+        <e k="function_baleSpawner_free" v="A placeable bale shop. All bales cost $0"/>
+        <e k="description_baleSpawner" v="Select type and size"/>
+        <e k="trigger_baleSpawner" v="Open Shop"/>
+    </elements>
+</l10n>

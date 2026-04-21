@@ -1,0 +1,10 @@
+<l10n>
+    <elements>
+        <e k="shopItem_baleSpawner" v="Ballen-Laicher"/>
+        <e k="shopItem_baleSpawner_free" v="Ballen-Laicher (frei)"/>
+        <e k="function_baleSpawner" v="Ein platzierbarer Ballenladen."/>
+        <e k="function_baleSpawner_free" v="Ein platzierbarer Ballenladen. Alle Ballen kosten 0 $."/>
+        <e k="description_baleSpawner" v="Typ und Größe auswählen"/>
+        <e k="trigger_baleSpawner" v="Geschäft öffnen"/>
+    </elements>
+</l10n>

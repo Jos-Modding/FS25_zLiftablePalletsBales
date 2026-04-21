@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
+    <storeData>
+        <name params="$l10n_fillType_cotton">%s 488 cm</name>
+        <functions>
+            <function>$l10n_function_bales</function>
+        </functions>
+        <image>store/store_buyableBales_cottonSquare.dds</image>
+        <price>10000</price>
+        <lifetime>600</lifetime>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <category>bales</category>
+        <financeCategory>PURCHASE_BALES</financeCategory>
+
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_fillType_cotton</typeDesc>
+        <filename>$data/objects/multiPurchaseItem/multiPurchaseItem.i3d</filename>
+        <size width="2.5" length="5" height="2.5"/>
+        <components>
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="100"/>
+        </components>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="COTTON" capacity="20000" />
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <multipleItemPurchase filename="xml/bales/squarebales/cottonSquarebale488.xml" fillType="COTTON">
+        <offsets>
+            <offset amount="1" offset="0 0 1"/>
+            <offset amount="5" offset="0 0 0"/>
+        </offsets>
+        <itemPositions>
+            <itemPosition position="0 1.10 -2.20" rotation="0 90 0"/>
+            <itemPosition position="0 3.40 -2.20" rotation="0 90 0"/>
+            <itemPosition position="0 1.10 0" rotation="0 90 0"/>
+            <itemPosition position="0 3.40 0" rotation="0 90 0"/>
+
+            <itemPosition position="4.88 1.10 -2.20" rotation="0 90 0"/>
+            <itemPosition position="4.88 3.40 -2.20" rotation="0 90 0"/>
+            <itemPosition position="4.88 1.10 0" rotation="0 90 0"/>
+            <itemPosition position="4.88 3.40 0" rotation="0 90 0"/>
+        </itemPositions>
+    </multipleItemPurchase>
+
+    <multipleItemPurchaseAmountConfigurations>
+        <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="10000"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="15000"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="20000"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="25000"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="30000"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="35000"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="40000"/>
+    </multipleItemPurchaseAmountConfigurations>
+</vehicle>
