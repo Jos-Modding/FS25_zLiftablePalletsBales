@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
     <storeData>
         <name params="$l10n_fillType_cotton">%s 488 cm</name>
@@ -6,7 +6,7 @@
             <function>$l10n_function_bales</function>
         </functions>
         <image>store/store_buyableBales_cottonSquare.dds</image>
-        <price>10000</price>
+        <price>5000</price>
         <lifetime>600</lifetime>
         <allowLeasing>false</allowLeasing>
         <canBeSold>false</canBeSold>
@@ -56,12 +56,12 @@
 
     <multipleItemPurchaseAmountConfigurations>
         <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
-        <multipleItemPurchaseAmountConfiguration name="2" price="10000"/>
-        <multipleItemPurchaseAmountConfiguration name="3" price="15000"/>
-        <multipleItemPurchaseAmountConfiguration name="4" price="20000"/>
-        <multipleItemPurchaseAmountConfiguration name="5" price="25000"/>
-        <multipleItemPurchaseAmountConfiguration name="6" price="30000"/>
-        <multipleItemPurchaseAmountConfiguration name="7" price="35000"/>
-        <multipleItemPurchaseAmountConfiguration name="8" price="40000"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="5000"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="10000"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="15000"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="20000"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="25000"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="30000"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="35000"/>
     </multipleItemPurchaseAmountConfigurations>
 </vehicle>

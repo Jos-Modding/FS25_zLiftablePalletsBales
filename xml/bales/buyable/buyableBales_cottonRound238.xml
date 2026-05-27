@@ -55,12 +55,12 @@
 
     <multipleItemPurchaseAmountConfigurations>
         <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
-        <multipleItemPurchaseAmountConfiguration name="2" price="10000"/>
-        <multipleItemPurchaseAmountConfiguration name="3" price="15000"/>
-        <multipleItemPurchaseAmountConfiguration name="4" price="20000"/>
-        <multipleItemPurchaseAmountConfiguration name="5" price="25000"/>
-        <multipleItemPurchaseAmountConfiguration name="6" price="30000"/>
-        <multipleItemPurchaseAmountConfiguration name="7" price="35000"/>
-        <multipleItemPurchaseAmountConfiguration name="8" price="40000"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="5000"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="10000"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="15000"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="20000"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="25000"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="30000"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="35000"/>
     </multipleItemPurchaseAmountConfigurations>
 </vehicle>

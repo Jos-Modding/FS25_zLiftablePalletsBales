@@ -61,13 +61,13 @@
 
     <multipleItemPurchaseAmountConfigurations>
         <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
-        <multipleItemPurchaseAmountConfiguration name="2" price="1500"/>
-        <multipleItemPurchaseAmountConfiguration name="3" price="2250"/>
-        <multipleItemPurchaseAmountConfiguration name="4" price="3000"/>
-        <multipleItemPurchaseAmountConfiguration name="5" price="3750"/>
-        <multipleItemPurchaseAmountConfiguration name="6" price="4500"/>
-        <multipleItemPurchaseAmountConfiguration name="7" price="5250"/>
-        <multipleItemPurchaseAmountConfiguration name="8" price="6000"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="750"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="1500"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="2250"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="3000"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="3750"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="4500"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="5250"/>
     </multipleItemPurchaseAmountConfigurations>
 
     <baseColorConfigurations useDefaultColors="true">
