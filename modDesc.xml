@@ -37,6 +37,9 @@ Monthly upkeep: $0
 All bales: $0
 
 ---
+Changelog 1.0.6.0:
+- Added John Deere v452R baler
+- Fixed prices for buyable bales
 
 Changelog 1.0.5.0:
 - Added Bale Spawner for Liftable bales
@@ -109,6 +112,10 @@ Monatliche Unterhaltskosten: 0€
 Alle Ballen: 0€
 
 ---
+
+Changelog 1.0.6.0:
+- John Deere V452R Ballenpresse hinzugefügt
+- Festpreise für käufliche Ballen
 
 Changelog 1.0.5.0:
 - Ballengenerator für anhebbare Ballen hinzugefügt
