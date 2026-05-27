@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="108">
+<modDesc descVersion="109">
     <author>Jos</author>
-    <version>1.0.5.0</version>
+    <version>1.0.6.0</version>
     <title>
         <en>Liftable Pallets And Bales</en>
         <de>Anhebbare Paletten Und Ballen</de>
@@ -339,6 +339,7 @@ Changelog 1.0.1.0:
         <storeItem xmlFilename="xml/vehicles/zr5.xml" />
         <storeItem xmlFilename="xml/vehicles/baler4160V.xml" />
         <storeItem xmlFilename="xml/vehicles/rotana160V.xml" />
+        <storeItem xmlFilename="xml/vehicles/v452R.xml" />
         <!-- Square Balers -->
         <storeItem xmlFilename="xml/vehicles/baler1840.xml" />
         <storeItem xmlFilename="xml/vehicles/baler2370UHD.xml" />

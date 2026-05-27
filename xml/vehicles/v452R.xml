@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="baler" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
+    <parentFile xmlFilename="$data/vehicles/johnDeere/v452R/v452R.xml">
+        <!-- Round baler without wrapper -->
+        <attributes>
+            <set path="vehicle.baler#canUnloadUnfinishedBale" value="true" />
+            <set path="vehicle.baler#unfinishedBaleThreshold" value="100" />
+            <set path="vehicle.baler.baleTypes.baleType(0)#width" value="1.20" />
+            <set path="vehicle.baler.baleTypes.baleType(1)#width" value="1.20" />
+            <!-- Instant hay -->
+            <set path="vehicle.baler.baleTypes.baleType(2)#isRoundBale" value="true" />
+            <set path="vehicle.baler.baleTypes.baleType(2)#width" value="1.20" />
+            <set path="vehicle.baler.baleTypes.baleType(2)#diameter" value="1.27" />
+            <set path="vehicle.baler.baleTypes.baleType(2).nodes#baleNode" value="baleNode125" />
+            <set path="vehicle.baler.baleTypes.baleType(2).animations#fillAnimation" value="fillAnimationRB125" />
+            <set path="vehicle.baler.baleTypes.baleType(2).animations#unloadAnimation" value="unloadAnimationRB125" />
+            <set path="vehicle.baler.baleTypes.baleType(2).animations#dropAnimationTime" value="5" />
+            <!-- Instant hay -->
+            <set path="vehicle.baler.baleTypes.baleType(3)#isRoundBale" value="true" />
+            <set path="vehicle.baler.baleTypes.baleType(3)#width" value="1.20" />
+            <set path="vehicle.baler.baleTypes.baleType(3)#diameter" value="1.52" />
+            <set path="vehicle.baler.baleTypes.baleType(3).nodes#baleNode" value="baleNode150" />
+            <set path="vehicle.baler.baleTypes.baleType(3).animations#fillAnimation" value="fillAnimationRB150" />
+            <set path="vehicle.baler.baleTypes.baleType(3).animations#unloadAnimation" value="unloadAnimationRB150" />
+            <set path="vehicle.baler.baleTypes.baleType(3).animations#dropAnimationTime" value="5" />
+
+            <set path="vehicle.design2Configurations#title" value="$l10n_configuration_workingWidth" />
+            <set path="vehicle.design2Configurations#isYesNoOption" value="false" />
+
+            <set path="vehicle.design2Configurations.design2Configuration(0)#isDefault" value="true" />
+            <set path="vehicle.design2Configurations.design2Configuration(0)#price" value="0" />
+            <set path="vehicle.design2Configurations.design2Configuration(0)#name" value="3 %s" />
+            <set path="vehicle.design2Configurations.design2Configuration(0)#params" value="$l10n_unit_m" />
+            <set path="vehicle.design2Configurations.design2Configuration(0)#workingWidth" value="3" />
+            <set path="vehicle.design2Configurations.design2Configuration(0).objectChange(0)#node" value="workAreaStart" />
+            <set path="vehicle.design2Configurations.design2Configuration(0).objectChange(0)#translationActive" value="1.5 0 -0.2" />
+            <set path="vehicle.design2Configurations.design2Configuration(0).objectChange(1)#node" value="workAreaWidth" />
+            <set path="vehicle.design2Configurations.design2Configuration(0).objectChange(1)#translationActive" value="-1.5 0 -0.2" />
+            <set path="vehicle.design2Configurations.design2Configuration(0).objectChange(2)#node" value="workAreaHeight" />
+            <set path="vehicle.design2Configurations.design2Configuration(0).objectChange(2)#translationActive" value="1.5 0 1.5" />
+
+            <set path="vehicle.design2Configurations.design2Configuration(1)#price" value="500" />
+            <set path="vehicle.design2Configurations.design2Configuration(1)#name" value="12 %s" />
+            <set path="vehicle.design2Configurations.design2Configuration(1)#params" value="$l10n_unit_m" />
+            <set path="vehicle.design2Configurations.design2Configuration(1)#workingWidth" value="12" />
+            <set path="vehicle.design2Configurations.design2Configuration(1).objectChange(0)#node" value="workAreaStart" />
+            <set path="vehicle.design2Configurations.design2Configuration(1).objectChange(0)#translationActive" value="6 0 -0.2" />
+            <set path="vehicle.design2Configurations.design2Configuration(1).objectChange(1)#node" value="workAreaWidth" />
+            <set path="vehicle.design2Configurations.design2Configuration(1).objectChange(1)#translationActive" value="-6 0 -0.2" />
+            <set path="vehicle.design2Configurations.design2Configuration(1).objectChange(2)#node" value="workAreaHeight" />
+            <set path="vehicle.design2Configurations.design2Configuration(1).objectChange(2)#translationActive" value="6 0 1.5" />
+
+            <set path="vehicle.design2Configurations.design2Configuration(2)#price" value="1000" />
+            <set path="vehicle.design2Configurations.design2Configuration(2)#name" value="24 %s" />
+            <set path="vehicle.design2Configurations.design2Configuration(2)#params" value="$l10n_unit_m" />
+            <set path="vehicle.design2Configurations.design2Configuration(2)#workingWidth" value="24" />
+            <set path="vehicle.design2Configurations.design2Configuration(2).objectChange(0)#node" value="workAreaStart" />
+            <set path="vehicle.design2Configurations.design2Configuration(2).objectChange(0)#translationActive" value="12 0 -0.2" />
+            <set path="vehicle.design2Configurations.design2Configuration(2).objectChange(1)#node" value="workAreaWidth" />
+            <set path="vehicle.design2Configurations.design2Configuration(2).objectChange(1)#translationActive" value="-12 0 -0.2" />
+            <set path="vehicle.design2Configurations.design2Configuration(2).objectChange(2)#node" value="workAreaHeight" />
+            <set path="vehicle.design2Configurations.design2Configuration(2).objectChange(2)#translationActive" value="12 0 1.5" />
+
+            <set path="vehicle.workAreas.workArea(0)#requiresOwnedFarmland" value="false" />
+            <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true" />
+        </attributes>
+    </parentFile>
+</vehicle>
